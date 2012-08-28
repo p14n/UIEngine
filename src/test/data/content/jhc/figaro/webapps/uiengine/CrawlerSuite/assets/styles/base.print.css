@@ -1,0 +1,531 @@
+
+body {
+	margin: 10px;
+	padding: 0px;
+	color: #333333;
+	font: normal 10px Arial, Helvetica, sans-serif;
+}
+
+a:link, a:active, a:visited {
+	color: #1D407C;
+}
+
+a img {
+	border: none;
+}
+
+fieldset {
+  border:none;
+}
+
+/* footer */
+
+.footerPanel {
+	border-top:1px solid #1D407C;	
+	position:relative;
+	width:100%;
+	margin-top:11px;
+	clear:both;
+}
+.footerPanel p {
+	color:#555555;
+	font-size:10px;
+	margin-top: 10px;
+}
+.footerInfo {
+	float:left;
+	width:82%;
+	text-align: center;
+	padding-top: 20px;
+}
+.footerInfo p {
+	margin:0 0 5px;
+	padding:0;
+}
+.footerInfo .warning {
+	border: none;
+	padding: 5px;
+	margin: 2px;
+}
+#partlogo {
+	float:left;
+	padding-top: 20px;
+}
+.footerPanel a.indent {
+	padding-left: 35px;
+}
+
+.dataTable {
+	width: 100%;
+	margin: 10px 0px 0px;
+	border-collapse:separate;
+
+}
+
+.dataTable th.rightAlign span{
+	float:none;
+}
+
+.dataTable th.rightAlign > span{
+	float: right;
+}
+
+.dataTable th.rightAlign span  {
+	text-align:center;
+}
+.dataTable td.rightAlign span {
+	float:right;
+}
+.dataTable td.rightAlign span a{
+	float:right;
+}
+
+/*
+quantity headers
+*/
+.dataTable{
+	border-bottom: 3px solid #D0D0D0;
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+}
+
+.dataTable thead th {
+	background:#D0D0D0 none repeat scroll 0 0;
+	color:#333333;
+	font-size:10px;
+	font-weight: bold;
+	padding:5px 3px 4px;
+}
+.dataTable thead th span{
+	float:left;
+}
+.dataTable thead th.price span,
+.dataTable thead th.quantity span,
+.dataTable thead th.count span,
+.dataTable thead th.percent span{
+	float:none;
+}
+
+.dataTable thead th.wicket_orderUp span{
+	/*background-image: url(../images/arrow_up.gif);*/
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	padding-right:15px;
+}
+
+.dataTable thead th.wicket_orderDown span{
+	/*background-image: url(../images/arrow_down.gif);*/
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	padding-right:15px;
+}
+
+
+.dataTable thead th a {
+	text-decoration: none;
+}
+
+.dataTable tbody tr.even {
+	background-color: #f2f2f2;
+}
+
+.dataTable tbody tr.odd {
+	background-color: #e5e5e5;
+}
+
+.dataTable tbody td {
+	color:#333333;
+	font-size:10px;
+	padding:2px 3px 3px;
+}
+
+.dataTable .indicator {
+	text-align: center;
+}
+
+.dataTable .zeroValuedHolding_true {
+	cursor: help;
+	font-style: italic;
+	color: red;
+}
+
+.infoContentTitle {
+    margin-bottom: 0px;
+}
+
+.pageInfoContents help {
+    margin-top: 10px;
+}
+
+.groupInfoContents div{
+    margin-top: 10px;
+}
+/*174341 - nicer print*/
+input,select {
+	border: 0px;
+}
+label{
+	display: block;
+	float: left;
+	width: 170px;
+	font-variant: small-caps;
+}
+.dataTable th span {
+text-align:left;
+}
+/*174341 - nicer print END*/
+
+body {
+	margin: 10px;
+	padding: 0px;
+	color: #333333;
+	font: normal 10px Arial, Helvetica, sans-serif;
+}
+
+a:link, a:active, a:visited {
+	color: #1D407C;
+}
+
+a img {
+	border: none;
+}
+
+fieldset {
+  border:none;
+}
+
+/* footer */
+
+.footerPanel {
+	border-top:1px solid #1D407C;	
+	position:relative;
+	width:100%;
+	margin-top:11px;
+	clear:both;
+}
+.footerPanel p {
+	color:#555555;
+	font-size:10px;
+	margin-top: 10px;
+}
+.footerInfo {
+	float:left;
+	width:82%;
+	text-align: center;
+	padding-top: 20px;
+}
+.footerInfo p {
+	margin:0 0 5px;
+	padding:0;
+}
+.footerInfo .warning {
+	border: none;
+	padding: 5px;
+	margin: 2px;
+}
+#partlogo {
+	float:left;
+	padding-top: 20px;
+}
+.footerPanel a.indent {
+	padding-left: 35px;
+}
+
+.dataTable {
+	width: 100%;
+	margin: 10px 0px 0px;
+	border-collapse:separate;
+
+}
+
+.dataTable th.rightAlign span{
+	float:none;
+}
+
+.dataTable th.rightAlign > span{
+	float: right;
+}
+
+.dataTable th.rightAlign span  {
+	text-align:center;
+}
+.dataTable td.rightAlign span {
+	float:right;
+}
+.dataTable td.rightAlign span a{
+	float:right;
+}
+
+/*
+quantity headers
+*/
+.dataTable{
+	border-bottom: 3px solid #D0D0D0;
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+}
+
+.dataTable thead th {
+	background:#D0D0D0 none repeat scroll 0 0;
+	color:#333333;
+	font-size:10px;
+	font-weight: bold;
+	padding:5px 3px 4px;
+}
+.dataTable thead th span{
+	float:left;
+}
+.dataTable thead th.price span,
+.dataTable thead th.quantity span,
+.dataTable thead th.count span,
+.dataTable thead th.percent span{
+	float:none;
+}
+
+.dataTable thead th.wicket_orderUp span{
+	/*background-image: url(../images/arrow_up.gif);*/
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	padding-right:15px;
+}
+
+.dataTable thead th.wicket_orderDown span{
+	/*background-image: url(../images/arrow_down.gif);*/
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	padding-right:15px;
+}
+
+
+.dataTable thead th a {
+	text-decoration: none;
+}
+
+.dataTable tbody tr.even {
+	background-color: #f2f2f2;
+}
+
+.dataTable tbody tr.odd {
+	background-color: #e5e5e5;
+}
+
+.dataTable tbody td {
+	color:#333333;
+	font-size:10px;
+	padding:2px 3px 3px;
+}
+
+.dataTable .indicator {
+	text-align: center;
+}
+
+.dataTable .zeroValuedHolding_true {
+	cursor: help;
+	font-style: italic;
+	color: red;
+}
+
+.infoContentTitle {
+    margin-bottom: 0px;
+}
+
+.pageInfoContents help {
+    margin-top: 10px;
+}
+
+.groupInfoContents div{
+    margin-top: 10px;
+}
+/*174341 - nicer print*/
+input,select {
+	border: 0px;
+}
+label{
+	display: block;
+	float: left;
+	width: 170px;
+	font-variant: small-caps;
+}
+.dataTable th span {
+text-align:left;
+}
+/*174341 - nicer print END*/
+
+body {
+	margin: 10px;
+	padding: 0px;
+	color: #333333;
+	font: normal 10px Arial, Helvetica, sans-serif;
+}
+
+a:link, a:active, a:visited {
+	color: #1D407C;
+}
+
+a img {
+	border: none;
+}
+
+fieldset {
+  border:none;
+}
+
+/* footer */
+
+.footerPanel {
+	border-top:1px solid #1D407C;	
+	position:relative;
+	width:100%;
+	margin-top:11px;
+	clear:both;
+}
+.footerPanel p {
+	color:#555555;
+	font-size:10px;
+	margin-top: 10px;
+}
+.footerInfo {
+	float:left;
+	width:82%;
+	text-align: center;
+	padding-top: 20px;
+}
+.footerInfo p {
+	margin:0 0 5px;
+	padding:0;
+}
+.footerInfo .warning {
+	border: none;
+	padding: 5px;
+	margin: 2px;
+}
+#partlogo {
+	float:left;
+	padding-top: 20px;
+}
+.footerPanel a.indent {
+	padding-left: 35px;
+}
+
+.dataTable {
+	width: 100%;
+	margin: 10px 0px 0px;
+	border-collapse:separate;
+
+}
+
+.dataTable th.rightAlign span{
+	float:none;
+}
+
+.dataTable th.rightAlign > span{
+	float: right;
+}
+
+.dataTable th.rightAlign span  {
+	text-align:center;
+}
+.dataTable td.rightAlign span {
+	float:right;
+}
+.dataTable td.rightAlign span a{
+	float:right;
+}
+
+/*
+quantity headers
+*/
+.dataTable{
+	border-bottom: 3px solid #D0D0D0;
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+}
+
+.dataTable thead th {
+	background:#D0D0D0 none repeat scroll 0 0;
+	color:#333333;
+	font-size:10px;
+	font-weight: bold;
+	padding:5px 3px 4px;
+}
+.dataTable thead th span{
+	float:left;
+}
+.dataTable thead th.price span,
+.dataTable thead th.quantity span,
+.dataTable thead th.count span,
+.dataTable thead th.percent span{
+	float:none;
+}
+
+.dataTable thead th.wicket_orderUp span{
+	/*background-image: url(../images/arrow_up.gif);*/
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	padding-right:15px;
+}
+
+.dataTable thead th.wicket_orderDown span{
+	/*background-image: url(../images/arrow_down.gif);*/
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	padding-right:15px;
+}
+
+
+.dataTable thead th a {
+	text-decoration: none;
+}
+
+.dataTable tbody tr.even {
+	background-color: #f2f2f2;
+}
+
+.dataTable tbody tr.odd {
+	background-color: #e5e5e5;
+}
+
+.dataTable tbody td {
+	color:#333333;
+	font-size:10px;
+	padding:2px 3px 3px;
+}
+
+.dataTable .indicator {
+	text-align: center;
+}
+
+.dataTable .zeroValuedHolding_true {
+	cursor: help;
+	font-style: italic;
+	color: red;
+}
+
+.infoContentTitle {
+    margin-bottom: 0px;
+}
+
+.pageInfoContents help {
+    margin-top: 10px;
+}
+
+.groupInfoContents div{
+    margin-top: 10px;
+}
+/*174341 - nicer print*/
+input,select {
+	border: 0px;
+}
+label{
+	display: block;
+	float: left;
+	width: 170px;
+	font-variant: small-caps;
+}
+.dataTable th span {
+text-align:left;
+}
+/*174341 - nicer print END*/

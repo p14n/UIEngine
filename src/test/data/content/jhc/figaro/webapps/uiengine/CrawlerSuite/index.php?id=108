@@ -1,0 +1,4634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Portfolio
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1 selected">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2 selected">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Portfolio
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      
+<div id="id21">
+			
+	<div id="accountSelectorPanel">
+		<div id="accountSelectorPanel" class="accountSelectorPanel">
+			<div class="accountUserNote"></div>
+			<div class="accountSelector">
+				<label for="account" class="accountNameLabel">Account:
+		  </label>
+				<select name="container:components:panels:16:panel:personGroupSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:16:panel:personGroupSelectorPanel:accountOptions:1:IOnChangeListener::&amp;container:components:panels:16:panel:personGroupSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+					<option value="00000010004.0">All
+			    </option>
+					<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+  </option>
+					<option value="0000060">Mr H Daniel ISA Account (0000060)
+  </option>
+					<option value="0000061">Mr H Daniel Nominee Client (0000061)
+  </option>
+					<option value="0000062">Mr H Daniel Nominee Client (0000062)
+  </option>
+					<option value="0000063">Mr H Daniel Nominee Client (0000063)
+  </option>
+				</select>
+				<span class="accountName"></span>
+			<!-- To be shown when printing -->
+				<div id="accountInfoPrint" class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+			</div>
+					
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">AvailableCash:
+			  </span>
+				<span class="accountCashValue">¬£
+			  9,924.75
+			  </span>
+			</div>
+	
+				
+		</div>
+	</div>
+</div>
+		
+<div id="id22">
+		
+</div>
+		
+<div id="id23">
+	<div class="portfolioSelectorPanel">
+		
+		
+		
+			
+				
+		<div id="pdfButton">
+			<input type="button" name="pdf" class="formButton buttons pdfButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:pdf:1:ILinkListener::'; } ;return false" value="Download PDF" title="Download PDF" alt="Download PDF"/>
+		</div>
+		
+			
+				
+		<div id="downloadButton">
+					
+			<input type="button" name="download" class="formButton buttons downloadButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:download:1:ILinkListener::'; } ;return false" value="Download CSV" title="Download CSV" alt="Download CSV"/>
+		</div>
+			
+	</div>
+</div>
+		
+			
+		
+<div id="id24">
+	<div id="messagePanelContainer">
+		<div id="messagePanelMessage"></div>
+	</div>
+</div>
+		
+<div id="id25">
+	<div class="portfolioItemsPanel">
+		<table cellpadding="0" cellspacing="0" class="portfolioTable dataTable" summary="Current portfolio information">
+			<thead>
+						
+				<tr class="headers">
+							
+					<th class="wicket_orderNone instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:1:header:orderByLink:1:ILinkListener::">
+							<span>Stock Code
+	    </span>
+						</a>
+					</th>
+							
+					<th class="wicket_orderDown instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:2:header:orderByLink:1:ILinkListener::">
+							<span>Stock Description
+	    </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign quantity">
+						<span>Quantity
+	    </span>
+					</th>
+							
+					<th class="rightAlign bookcost">
+						<span>
+							<span>Cost
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="rightAlign mid">
+						<span>Price
+	    </span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign value">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:6:header:orderByLink:1:ILinkListener::">
+							<span>
+								<span>Value
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+							</span>
+						</a>
+					</th>
+							
+					<th class="rightAlign change">
+						<span>
+							<span>Gain/Loss
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign
+			  percentChange">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:8:header:orderByLink:1:ILinkListener::">
+							<span>Gain/Loss (%)
+			  </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign percentChange">
+						<span>Gain/Loss on Day (%)
+			  </span>
+					</th>
+							
+					<th class="icon icon-trade">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-research">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-watchlist">
+						<span></span>
+					</th>
+						
+				</tr>
+					
+			</thead>
+			<tfoot>
+						
+				<tr class="portfolio-totals">
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank rightAlign
+			  quantity">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal rightAlign bookcost">
+						<span>
+							<div>50.25
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign mid">
+						<span>Totals
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign value">
+						<span>122.23
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign change">
+						<span>
+							<div>71.98
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span>
+							<div>143.24
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-trade">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-research">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-watchlist">
+						<span></span>
+					</td>
+						
+				</tr>
+					
+			</tfoot>
+			<tbody>
+				<tr class="even">
+					<td class="instrumentName">
+						<span>BARC
+		  </span>
+					</td>
+					<td class="instrumentName">
+						<span>BARCLAYS ORD GBP0.25
+		  </span>
+					</td>
+					<td class="rightAlign quantity">
+						<span>50
+		  </span>
+					</td>
+					<td class="rightAlign bookcost">
+						<span class="unavailableValue_false">
+							<div>50.25
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign mid">
+						<span>2.4445 GBP
+		  </span>
+					</td>
+					<td class="rightAlign value">
+						<span class="zeroValuedHolding_false">122.23
+		  </span>
+					</td>
+					<td class="rightAlign change">
+						<span class="unavailableValue_false">
+							<div>71.98
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span>
+							<div>143.23
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span class="neutral">0.00
+		  </span>
+					</td>
+					<td class="icon icon-trade">
+						<span>
+							<a href="#" id="id26" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:10:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id26') !=
+		  null;}.bind(this));return !wcall;" alt="Trade" title="Trade">
+								<img src="assets/images/icon_trade.gif"></img>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-research">
+						<span>
+							<a id="id27" href="research?isin=GB0031348658" class="externalLink" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:11:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id27') !=
+		  null;}.bind(this));return !wcall;" alt="Research" title="Research">
+								<img src="assets/images/icon_info.gif"/>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-watchlist">
+						<span>
+							<a href="#" id="id28" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:12:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id28') !=
+		  null;}.bind(this));return !wcall;" alt="Add to
+		  Watchlist" title="Add to Watchlist">
+								<img src="assets/images/icon_watchlist.gif"></img>
+							</a>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+		
+<div id="id29">
+	<div id="id2a">
+		<div class="portfolioRatesTotalPanel">
+	
+					
+			<table id="portfolioTotalsTable" class="zebraTable dataTable">
+				<thead>
+					<tr>
+						<th colspan="4">
+							<span>Total assets
+			    </span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="valueTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Portfolio total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 122.23
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td class="dataRegularHeaderR italic">
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span>¬£ 6,203.75
+				  </span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="balanceTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,203.75
+			  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="portfolioTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Assets total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,325.98
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="infoLine">
+						<td colspan="4">
+							<div>
+								<p>UK Equity prices 15 minutes delayed. Other prices
+			    latest available.
+			    </p>
+									
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+		
+</div>
+		
+<div id="id1b">
+	<div class="legendPanel" id="id11">
+		<div class="legendContainer">
+			<span class="label">Key:
+			  </span>
+			<ul>
+						
+				<li class="trade-key">
+					<img src="assets/images/icon_trade.gif" class="imagePanel" title="Link to trading" alt="Link to trading"/>
+					<span>Buy/Sell
+				  </span>
+				</li>
+						
+				<li class="research-key">
+					<img src="assets/images/icon_info.gif" class="imagePanel" title="Link to research" alt="Link to research"/>
+					<span>Research
+						</span>
+				</li>
+						
+				<li class="watchlist-key">
+					<img src="assets/images/icon_watchlist.gif" class="imagePanel" title="Add to Watchlist" alt="Add to Watchlist"/>
+					<span>Add to
+						Watchlist
+						</span>
+				</li>
+						
+				<li class="price-unavailable-key">
+					<img src="assets/images/exclamation_mark.gif" class="imagePanel" title="The price for this holding is unavailable" alt="The price for this holding is unavailable"/>
+					<span>Price
+						not available
+						</span>
+				</li>
+						
+				<li class="value-unavailable-key">
+					<img src="assets/images/icon_unavailable.gif" class="imagePanel" title="The book cost is not available in this currency" alt="The book cost is not available in this currency"/>
+					<span>Book
+						cost not available in this currency
+						</span>
+				</li>
+					
+			</ul>
+		</div>
+	</div>
+</div>
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Portfolio
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1 selected">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2 selected">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Portfolio
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      
+<div id="id21">
+			
+	<div id="accountSelectorPanel">
+		<div id="accountSelectorPanel" class="accountSelectorPanel">
+			<div class="accountUserNote"></div>
+			<div class="accountSelector">
+				<label for="account" class="accountNameLabel">Account:
+		  </label>
+				<select name="container:components:panels:16:panel:personGroupSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:16:panel:personGroupSelectorPanel:accountOptions:1:IOnChangeListener::&amp;container:components:panels:16:panel:personGroupSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+					<option value="00000010004.0">All
+			    </option>
+					<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+  </option>
+					<option value="0000060">Mr H Daniel ISA Account (0000060)
+  </option>
+					<option value="0000061">Mr H Daniel Nominee Client (0000061)
+  </option>
+					<option value="0000062">Mr H Daniel Nominee Client (0000062)
+  </option>
+					<option value="0000063">Mr H Daniel Nominee Client (0000063)
+  </option>
+				</select>
+				<span class="accountName"></span>
+			<!-- To be shown when printing -->
+				<div id="accountInfoPrint" class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+			</div>
+					
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">AvailableCash:
+			  </span>
+				<span class="accountCashValue">¬£
+			  9,924.75
+			  </span>
+			</div>
+	
+				
+		</div>
+	</div>
+</div>
+		
+<div id="id22">
+		
+</div>
+		
+<div id="id23">
+	<div class="portfolioSelectorPanel">
+		
+		
+		
+			
+				
+		<div id="pdfButton">
+			<input type="button" name="pdf" class="formButton buttons pdfButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:pdf:1:ILinkListener::'; } ;return false" value="Download PDF" title="Download PDF" alt="Download PDF"/>
+		</div>
+		
+			
+				
+		<div id="downloadButton">
+					
+			<input type="button" name="download" class="formButton buttons downloadButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:download:1:ILinkListener::'; } ;return false" value="Download CSV" title="Download CSV" alt="Download CSV"/>
+		</div>
+			
+	</div>
+</div>
+		
+			
+		
+<div id="id24">
+	<div id="messagePanelContainer">
+		<div id="messagePanelMessage"></div>
+	</div>
+</div>
+		
+<div id="id25">
+	<div class="portfolioItemsPanel">
+		<table cellpadding="0" cellspacing="0" class="portfolioTable dataTable" summary="Current portfolio information">
+			<thead>
+						
+				<tr class="headers">
+							
+					<th class="wicket_orderNone instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:1:header:orderByLink:1:ILinkListener::">
+							<span>Stock Code
+	    </span>
+						</a>
+					</th>
+							
+					<th class="wicket_orderDown instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:2:header:orderByLink:1:ILinkListener::">
+							<span>Stock Description
+	    </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign quantity">
+						<span>Quantity
+	    </span>
+					</th>
+							
+					<th class="rightAlign bookcost">
+						<span>
+							<span>Cost
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="rightAlign mid">
+						<span>Price
+	    </span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign value">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:6:header:orderByLink:1:ILinkListener::">
+							<span>
+								<span>Value
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+							</span>
+						</a>
+					</th>
+							
+					<th class="rightAlign change">
+						<span>
+							<span>Gain/Loss
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign
+			  percentChange">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:8:header:orderByLink:1:ILinkListener::">
+							<span>Gain/Loss (%)
+			  </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign percentChange">
+						<span>Gain/Loss on Day (%)
+			  </span>
+					</th>
+							
+					<th class="icon icon-trade">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-research">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-watchlist">
+						<span></span>
+					</th>
+						
+				</tr>
+					
+			</thead>
+			<tfoot>
+						
+				<tr class="portfolio-totals">
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank rightAlign
+			  quantity">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal rightAlign bookcost">
+						<span>
+							<div>50.25
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign mid">
+						<span>Totals
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign value">
+						<span>122.23
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign change">
+						<span>
+							<div>71.98
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span>
+							<div>143.24
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-trade">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-research">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-watchlist">
+						<span></span>
+					</td>
+						
+				</tr>
+					
+			</tfoot>
+			<tbody>
+				<tr class="even">
+					<td class="instrumentName">
+						<span>BARC
+		  </span>
+					</td>
+					<td class="instrumentName">
+						<span>BARCLAYS ORD GBP0.25
+		  </span>
+					</td>
+					<td class="rightAlign quantity">
+						<span>50
+		  </span>
+					</td>
+					<td class="rightAlign bookcost">
+						<span class="unavailableValue_false">
+							<div>50.25
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign mid">
+						<span>2.4445 GBP
+		  </span>
+					</td>
+					<td class="rightAlign value">
+						<span class="zeroValuedHolding_false">122.23
+		  </span>
+					</td>
+					<td class="rightAlign change">
+						<span class="unavailableValue_false">
+							<div>71.98
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span>
+							<div>143.23
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span class="neutral">0.00
+		  </span>
+					</td>
+					<td class="icon icon-trade">
+						<span>
+							<a href="#" id="id26" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:10:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id26') !=
+		  null;}.bind(this));return !wcall;" alt="Trade" title="Trade">
+								<img src="assets/images/icon_trade.gif"></img>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-research">
+						<span>
+							<a id="id27" href="research?isin=GB0031348658" class="externalLink" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:11:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id27') !=
+		  null;}.bind(this));return !wcall;" alt="Research" title="Research">
+								<img src="assets/images/icon_info.gif"/>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-watchlist">
+						<span>
+							<a href="#" id="id28" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:12:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id28') !=
+		  null;}.bind(this));return !wcall;" alt="Add to
+		  Watchlist" title="Add to Watchlist">
+								<img src="assets/images/icon_watchlist.gif"></img>
+							</a>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+		
+<div id="id29">
+	<div id="id2a">
+		<div class="portfolioRatesTotalPanel">
+	
+					
+			<table id="portfolioTotalsTable" class="zebraTable dataTable">
+				<thead>
+					<tr>
+						<th colspan="4">
+							<span>Total assets
+			    </span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="valueTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Portfolio total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 122.23
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td class="dataRegularHeaderR italic">
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span>¬£ 6,203.75
+				  </span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="balanceTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,203.75
+			  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="portfolioTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Assets total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,325.98
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="infoLine">
+						<td colspan="4">
+							<div>
+								<p>UK Equity prices 15 minutes delayed. Other prices
+			    latest available.
+			    </p>
+									
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+		
+</div>
+		
+<div id="id1b">
+	<div class="legendPanel" id="id11">
+		<div class="legendContainer">
+			<span class="label">Key:
+			  </span>
+			<ul>
+						
+				<li class="trade-key">
+					<img src="assets/images/icon_trade.gif" class="imagePanel" title="Link to trading" alt="Link to trading"/>
+					<span>Buy/Sell
+				  </span>
+				</li>
+						
+				<li class="research-key">
+					<img src="assets/images/icon_info.gif" class="imagePanel" title="Link to research" alt="Link to research"/>
+					<span>Research
+						</span>
+				</li>
+						
+				<li class="watchlist-key">
+					<img src="assets/images/icon_watchlist.gif" class="imagePanel" title="Add to Watchlist" alt="Add to Watchlist"/>
+					<span>Add to
+						Watchlist
+						</span>
+				</li>
+						
+				<li class="price-unavailable-key">
+					<img src="assets/images/exclamation_mark.gif" class="imagePanel" title="The price for this holding is unavailable" alt="The price for this holding is unavailable"/>
+					<span>Price
+						not available
+						</span>
+				</li>
+						
+				<li class="value-unavailable-key">
+					<img src="assets/images/icon_unavailable.gif" class="imagePanel" title="The book cost is not available in this currency" alt="The book cost is not available in this currency"/>
+					<span>Book
+						cost not available in this currency
+						</span>
+				</li>
+					
+			</ul>
+		</div>
+	</div>
+</div>
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Portfolio
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1 selected">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2 selected">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Portfolio
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      
+<div id="id21">
+			
+	<div id="accountSelectorPanel">
+		<div id="accountSelectorPanel" class="accountSelectorPanel">
+			<div class="accountUserNote"></div>
+			<div class="accountSelector">
+				<label for="account" class="accountNameLabel">Account:
+		  </label>
+				<select name="container:components:panels:16:panel:personGroupSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:16:panel:personGroupSelectorPanel:accountOptions:1:IOnChangeListener::&amp;container:components:panels:16:panel:personGroupSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+					<option value="00000010004.0">All
+			    </option>
+					<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+  </option>
+					<option value="0000060">Mr H Daniel ISA Account (0000060)
+  </option>
+					<option value="0000061">Mr H Daniel Nominee Client (0000061)
+  </option>
+					<option value="0000062">Mr H Daniel Nominee Client (0000062)
+  </option>
+					<option value="0000063">Mr H Daniel Nominee Client (0000063)
+  </option>
+				</select>
+				<span class="accountName"></span>
+			<!-- To be shown when printing -->
+				<div id="accountInfoPrint" class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+			</div>
+					
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">AvailableCash:
+			  </span>
+				<span class="accountCashValue">¬£
+			  9,924.75
+			  </span>
+			</div>
+	
+				
+		</div>
+	</div>
+</div>
+		
+<div id="id22">
+		
+</div>
+		
+<div id="id23">
+	<div class="portfolioSelectorPanel">
+		
+		
+		
+			
+				
+		<div id="pdfButton">
+			<input type="button" name="pdf" class="formButton buttons pdfButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:pdf:1:ILinkListener::'; } ;return false" value="Download PDF" title="Download PDF" alt="Download PDF"/>
+		</div>
+		
+			
+				
+		<div id="downloadButton">
+					
+			<input type="button" name="download" class="formButton buttons downloadButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:download:1:ILinkListener::'; } ;return false" value="Download CSV" title="Download CSV" alt="Download CSV"/>
+		</div>
+			
+	</div>
+</div>
+		
+			
+		
+<div id="id24">
+	<div id="messagePanelContainer">
+		<div id="messagePanelMessage"></div>
+	</div>
+</div>
+		
+<div id="id25">
+	<div class="portfolioItemsPanel">
+		<table cellpadding="0" cellspacing="0" class="portfolioTable dataTable" summary="Current portfolio information">
+			<thead>
+						
+				<tr class="headers">
+							
+					<th class="wicket_orderNone instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:1:header:orderByLink:1:ILinkListener::">
+							<span>Stock Code
+	    </span>
+						</a>
+					</th>
+							
+					<th class="wicket_orderDown instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:2:header:orderByLink:1:ILinkListener::">
+							<span>Stock Description
+	    </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign quantity">
+						<span>Quantity
+	    </span>
+					</th>
+							
+					<th class="rightAlign bookcost">
+						<span>
+							<span>Cost
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="rightAlign mid">
+						<span>Price
+	    </span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign value">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:6:header:orderByLink:1:ILinkListener::">
+							<span>
+								<span>Value
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+							</span>
+						</a>
+					</th>
+							
+					<th class="rightAlign change">
+						<span>
+							<span>Gain/Loss
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign
+			  percentChange">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:8:header:orderByLink:1:ILinkListener::">
+							<span>Gain/Loss (%)
+			  </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign percentChange">
+						<span>Gain/Loss on Day (%)
+			  </span>
+					</th>
+							
+					<th class="icon icon-trade">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-research">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-watchlist">
+						<span></span>
+					</th>
+						
+				</tr>
+					
+			</thead>
+			<tfoot>
+						
+				<tr class="portfolio-totals">
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank rightAlign
+			  quantity">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal rightAlign bookcost">
+						<span>
+							<div>50.25
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign mid">
+						<span>Totals
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign value">
+						<span>122.23
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign change">
+						<span>
+							<div>71.98
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span>
+							<div>143.24
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-trade">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-research">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-watchlist">
+						<span></span>
+					</td>
+						
+				</tr>
+					
+			</tfoot>
+			<tbody>
+				<tr class="even">
+					<td class="instrumentName">
+						<span>BARC
+		  </span>
+					</td>
+					<td class="instrumentName">
+						<span>BARCLAYS ORD GBP0.25
+		  </span>
+					</td>
+					<td class="rightAlign quantity">
+						<span>50
+		  </span>
+					</td>
+					<td class="rightAlign bookcost">
+						<span class="unavailableValue_false">
+							<div>50.25
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign mid">
+						<span>2.4445 GBP
+		  </span>
+					</td>
+					<td class="rightAlign value">
+						<span class="zeroValuedHolding_false">122.23
+		  </span>
+					</td>
+					<td class="rightAlign change">
+						<span class="unavailableValue_false">
+							<div>71.98
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span>
+							<div>143.23
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span class="neutral">0.00
+		  </span>
+					</td>
+					<td class="icon icon-trade">
+						<span>
+							<a href="#" id="id26" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:10:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id26') !=
+		  null;}.bind(this));return !wcall;" alt="Trade" title="Trade">
+								<img src="assets/images/icon_trade.gif"></img>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-research">
+						<span>
+							<a id="id27" href="research?isin=GB0031348658" class="externalLink" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:11:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id27') !=
+		  null;}.bind(this));return !wcall;" alt="Research" title="Research">
+								<img src="assets/images/icon_info.gif"/>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-watchlist">
+						<span>
+							<a href="#" id="id28" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:12:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id28') !=
+		  null;}.bind(this));return !wcall;" alt="Add to
+		  Watchlist" title="Add to Watchlist">
+								<img src="assets/images/icon_watchlist.gif"></img>
+							</a>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+		
+<div id="id29">
+	<div id="id2a">
+		<div class="portfolioRatesTotalPanel">
+	
+					
+			<table id="portfolioTotalsTable" class="zebraTable dataTable">
+				<thead>
+					<tr>
+						<th colspan="4">
+							<span>Total assets
+			    </span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="valueTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Portfolio total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 122.23
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td class="dataRegularHeaderR italic">
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span>¬£ 6,203.75
+				  </span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="balanceTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,203.75
+			  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="portfolioTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Assets total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,325.98
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="infoLine">
+						<td colspan="4">
+							<div>
+								<p>UK Equity prices 15 minutes delayed. Other prices
+			    latest available.
+			    </p>
+									
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+		
+</div>
+		
+<div id="id1b">
+	<div class="legendPanel" id="id11">
+		<div class="legendContainer">
+			<span class="label">Key:
+			  </span>
+			<ul>
+						
+				<li class="trade-key">
+					<img src="assets/images/icon_trade.gif" class="imagePanel" title="Link to trading" alt="Link to trading"/>
+					<span>Buy/Sell
+				  </span>
+				</li>
+						
+				<li class="research-key">
+					<img src="assets/images/icon_info.gif" class="imagePanel" title="Link to research" alt="Link to research"/>
+					<span>Research
+						</span>
+				</li>
+						
+				<li class="watchlist-key">
+					<img src="assets/images/icon_watchlist.gif" class="imagePanel" title="Add to Watchlist" alt="Add to Watchlist"/>
+					<span>Add to
+						Watchlist
+						</span>
+				</li>
+						
+				<li class="price-unavailable-key">
+					<img src="assets/images/exclamation_mark.gif" class="imagePanel" title="The price for this holding is unavailable" alt="The price for this holding is unavailable"/>
+					<span>Price
+						not available
+						</span>
+				</li>
+						
+				<li class="value-unavailable-key">
+					<img src="assets/images/icon_unavailable.gif" class="imagePanel" title="The book cost is not available in this currency" alt="The book cost is not available in this currency"/>
+					<span>Book
+						cost not available in this currency
+						</span>
+				</li>
+					
+			</ul>
+		</div>
+	</div>
+</div>
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Portfolio
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1 selected">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2 selected">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Portfolio
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      
+<div id="id21">
+			
+	<div id="accountSelectorPanel">
+		<div id="accountSelectorPanel" class="accountSelectorPanel">
+			<div class="accountUserNote"></div>
+			<div class="accountSelector">
+				<label for="account" class="accountNameLabel">Account:
+		  </label>
+				<select name="container:components:panels:16:panel:personGroupSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:16:panel:personGroupSelectorPanel:accountOptions:1:IOnChangeListener::&amp;container:components:panels:16:panel:personGroupSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+					<option value="00000010004.0">All
+			    </option>
+					<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+  </option>
+					<option value="0000060">Mr H Daniel ISA Account (0000060)
+  </option>
+					<option value="0000061">Mr H Daniel Nominee Client (0000061)
+  </option>
+					<option value="0000062">Mr H Daniel Nominee Client (0000062)
+  </option>
+					<option value="0000063">Mr H Daniel Nominee Client (0000063)
+  </option>
+				</select>
+				<span class="accountName"></span>
+			<!-- To be shown when printing -->
+				<div id="accountInfoPrint" class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+			</div>
+					
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">AvailableCash:
+			  </span>
+				<span class="accountCashValue">¬£
+			  9,924.75
+			  </span>
+			</div>
+	
+				
+		</div>
+	</div>
+</div>
+		
+<div id="id22">
+		
+</div>
+		
+<div id="id23">
+	<div class="portfolioSelectorPanel">
+		
+		
+		
+			
+				
+		<div id="pdfButton">
+			<input type="button" name="pdf" class="formButton buttons pdfButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:pdf:1:ILinkListener::'; } ;return false" value="Download PDF" title="Download PDF" alt="Download PDF"/>
+		</div>
+		
+			
+				
+		<div id="downloadButton">
+					
+			<input type="button" name="download" class="formButton buttons downloadButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:download:1:ILinkListener::'; } ;return false" value="Download CSV" title="Download CSV" alt="Download CSV"/>
+		</div>
+			
+	</div>
+</div>
+		
+			
+		
+<div id="id24">
+	<div id="messagePanelContainer">
+		<div id="messagePanelMessage"></div>
+	</div>
+</div>
+		
+<div id="id25">
+	<div class="portfolioItemsPanel">
+		<table cellpadding="0" cellspacing="0" class="portfolioTable dataTable" summary="Current portfolio information">
+			<thead>
+						
+				<tr class="headers">
+							
+					<th class="wicket_orderNone instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:1:header:orderByLink:1:ILinkListener::">
+							<span>Stock Code
+	    </span>
+						</a>
+					</th>
+							
+					<th class="wicket_orderDown instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:2:header:orderByLink:1:ILinkListener::">
+							<span>Stock Description
+	    </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign quantity">
+						<span>Quantity
+	    </span>
+					</th>
+							
+					<th class="rightAlign bookcost">
+						<span>
+							<span>Cost
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="rightAlign mid">
+						<span>Price
+	    </span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign value">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:6:header:orderByLink:1:ILinkListener::">
+							<span>
+								<span>Value
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+							</span>
+						</a>
+					</th>
+							
+					<th class="rightAlign change">
+						<span>
+							<span>Gain/Loss
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign
+			  percentChange">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:8:header:orderByLink:1:ILinkListener::">
+							<span>Gain/Loss (%)
+			  </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign percentChange">
+						<span>Gain/Loss on Day (%)
+			  </span>
+					</th>
+							
+					<th class="icon icon-trade">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-research">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-watchlist">
+						<span></span>
+					</th>
+						
+				</tr>
+					
+			</thead>
+			<tfoot>
+						
+				<tr class="portfolio-totals">
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank rightAlign
+			  quantity">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal rightAlign bookcost">
+						<span>
+							<div>50.25
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign mid">
+						<span>Totals
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign value">
+						<span>122.23
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign change">
+						<span>
+							<div>71.98
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span>
+							<div>143.24
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-trade">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-research">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-watchlist">
+						<span></span>
+					</td>
+						
+				</tr>
+					
+			</tfoot>
+			<tbody>
+				<tr class="even">
+					<td class="instrumentName">
+						<span>BARC
+		  </span>
+					</td>
+					<td class="instrumentName">
+						<span>BARCLAYS ORD GBP0.25
+		  </span>
+					</td>
+					<td class="rightAlign quantity">
+						<span>50
+		  </span>
+					</td>
+					<td class="rightAlign bookcost">
+						<span class="unavailableValue_false">
+							<div>50.25
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign mid">
+						<span>2.4445 GBP
+		  </span>
+					</td>
+					<td class="rightAlign value">
+						<span class="zeroValuedHolding_false">122.23
+		  </span>
+					</td>
+					<td class="rightAlign change">
+						<span class="unavailableValue_false">
+							<div>71.98
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span>
+							<div>143.23
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span class="neutral">0.00
+		  </span>
+					</td>
+					<td class="icon icon-trade">
+						<span>
+							<a href="#" id="id26" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:10:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id26') !=
+		  null;}.bind(this));return !wcall;" alt="Trade" title="Trade">
+								<img src="assets/images/icon_trade.gif"></img>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-research">
+						<span>
+							<a id="id27" href="research?isin=GB0031348658" class="externalLink" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:11:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id27') !=
+		  null;}.bind(this));return !wcall;" alt="Research" title="Research">
+								<img src="assets/images/icon_info.gif"/>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-watchlist">
+						<span>
+							<a href="#" id="id28" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:12:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id28') !=
+		  null;}.bind(this));return !wcall;" alt="Add to
+		  Watchlist" title="Add to Watchlist">
+								<img src="assets/images/icon_watchlist.gif"></img>
+							</a>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+		
+<div id="id29">
+	<div id="id2a">
+		<div class="portfolioRatesTotalPanel">
+	
+					
+			<table id="portfolioTotalsTable" class="zebraTable dataTable">
+				<thead>
+					<tr>
+						<th colspan="4">
+							<span>Total assets
+			    </span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="valueTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Portfolio total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 122.23
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td class="dataRegularHeaderR italic">
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span>¬£ 6,203.75
+				  </span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="balanceTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,203.75
+			  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="portfolioTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Assets total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,325.98
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="infoLine">
+						<td colspan="4">
+							<div>
+								<p>UK Equity prices 15 minutes delayed. Other prices
+			    latest available.
+			    </p>
+									
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+		
+</div>
+		
+<div id="id1b">
+	<div class="legendPanel" id="id11">
+		<div class="legendContainer">
+			<span class="label">Key:
+			  </span>
+			<ul>
+						
+				<li class="trade-key">
+					<img src="assets/images/icon_trade.gif" class="imagePanel" title="Link to trading" alt="Link to trading"/>
+					<span>Buy/Sell
+				  </span>
+				</li>
+						
+				<li class="research-key">
+					<img src="assets/images/icon_info.gif" class="imagePanel" title="Link to research" alt="Link to research"/>
+					<span>Research
+						</span>
+				</li>
+						
+				<li class="watchlist-key">
+					<img src="assets/images/icon_watchlist.gif" class="imagePanel" title="Add to Watchlist" alt="Add to Watchlist"/>
+					<span>Add to
+						Watchlist
+						</span>
+				</li>
+						
+				<li class="price-unavailable-key">
+					<img src="assets/images/exclamation_mark.gif" class="imagePanel" title="The price for this holding is unavailable" alt="The price for this holding is unavailable"/>
+					<span>Price
+						not available
+						</span>
+				</li>
+						
+				<li class="value-unavailable-key">
+					<img src="assets/images/icon_unavailable.gif" class="imagePanel" title="The book cost is not available in this currency" alt="The book cost is not available in this currency"/>
+					<span>Book
+						cost not available in this currency
+						</span>
+				</li>
+					
+			</ul>
+		</div>
+	</div>
+</div>
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Portfolio
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1 selected">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2 selected">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Portfolio
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      
+<div id="id21">
+			
+	<div id="accountSelectorPanel">
+		<div id="accountSelectorPanel" class="accountSelectorPanel">
+			<div class="accountUserNote"></div>
+			<div class="accountSelector">
+				<label for="account" class="accountNameLabel">Account:
+		  </label>
+				<select name="container:components:panels:16:panel:personGroupSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:16:panel:personGroupSelectorPanel:accountOptions:1:IOnChangeListener::&amp;container:components:panels:16:panel:personGroupSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+					<option value="00000010004.0">All
+			    </option>
+					<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+  </option>
+					<option value="0000060">Mr H Daniel ISA Account (0000060)
+  </option>
+					<option value="0000061">Mr H Daniel Nominee Client (0000061)
+  </option>
+					<option value="0000062">Mr H Daniel Nominee Client (0000062)
+  </option>
+					<option value="0000063">Mr H Daniel Nominee Client (0000063)
+  </option>
+				</select>
+				<span class="accountName"></span>
+			<!-- To be shown when printing -->
+				<div id="accountInfoPrint" class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+			</div>
+					
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">AvailableCash:
+			  </span>
+				<span class="accountCashValue">¬£
+			  9,924.75
+			  </span>
+			</div>
+	
+				
+		</div>
+	</div>
+</div>
+		
+<div id="id22">
+		
+</div>
+		
+<div id="id23">
+	<div class="portfolioSelectorPanel">
+		
+		
+		
+			
+				
+		<div id="pdfButton">
+			<input type="button" name="pdf" class="formButton buttons pdfButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:pdf:1:ILinkListener::'; } ;return false" value="Download PDF" title="Download PDF" alt="Download PDF"/>
+		</div>
+		
+			
+				
+		<div id="downloadButton">
+					
+			<input type="button" name="download" class="formButton buttons downloadButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:download:1:ILinkListener::'; } ;return false" value="Download CSV" title="Download CSV" alt="Download CSV"/>
+		</div>
+			
+	</div>
+</div>
+		
+			
+		
+<div id="id24">
+	<div id="messagePanelContainer">
+		<div id="messagePanelMessage"></div>
+	</div>
+</div>
+		
+<div id="id25">
+	<div class="portfolioItemsPanel">
+		<table cellpadding="0" cellspacing="0" class="portfolioTable dataTable" summary="Current portfolio information">
+			<thead>
+						
+				<tr class="headers">
+							
+					<th class="wicket_orderNone instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:1:header:orderByLink:1:ILinkListener::">
+							<span>Stock Code
+	    </span>
+						</a>
+					</th>
+							
+					<th class="wicket_orderDown instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:2:header:orderByLink:1:ILinkListener::">
+							<span>Stock Description
+	    </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign quantity">
+						<span>Quantity
+	    </span>
+					</th>
+							
+					<th class="rightAlign bookcost">
+						<span>
+							<span>Cost
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="rightAlign mid">
+						<span>Price
+	    </span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign value">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:6:header:orderByLink:1:ILinkListener::">
+							<span>
+								<span>Value
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+							</span>
+						</a>
+					</th>
+							
+					<th class="rightAlign change">
+						<span>
+							<span>Gain/Loss
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign
+			  percentChange">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:8:header:orderByLink:1:ILinkListener::">
+							<span>Gain/Loss (%)
+			  </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign percentChange">
+						<span>Gain/Loss on Day (%)
+			  </span>
+					</th>
+							
+					<th class="icon icon-trade">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-research">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-watchlist">
+						<span></span>
+					</th>
+						
+				</tr>
+					
+			</thead>
+			<tfoot>
+						
+				<tr class="portfolio-totals">
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank rightAlign
+			  quantity">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal rightAlign bookcost">
+						<span>
+							<div>50.25
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign mid">
+						<span>Totals
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign value">
+						<span>122.23
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign change">
+						<span>
+							<div>71.98
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span>
+							<div>143.24
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-trade">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-research">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-watchlist">
+						<span></span>
+					</td>
+						
+				</tr>
+					
+			</tfoot>
+			<tbody>
+				<tr class="even">
+					<td class="instrumentName">
+						<span>BARC
+		  </span>
+					</td>
+					<td class="instrumentName">
+						<span>BARCLAYS ORD GBP0.25
+		  </span>
+					</td>
+					<td class="rightAlign quantity">
+						<span>50
+		  </span>
+					</td>
+					<td class="rightAlign bookcost">
+						<span class="unavailableValue_false">
+							<div>50.25
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign mid">
+						<span>2.4445 GBP
+		  </span>
+					</td>
+					<td class="rightAlign value">
+						<span class="zeroValuedHolding_false">122.23
+		  </span>
+					</td>
+					<td class="rightAlign change">
+						<span class="unavailableValue_false">
+							<div>71.98
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span>
+							<div>143.23
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span class="neutral">0.00
+		  </span>
+					</td>
+					<td class="icon icon-trade">
+						<span>
+							<a href="#" id="id26" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:10:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id26') !=
+		  null;}.bind(this));return !wcall;" alt="Trade" title="Trade">
+								<img src="assets/images/icon_trade.gif"></img>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-research">
+						<span>
+							<a id="id27" href="research?isin=GB0031348658" class="externalLink" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:11:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id27') !=
+		  null;}.bind(this));return !wcall;" alt="Research" title="Research">
+								<img src="assets/images/icon_info.gif"/>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-watchlist">
+						<span>
+							<a href="#" id="id28" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:12:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id28') !=
+		  null;}.bind(this));return !wcall;" alt="Add to
+		  Watchlist" title="Add to Watchlist">
+								<img src="assets/images/icon_watchlist.gif"></img>
+							</a>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+		
+<div id="id29">
+	<div id="id2a">
+		<div class="portfolioRatesTotalPanel">
+	
+					
+			<table id="portfolioTotalsTable" class="zebraTable dataTable">
+				<thead>
+					<tr>
+						<th colspan="4">
+							<span>Total assets
+			    </span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="valueTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Portfolio total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 122.23
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td class="dataRegularHeaderR italic">
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span>¬£ 6,203.75
+				  </span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="balanceTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,203.75
+			  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="portfolioTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Assets total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,325.98
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="infoLine">
+						<td colspan="4">
+							<div>
+								<p>UK Equity prices 15 minutes delayed. Other prices
+			    latest available.
+			    </p>
+									
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+		
+</div>
+		
+<div id="id1b">
+	<div class="legendPanel" id="id11">
+		<div class="legendContainer">
+			<span class="label">Key:
+			  </span>
+			<ul>
+						
+				<li class="trade-key">
+					<img src="assets/images/icon_trade.gif" class="imagePanel" title="Link to trading" alt="Link to trading"/>
+					<span>Buy/Sell
+				  </span>
+				</li>
+						
+				<li class="research-key">
+					<img src="assets/images/icon_info.gif" class="imagePanel" title="Link to research" alt="Link to research"/>
+					<span>Research
+						</span>
+				</li>
+						
+				<li class="watchlist-key">
+					<img src="assets/images/icon_watchlist.gif" class="imagePanel" title="Add to Watchlist" alt="Add to Watchlist"/>
+					<span>Add to
+						Watchlist
+						</span>
+				</li>
+						
+				<li class="price-unavailable-key">
+					<img src="assets/images/exclamation_mark.gif" class="imagePanel" title="The price for this holding is unavailable" alt="The price for this holding is unavailable"/>
+					<span>Price
+						not available
+						</span>
+				</li>
+						
+				<li class="value-unavailable-key">
+					<img src="assets/images/icon_unavailable.gif" class="imagePanel" title="The book cost is not available in this currency" alt="The book cost is not available in this currency"/>
+					<span>Book
+						cost not available in this currency
+						</span>
+				</li>
+					
+			</ul>
+		</div>
+	</div>
+</div>
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Portfolio
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1 selected">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2 selected">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Portfolio
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      
+<div id="id21">
+			
+	<div id="accountSelectorPanel">
+		<div id="accountSelectorPanel" class="accountSelectorPanel">
+			<div class="accountUserNote"></div>
+			<div class="accountSelector">
+				<label for="account" class="accountNameLabel">Account:
+		  </label>
+				<select name="container:components:panels:16:panel:personGroupSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:16:panel:personGroupSelectorPanel:accountOptions:1:IOnChangeListener::&amp;container:components:panels:16:panel:personGroupSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+					<option value="00000010004.0">All
+			    </option>
+					<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+  </option>
+					<option value="0000060">Mr H Daniel ISA Account (0000060)
+  </option>
+					<option value="0000061">Mr H Daniel Nominee Client (0000061)
+  </option>
+					<option value="0000062">Mr H Daniel Nominee Client (0000062)
+  </option>
+					<option value="0000063">Mr H Daniel Nominee Client (0000063)
+  </option>
+				</select>
+				<span class="accountName"></span>
+			<!-- To be shown when printing -->
+				<div id="accountInfoPrint" class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+			</div>
+					
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">AvailableCash:
+			  </span>
+				<span class="accountCashValue">¬£
+			  9,924.75
+			  </span>
+			</div>
+	
+				
+		</div>
+	</div>
+</div>
+		
+<div id="id22">
+		
+</div>
+		
+<div id="id23">
+	<div class="portfolioSelectorPanel">
+		
+		
+		
+			
+				
+		<div id="pdfButton">
+			<input type="button" name="pdf" class="formButton buttons pdfButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:pdf:1:ILinkListener::'; } ;return false" value="Download PDF" title="Download PDF" alt="Download PDF"/>
+		</div>
+		
+			
+				
+		<div id="downloadButton">
+					
+			<input type="button" name="download" class="formButton buttons downloadButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:download:1:ILinkListener::'; } ;return false" value="Download CSV" title="Download CSV" alt="Download CSV"/>
+		</div>
+			
+	</div>
+</div>
+		
+			
+		
+<div id="id24">
+	<div id="messagePanelContainer">
+		<div id="messagePanelMessage"></div>
+	</div>
+</div>
+		
+<div id="id25">
+	<div class="portfolioItemsPanel">
+		<table cellpadding="0" cellspacing="0" class="portfolioTable dataTable" summary="Current portfolio information">
+			<thead>
+						
+				<tr class="headers">
+							
+					<th class="wicket_orderNone instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:1:header:orderByLink:1:ILinkListener::">
+							<span>Stock Code
+	    </span>
+						</a>
+					</th>
+							
+					<th class="wicket_orderDown instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:2:header:orderByLink:1:ILinkListener::">
+							<span>Stock Description
+	    </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign quantity">
+						<span>Quantity
+	    </span>
+					</th>
+							
+					<th class="rightAlign bookcost">
+						<span>
+							<span>Cost
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="rightAlign mid">
+						<span>Price
+	    </span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign value">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:6:header:orderByLink:1:ILinkListener::">
+							<span>
+								<span>Value
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+							</span>
+						</a>
+					</th>
+							
+					<th class="rightAlign change">
+						<span>
+							<span>Gain/Loss
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign
+			  percentChange">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:8:header:orderByLink:1:ILinkListener::">
+							<span>Gain/Loss (%)
+			  </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign percentChange">
+						<span>Gain/Loss on Day (%)
+			  </span>
+					</th>
+							
+					<th class="icon icon-trade">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-research">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-watchlist">
+						<span></span>
+					</th>
+						
+				</tr>
+					
+			</thead>
+			<tfoot>
+						
+				<tr class="portfolio-totals">
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank rightAlign
+			  quantity">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal rightAlign bookcost">
+						<span>
+							<div>50.25
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign mid">
+						<span>Totals
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign value">
+						<span>122.23
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign change">
+						<span>
+							<div>71.98
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span>
+							<div>143.24
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-trade">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-research">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-watchlist">
+						<span></span>
+					</td>
+						
+				</tr>
+					
+			</tfoot>
+			<tbody>
+				<tr class="even">
+					<td class="instrumentName">
+						<span>BARC
+		  </span>
+					</td>
+					<td class="instrumentName">
+						<span>BARCLAYS ORD GBP0.25
+		  </span>
+					</td>
+					<td class="rightAlign quantity">
+						<span>50
+		  </span>
+					</td>
+					<td class="rightAlign bookcost">
+						<span class="unavailableValue_false">
+							<div>50.25
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign mid">
+						<span>2.4445 GBP
+		  </span>
+					</td>
+					<td class="rightAlign value">
+						<span class="zeroValuedHolding_false">122.23
+		  </span>
+					</td>
+					<td class="rightAlign change">
+						<span class="unavailableValue_false">
+							<div>71.98
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span>
+							<div>143.23
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span class="neutral">0.00
+		  </span>
+					</td>
+					<td class="icon icon-trade">
+						<span>
+							<a href="#" id="id26" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:10:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id26') !=
+		  null;}.bind(this));return !wcall;" alt="Trade" title="Trade">
+								<img src="assets/images/icon_trade.gif"></img>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-research">
+						<span>
+							<a id="id27" href="research?isin=GB0031348658" class="externalLink" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:11:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id27') !=
+		  null;}.bind(this));return !wcall;" alt="Research" title="Research">
+								<img src="assets/images/icon_info.gif"/>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-watchlist">
+						<span>
+							<a href="#" id="id28" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:12:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id28') !=
+		  null;}.bind(this));return !wcall;" alt="Add to
+		  Watchlist" title="Add to Watchlist">
+								<img src="assets/images/icon_watchlist.gif"></img>
+							</a>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+		
+<div id="id29">
+	<div id="id2a">
+		<div class="portfolioRatesTotalPanel">
+	
+					
+			<table id="portfolioTotalsTable" class="zebraTable dataTable">
+				<thead>
+					<tr>
+						<th colspan="4">
+							<span>Total assets
+			    </span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="valueTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Portfolio total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 122.23
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td class="dataRegularHeaderR italic">
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span>¬£ 6,203.75
+				  </span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="balanceTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,203.75
+			  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="portfolioTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Assets total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,325.98
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="infoLine">
+						<td colspan="4">
+							<div>
+								<p>UK Equity prices 15 minutes delayed. Other prices
+			    latest available.
+			    </p>
+									
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+		
+</div>
+		
+<div id="id1b">
+	<div class="legendPanel" id="id11">
+		<div class="legendContainer">
+			<span class="label">Key:
+			  </span>
+			<ul>
+						
+				<li class="trade-key">
+					<img src="assets/images/icon_trade.gif" class="imagePanel" title="Link to trading" alt="Link to trading"/>
+					<span>Buy/Sell
+				  </span>
+				</li>
+						
+				<li class="research-key">
+					<img src="assets/images/icon_info.gif" class="imagePanel" title="Link to research" alt="Link to research"/>
+					<span>Research
+						</span>
+				</li>
+						
+				<li class="watchlist-key">
+					<img src="assets/images/icon_watchlist.gif" class="imagePanel" title="Add to Watchlist" alt="Add to Watchlist"/>
+					<span>Add to
+						Watchlist
+						</span>
+				</li>
+						
+				<li class="price-unavailable-key">
+					<img src="assets/images/exclamation_mark.gif" class="imagePanel" title="The price for this holding is unavailable" alt="The price for this holding is unavailable"/>
+					<span>Price
+						not available
+						</span>
+				</li>
+						
+				<li class="value-unavailable-key">
+					<img src="assets/images/icon_unavailable.gif" class="imagePanel" title="The book cost is not available in this currency" alt="The book cost is not available in this currency"/>
+					<span>Book
+						cost not available in this currency
+						</span>
+				</li>
+					
+			</ul>
+		</div>
+	</div>
+</div>
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Portfolio
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1 selected">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2 selected">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Portfolio
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      
+<div id="id21">
+			
+	<div id="accountSelectorPanel">
+		<div id="accountSelectorPanel" class="accountSelectorPanel">
+			<div class="accountUserNote"></div>
+			<div class="accountSelector">
+				<label for="account" class="accountNameLabel">Account:
+		  </label>
+				<select name="container:components:panels:16:panel:personGroupSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:16:panel:personGroupSelectorPanel:accountOptions:1:IOnChangeListener::&amp;container:components:panels:16:panel:personGroupSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+					<option value="00000010004.0">All
+			    </option>
+					<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+  </option>
+					<option value="0000060">Mr H Daniel ISA Account (0000060)
+  </option>
+					<option value="0000061">Mr H Daniel Nominee Client (0000061)
+  </option>
+					<option value="0000062">Mr H Daniel Nominee Client (0000062)
+  </option>
+					<option value="0000063">Mr H Daniel Nominee Client (0000063)
+  </option>
+				</select>
+				<span class="accountName"></span>
+			<!-- To be shown when printing -->
+				<div id="accountInfoPrint" class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+			</div>
+					
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">AvailableCash:
+			  </span>
+				<span class="accountCashValue">¬£
+			  9,924.75
+			  </span>
+			</div>
+	
+				
+		</div>
+	</div>
+</div>
+		
+<div id="id22">
+		
+</div>
+		
+<div id="id23">
+	<div class="portfolioSelectorPanel">
+		
+		
+		
+			
+				
+		<div id="pdfButton">
+			<input type="button" name="pdf" class="formButton buttons pdfButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:pdf:1:ILinkListener::'; } ;return false" value="Download PDF" title="Download PDF" alt="Download PDF"/>
+		</div>
+		
+			
+				
+		<div id="downloadButton">
+					
+			<input type="button" name="download" class="formButton buttons downloadButton" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?wicket:interface=:127:container:components:panels:18:panel:download:1:ILinkListener::'; } ;return false" value="Download CSV" title="Download CSV" alt="Download CSV"/>
+		</div>
+			
+	</div>
+</div>
+		
+			
+		
+<div id="id24">
+	<div id="messagePanelContainer">
+		<div id="messagePanelMessage"></div>
+	</div>
+</div>
+		
+<div id="id25">
+	<div class="portfolioItemsPanel">
+		<table cellpadding="0" cellspacing="0" class="portfolioTable dataTable" summary="Current portfolio information">
+			<thead>
+						
+				<tr class="headers">
+							
+					<th class="wicket_orderNone instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:1:header:orderByLink:1:ILinkListener::">
+							<span>Stock Code
+	    </span>
+						</a>
+					</th>
+							
+					<th class="wicket_orderDown instrumentName">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:2:header:orderByLink:1:ILinkListener::">
+							<span>Stock Description
+	    </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign quantity">
+						<span>Quantity
+	    </span>
+					</th>
+							
+					<th class="rightAlign bookcost">
+						<span>
+							<span>Cost
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="rightAlign mid">
+						<span>Price
+	    </span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign value">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:6:header:orderByLink:1:ILinkListener::">
+							<span>
+								<span>Value
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+							</span>
+						</a>
+					</th>
+							
+					<th class="rightAlign change">
+						<span>
+							<span>Gain/Loss
+	    </span>&nbsp;
+	    <span>(¬£)
+	    </span>
+						</span>
+					</th>
+							
+					<th class="wicket_orderNone rightAlign
+			  percentChange">
+						<a href="?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:topToolbars:2:toolbar:headers:8:header:orderByLink:1:ILinkListener::">
+							<span>Gain/Loss (%)
+			  </span>
+						</a>
+					</th>
+							
+					<th class="rightAlign percentChange">
+						<span>Gain/Loss on Day (%)
+			  </span>
+					</th>
+							
+					<th class="icon icon-trade">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-research">
+						<span></span>
+					</th>
+							
+					<th class="icon icon-watchlist">
+						<span></span>
+					</th>
+						
+				</tr>
+					
+			</thead>
+			<tfoot>
+						
+				<tr class="portfolio-totals">
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank instrumentName">
+						<span></span>
+					</td>
+							
+					<td class="footerTotalBlank rightAlign
+			  quantity">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal rightAlign bookcost">
+						<span>
+							<div>50.25
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign mid">
+						<span>Totals
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign value">
+						<span>122.23
+			  </span>
+					</td>
+							
+					<td class="footerTotal rightAlign change">
+						<span>
+							<div>71.98
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span>
+							<div>143.24
+			</div>
+		
+			
+								
+						</span>
+					</td>
+							
+					<td class="footerTotal rightAlign
+			  percentChange">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-trade">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-research">
+						<span></span>
+					</td>
+							
+					<td class="footerTotal icon icon-watchlist">
+						<span></span>
+					</td>
+						
+				</tr>
+					
+			</tfoot>
+			<tbody>
+				<tr class="even">
+					<td class="instrumentName">
+						<span>BARC
+		  </span>
+					</td>
+					<td class="instrumentName">
+						<span>BARCLAYS ORD GBP0.25
+		  </span>
+					</td>
+					<td class="rightAlign quantity">
+						<span>50
+		  </span>
+					</td>
+					<td class="rightAlign bookcost">
+						<span class="unavailableValue_false">
+							<div>50.25
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign mid">
+						<span>2.4445 GBP
+		  </span>
+					</td>
+					<td class="rightAlign value">
+						<span class="zeroValuedHolding_false">122.23
+		  </span>
+					</td>
+					<td class="rightAlign change">
+						<span class="unavailableValue_false">
+							<div>71.98
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span>
+							<div>143.23
+		</div>
+		
+	
+								
+						</span>
+					</td>
+					<td class="rightAlign percentChange">
+						<span class="neutral">0.00
+		  </span>
+					</td>
+					<td class="icon icon-trade">
+						<span>
+							<a href="#" id="id26" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:10:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id26') !=
+		  null;}.bind(this));return !wcall;" alt="Trade" title="Trade">
+								<img src="assets/images/icon_trade.gif"></img>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-research">
+						<span>
+							<a id="id27" href="research?isin=GB0031348658" class="externalLink" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:11:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id27') !=
+		  null;}.bind(this));return !wcall;" alt="Research" title="Research">
+								<img src="assets/images/icon_info.gif"/>
+							</a>
+						</span>
+					</td>
+					<td class="icon icon-watchlist">
+						<span>
+							<a href="#" id="id28" onclick="var
+		  wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:21:panel:portfolioTable:body:rows:1:cells:12:cell:link:1:IBehaviorListener:0:',function()
+		  { }.bind(this),function() { }.bind(this), function()
+		  {return Wicket.$('id28') !=
+		  null;}.bind(this));return !wcall;" alt="Add to
+		  Watchlist" title="Add to Watchlist">
+								<img src="assets/images/icon_watchlist.gif"></img>
+							</a>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+		
+<div id="id29">
+	<div id="id2a">
+		<div class="portfolioRatesTotalPanel">
+	
+					
+			<table id="portfolioTotalsTable" class="zebraTable dataTable">
+				<thead>
+					<tr>
+						<th colspan="4">
+							<span>Total assets
+			    </span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="valueTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Portfolio total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 122.23
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td class="dataRegularHeaderR italic">
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span>¬£ 6,203.75
+				  </span>
+						</td>
+						<td class="dataRegularHeaderR">
+							<span></span>
+						</td>
+					</tr>
+					<tr class="balanceTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Cash total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,203.75
+			  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="portfolioTotals">
+						<td class="dataRegularHeader">
+							<div>
+								<span>Assets total
+					  </span>&nbsp;
+					  <span>(¬£)
+					  </span>
+							</div>
+						</td>
+						<td>
+							<span></span>
+						</td>
+						<td class="dataRegularHeaderR total">
+							<span>¬£ 6,325.98
+				  </span>
+						</td>
+						<td>
+							<span></span>
+						</td>
+					</tr>
+					<tr class="infoLine">
+						<td colspan="4">
+							<div>
+								<p>UK Equity prices 15 minutes delayed. Other prices
+			    latest available.
+			    </p>
+									
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+		
+</div>
+		
+<div id="id1b">
+	<div class="legendPanel" id="id11">
+		<div class="legendContainer">
+			<span class="label">Key:
+			  </span>
+			<ul>
+						
+				<li class="trade-key">
+					<img src="assets/images/icon_trade.gif" class="imagePanel" title="Link to trading" alt="Link to trading"/>
+					<span>Buy/Sell
+				  </span>
+				</li>
+						
+				<li class="research-key">
+					<img src="assets/images/icon_info.gif" class="imagePanel" title="Link to research" alt="Link to research"/>
+					<span>Research
+						</span>
+				</li>
+						
+				<li class="watchlist-key">
+					<img src="assets/images/icon_watchlist.gif" class="imagePanel" title="Add to Watchlist" alt="Add to Watchlist"/>
+					<span>Add to
+						Watchlist
+						</span>
+				</li>
+						
+				<li class="price-unavailable-key">
+					<img src="assets/images/exclamation_mark.gif" class="imagePanel" title="The price for this holding is unavailable" alt="The price for this holding is unavailable"/>
+					<span>Price
+						not available
+						</span>
+				</li>
+						
+				<li class="value-unavailable-key">
+					<img src="assets/images/icon_unavailable.gif" class="imagePanel" title="The book cost is not available in this currency" alt="The book cost is not available in this currency"/>
+					<span>Book
+						cost not available in this currency
+						</span>
+				</li>
+					
+			</ul>
+		</div>
+	</div>
+</div>
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>

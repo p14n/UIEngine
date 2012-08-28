@@ -1,0 +1,357 @@
+/* accountSummary */
+a:link,a:active, a:visited {
+  color: #0000EE;
+}
+
+.accountSummaryPanel, .accountSummaryHeaderPanel, .accountSummaryChartPanel, .accountSummaryMarketingMessagePanel {
+  clear: both;
+  background: url(../images/menuBackground.png) repeat-y;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 4px;
+  padding-left: 175px;
+}
+
+html body .legendPanel {
+  padding-bottom: 12px;
+}
+
+.account-summary div.bodyPanel {
+    min-height: 105px;
+}
+
+.accountSummaryHeaderPanel {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.accountSummaryChartPanel {
+  position: absolute;
+  float: left;
+}
+
+.imagePanel {
+  width: auto;
+  height: auto;
+  /* move the image slightly to the left as it includes some blank space to the right */
+  margin-left: -10px;
+}
+
+.accountSummaryMarketingMessagePanel {
+  min-height: 250px;
+  padding-left: 536px;
+  padding-right: 0px;
+}
+
+.accountSummaryMarketingMessagePanel h2 {
+  margin-bottom: 15px;
+        padding-bottom: 0px;
+        float: left;
+        font: 13px/1.5 Helvetica, Arial, sans-serif;
+        font-size: 35px;
+        color: #37424a;
+        line-height: 35px;
+}
+
+.accountSummaryMarketingMessagePanel h3 {
+  font: 13px/1.5 Helvetica, Arial, sans-serif;
+        color: #7b7b7a;
+        font-size: 19px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+}
+
+.messageContainer {
+  width: 420px;
+}
+      .marketingMessageBody {
+        background-image: url(../images/marketingMessageBackground.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        min-height: 143px;
+      }
+
+ .accountSummaryPanel {
+    min-height: 50px;
+}
+
+.account-summary .accountSummaryInformationPanel div p {
+    font-weight: bold;
+}
+.account-summary .accountSummaryInformationPanel p {
+    margin-left: 20px;
+}
+
+
+div.watchlistWidgetContainer span.watchlistTitle {
+    padding-left: 20px;
+    font-size: 165%;
+    color: #555A62;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px;
+}
+
+div.watchlistWidgetContainer div.watchlistLink {
+    display: block;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div.watchlistWidgetContainer table.watchlistTable {
+    border: none;
+}
+
+div.watchlistWidgetContainer table.watchlistTable tbody {
+    border: 1px solid #DDDDDD;
+}
+
+div.watchlistWidgetContainer div.navigator, div.watchlistWidgetContainer div.navigatorLabel span {
+    color: #555A62;
+    font-size: 90%;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+
+/* accountSummary */
+a:link,a:active, a:visited {
+  color: #0000EE;
+}
+
+.accountSummaryPanel, .accountSummaryHeaderPanel, .accountSummaryChartPanel, .accountSummaryMarketingMessagePanel {
+  clear: both;
+  background: url(../images/menuBackground.png) repeat-y;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 4px;
+  padding-left: 175px;
+}
+
+html body .legendPanel {
+  padding-bottom: 12px;
+}
+
+.account-summary div.bodyPanel {
+    min-height: 105px;
+}
+
+.accountSummaryHeaderPanel {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.accountSummaryChartPanel {
+  position: absolute;
+  float: left;
+}
+
+.imagePanel {
+  width: auto;
+  height: auto;
+  /* move the image slightly to the left as it includes some blank space to the right */
+  margin-left: -10px;
+}
+
+.accountSummaryMarketingMessagePanel {
+  min-height: 250px;
+  padding-left: 536px;
+  padding-right: 0px;
+}
+
+.accountSummaryMarketingMessagePanel h2 {
+  margin-bottom: 15px;
+        padding-bottom: 0px;
+        float: left;
+        font: 13px/1.5 Helvetica, Arial, sans-serif;
+        font-size: 35px;
+        color: #37424a;
+        line-height: 35px;
+}
+
+.accountSummaryMarketingMessagePanel h3 {
+  font: 13px/1.5 Helvetica, Arial, sans-serif;
+        color: #7b7b7a;
+        font-size: 19px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+}
+
+.messageContainer {
+  width: 420px;
+}
+      .marketingMessageBody {
+        background-image: url(../images/marketingMessageBackground.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        min-height: 143px;
+      }
+
+ .accountSummaryPanel {
+    min-height: 50px;
+}
+
+.account-summary .accountSummaryInformationPanel div p {
+    font-weight: bold;
+}
+.account-summary .accountSummaryInformationPanel p {
+    margin-left: 20px;
+}
+
+
+div.watchlistWidgetContainer span.watchlistTitle {
+    padding-left: 20px;
+    font-size: 165%;
+    color: #555A62;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px;
+}
+
+div.watchlistWidgetContainer div.watchlistLink {
+    display: block;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div.watchlistWidgetContainer table.watchlistTable {
+    border: none;
+}
+
+div.watchlistWidgetContainer table.watchlistTable tbody {
+    border: 1px solid #DDDDDD;
+}
+
+div.watchlistWidgetContainer div.navigator, div.watchlistWidgetContainer div.navigatorLabel span {
+    color: #555A62;
+    font-size: 90%;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+
+/* accountSummary */
+a:link,a:active, a:visited {
+  color: #0000EE;
+}
+
+.accountSummaryPanel, .accountSummaryHeaderPanel, .accountSummaryChartPanel, .accountSummaryMarketingMessagePanel {
+  clear: both;
+  background: url(../images/menuBackground.png) repeat-y;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 4px;
+  padding-left: 175px;
+}
+
+html body .legendPanel {
+  padding-bottom: 12px;
+}
+
+.account-summary div.bodyPanel {
+    min-height: 105px;
+}
+
+.accountSummaryHeaderPanel {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.accountSummaryChartPanel {
+  position: absolute;
+  float: left;
+}
+
+.imagePanel {
+  width: auto;
+  height: auto;
+  /* move the image slightly to the left as it includes some blank space to the right */
+  margin-left: -10px;
+}
+
+.accountSummaryMarketingMessagePanel {
+  min-height: 250px;
+  padding-left: 536px;
+  padding-right: 0px;
+}
+
+.accountSummaryMarketingMessagePanel h2 {
+  margin-bottom: 15px;
+        padding-bottom: 0px;
+        float: left;
+        font: 13px/1.5 Helvetica, Arial, sans-serif;
+        font-size: 35px;
+        color: #37424a;
+        line-height: 35px;
+}
+
+.accountSummaryMarketingMessagePanel h3 {
+  font: 13px/1.5 Helvetica, Arial, sans-serif;
+        color: #7b7b7a;
+        font-size: 19px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+}
+
+.messageContainer {
+  width: 420px;
+}
+      .marketingMessageBody {
+        background-image: url(../images/marketingMessageBackground.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        min-height: 143px;
+      }
+
+ .accountSummaryPanel {
+    min-height: 50px;
+}
+
+.account-summary .accountSummaryInformationPanel div p {
+    font-weight: bold;
+}
+.account-summary .accountSummaryInformationPanel p {
+    margin-left: 20px;
+}
+
+
+div.watchlistWidgetContainer span.watchlistTitle {
+    padding-left: 20px;
+    font-size: 165%;
+    color: #555A62;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px;
+}
+
+div.watchlistWidgetContainer div.watchlistLink {
+    display: block;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div.watchlistWidgetContainer table.watchlistTable {
+    border: none;
+}
+
+div.watchlistWidgetContainer table.watchlistTable tbody {
+    border: 1px solid #DDDDDD;
+}
+
+div.watchlistWidgetContainer div.navigator, div.watchlistWidgetContainer div.navigatorLabel span {
+    color: #555A62;
+    font-size: 90%;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+

@@ -1,0 +1,3164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Buy & Sell
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1 selected">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2 selected">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Buy & Sell
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      <div id="id64">
+		<div id="accountSelectorPanel">
+	<div id="accountSelectorPanel" class="accountSelectorPanel">
+	  <div class="accountUserNote">
+	  </div>
+		<div class="accountSelector">
+			<label for="account"
+			       class="accountNameLabel">Account:
+			</label>
+			<select name="container:components:panels:35:panel:accountSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:35:panel:accountSelectorPanel:accountOptions:5:IOnChangeListener::&amp;container:components:panels:35:panel:accountSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+</option>
+<option value="0000060">Mr H Daniel ISA Account (0000060)
+</option>
+<option value="0000061">Mr H Daniel Nominee Client (0000061)
+</option>
+<option value="0000062">Mr H Daniel Nominee Client (0000062)
+</option>
+<option value="0000063">Mr H Daniel Nominee Client (0000063)
+</option>
+</select>
+			<span class="accountName">
+			</span>
+			<!-- To be shown when printing -->
+			<div id="accountInfoPrint"
+			class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+		</div>
+		
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">Available
+				  Cash:
+				</span>
+				<span class="accountCashValue">¬£
+				  9,924.75
+				</span>
+			</div>
+		
+				
+	</div>
+</div>
+		
+	</div>
+		
+			<div id="id65">
+		<div id="id66">
+<div class="bodyPanel ordersPanel" id="orderEntryPanel">
+	<span id="id67">
+
+		<div id="id68" style="display:none">
+	
+</div>
+
+	</span>
+	<div class="floatLeft wideSection">
+		<form action="?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:5:IFormSubmitListener::"
+		      id="id69" method="post" class="dateBasedForm"
+		      autocomplete="off">
+		  <div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden">
+		    <input type="hidden" name="id69_hf_0"
+			   id="id69_hf_0" />
+		  </div>
+			<fieldset>
+				<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+					<thead class="headers">
+						<tr>
+							<th colspan="2"
+							    class="left">Enter
+							order
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="shortColumn
+								   bold">Security
+							</td>
+							<td class="left">
+								<div id="id6a">
+	<input type="text" name="securityName:securityName" class="searchInput" size="30" maxlength="30" tabindex="1" autocomplete="off" value="" id="id61" onchange="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', null,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;" onblur="Wicket.$('submitOrderButton').setAttribute('disabled', 'true');Wicket.$('submitOrderButton').className = Wicket.$('submitOrderButton').className + ' disabled';self.document.body.className = self.document.body.className + ' busy';var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IBehaviorListener:1:', wicketSerialize(Wicket.$('id61')),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this), function() {return Wicket.$('id61') != null;}.bind(this));" alt="Name, Ticker or Sedol " title="Name, Ticker or Sedol "/>
+	<span>
+
+		<div id="id6b" style="display:none">
+	
+</div>
+
+	</span>
+	<a href="#" class="buttonAction buttons" id="id6c"
+	onclick="var
+	wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:stockSearchButton:5:IBehaviorListener:0:',function()
+	{ }.bind(this),function() { }.bind(this), function() {return
+	Wicket.$('id6c') != null;}.bind(this));return !wcall;">Find
+Stock
+	</a>												
+</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="shortColumn
+								   bold">Buy/Sell
+							</td>
+							<td class="left">
+								<select name="buyOrSell" class="typeSelector" tabindex="3" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:buyOrSell:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id6d')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id6d') != null;}.bind(this));" id="id6d">
+								  <option selected="selected" value="B">Buy
+								  </option>
+								  <option value="S">Sell
+								  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id6e">
+							<td class="shortColumn
+								   bold">Market
+							status
+							</td>
+							<td class="left
+								   bold">OPEN
+							</td>
+						</tr>
+						<tr class="orderTypeRow" id="id6f">
+							<td class="shortColumn
+								   bold">Order
+							Type
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="orderTypeRow:orderType" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:orderTypeRow:orderType:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id70')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id70') != null;}.bind(this));" id="id70">
+									  <option selected="selected" value="MKT">At Best
+									  </option>
+									  <option value="LIM">Limit
+									  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id71">
+							<td class="shortColumn
+		   bold">
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="clientCurrencyRow:clientCurrency" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:clientCurrencyRow:clientCurrency:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id72')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id72') != null;}.bind(this));" id="id72">
+									  <option value="EUR">EUR
+									  </option>
+									  <option selected="selected" value="GBP">GBP
+									  </option>
+									  <option value="USD">USD
+									  </option>
+</select>
+							</td>			
+						</tr>																		
+						<tr>
+							<td class="shortColumn
+							bold"
+							    valign="top">&nbsp;
+							</td>
+							<td class="left orderDetailsCell">
+								<div id="id62" class="clearBoth">
+									<span class="clearBoth" id="id73">
+										<span class="orderDetailsCellRow">
+											<input class="radio wicket-id62" type="radio" tabindex="5" id="id74" name="amountOptions" value="radio0" checked="checked"/>
+											Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</span>
+										<input type="text"
+										name="amountOptions:quantitySection:quantity"
+										size="8"
+										tabindex="6"
+						       class="amountQuantity"
+										value="0"/>
+										<br/>
+										</span>
+										
+										<span class="clearBoth">
+											<span class="orderDetailsCellRow">
+												<input class="radio wicket-id62" type="radio" tabindex="8" id="id75" name="amountOptions" value="radio1"/>
+												Amount &pound;&nbsp;&nbsp;
+											</span>
+											<input type="text" name="amountOptions:amount" size="8" tabindex="8" class="amountValue" value="0.00" disabled="disabled" id="id76"/>
+										
+									</span>
+								</div>								
+								<div class="clearBoth">
+								  <label for="charges">Charges:
+								  </label>&nbsp;
+									<span class="radioSpan"
+									      disabled="disabled"
+									      id="id77">
+									  <input name="chargesGroup:includeCharges"
+									      type="radio"
+										 disabled="disabled"
+									      value="I"
+									      id="id77-I"/>
+									  <label for="id77-I">Include
+									  </label>
+									  <input name="chargesGroup:includeCharges"
+									  type="radio"
+									  disabled="disabled"
+									 value="E"
+									  id="id77-E"/>
+									  <label for="id77-E">Exclude
+									  </label>
+									</span>
+								</div>
+								<div id="id78"
+								     style="display:none">
+								</div>
+								<div id="id79"
+								     style="display:none">
+								</div>
+								<div id="id7a"
+								     style="display:none">
+								</div>
+								<div class="clearBoth" id="submitOrderButton">
+									<input value="Next" type="button" tabindex="17" class="buttonAction buttons submitButton" name="submitOrderButton" id="id7b" onclick="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:submitOrderButton:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', 'submitOrderButton' ,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;; return false;" alt="Next" title="Next"/>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="feedbackContainer" id="id7c">
+  
+</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="floatLeft mediumSection" id="id7d">
+		<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+			<thead class="headers">
+				<tr>
+					<th class="mediumColumn
+						   left">Security info
+					</th>
+					<th class="right">Live Prices
+					sourced from the London Stock
+					Exchange. Refresh screen (F5)
+					  to update prices.
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="mediumColumn bold"
+					    valign="top">Security
+					</td>
+					<td class="rightColumn right"
+					    valign="top">
+					  <b>NONE SELECTED
+					  </b>
+					</td>
+				</tr>
+				<tr class="priceDetails" id="id7e">
+					<td class="mediumColumn
+						   bold">BidPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr class="priceDetails" id="id7f">
+					<td class="mediumColumn
+						   bold">OfferPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr id="id80" style="display:none">
+					</tr>
+				<tr>
+					<td class="mediumColumn
+						   bold">Current Holding
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+</div>
+		
+	</div>
+
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Buy & Sell
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1 selected">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2 selected">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Buy & Sell
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      <div id="id64">
+		<div id="accountSelectorPanel">
+	<div id="accountSelectorPanel" class="accountSelectorPanel">
+	  <div class="accountUserNote">
+	  </div>
+		<div class="accountSelector">
+			<label for="account"
+			       class="accountNameLabel">Account:
+			</label>
+			<select name="container:components:panels:35:panel:accountSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:35:panel:accountSelectorPanel:accountOptions:5:IOnChangeListener::&amp;container:components:panels:35:panel:accountSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+</option>
+<option value="0000060">Mr H Daniel ISA Account (0000060)
+</option>
+<option value="0000061">Mr H Daniel Nominee Client (0000061)
+</option>
+<option value="0000062">Mr H Daniel Nominee Client (0000062)
+</option>
+<option value="0000063">Mr H Daniel Nominee Client (0000063)
+</option>
+</select>
+			<span class="accountName">
+			</span>
+			<!-- To be shown when printing -->
+			<div id="accountInfoPrint"
+			class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+		</div>
+		
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">Available
+				  Cash:
+				</span>
+				<span class="accountCashValue">¬£
+				  9,924.75
+				</span>
+			</div>
+		
+				
+	</div>
+</div>
+		
+	</div>
+		
+			<div id="id65">
+		<div id="id66">
+<div class="bodyPanel ordersPanel" id="orderEntryPanel">
+	<span id="id67">
+
+		<div id="id68" style="display:none">
+	
+</div>
+
+	</span>
+	<div class="floatLeft wideSection">
+		<form action="?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:5:IFormSubmitListener::"
+		      id="id69" method="post" class="dateBasedForm"
+		      autocomplete="off">
+		  <div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden">
+		    <input type="hidden" name="id69_hf_0"
+			   id="id69_hf_0" />
+		  </div>
+			<fieldset>
+				<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+					<thead class="headers">
+						<tr>
+							<th colspan="2"
+							    class="left">Enter
+							order
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="shortColumn
+								   bold">Security
+							</td>
+							<td class="left">
+								<div id="id6a">
+	<input type="text" name="securityName:securityName" class="searchInput" size="30" maxlength="30" tabindex="1" autocomplete="off" value="" id="id61" onchange="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', null,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;" onblur="Wicket.$('submitOrderButton').setAttribute('disabled', 'true');Wicket.$('submitOrderButton').className = Wicket.$('submitOrderButton').className + ' disabled';self.document.body.className = self.document.body.className + ' busy';var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IBehaviorListener:1:', wicketSerialize(Wicket.$('id61')),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this), function() {return Wicket.$('id61') != null;}.bind(this));" alt="Name, Ticker or Sedol " title="Name, Ticker or Sedol "/>
+	<span>
+
+		<div id="id6b" style="display:none">
+	
+</div>
+
+	</span>
+	<a href="#" class="buttonAction buttons" id="id6c"
+	onclick="var
+	wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:stockSearchButton:5:IBehaviorListener:0:',function()
+	{ }.bind(this),function() { }.bind(this), function() {return
+	Wicket.$('id6c') != null;}.bind(this));return !wcall;">Find
+Stock
+	</a>												
+</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="shortColumn
+								   bold">Buy/Sell
+							</td>
+							<td class="left">
+								<select name="buyOrSell" class="typeSelector" tabindex="3" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:buyOrSell:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id6d')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id6d') != null;}.bind(this));" id="id6d">
+								  <option selected="selected" value="B">Buy
+								  </option>
+								  <option value="S">Sell
+								  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id6e">
+							<td class="shortColumn
+								   bold">Market
+							status
+							</td>
+							<td class="left
+								   bold">OPEN
+							</td>
+						</tr>
+						<tr class="orderTypeRow" id="id6f">
+							<td class="shortColumn
+								   bold">Order
+							Type
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="orderTypeRow:orderType" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:orderTypeRow:orderType:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id70')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id70') != null;}.bind(this));" id="id70">
+									  <option selected="selected" value="MKT">At Best
+									  </option>
+									  <option value="LIM">Limit
+									  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id71">
+							<td class="shortColumn
+		   bold">
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="clientCurrencyRow:clientCurrency" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:clientCurrencyRow:clientCurrency:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id72')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id72') != null;}.bind(this));" id="id72">
+									  <option value="EUR">EUR
+									  </option>
+									  <option selected="selected" value="GBP">GBP
+									  </option>
+									  <option value="USD">USD
+									  </option>
+</select>
+							</td>			
+						</tr>																		
+						<tr>
+							<td class="shortColumn
+							bold"
+							    valign="top">&nbsp;
+							</td>
+							<td class="left orderDetailsCell">
+								<div id="id62" class="clearBoth">
+									<span class="clearBoth" id="id73">
+										<span class="orderDetailsCellRow">
+											<input class="radio wicket-id62" type="radio" tabindex="5" id="id74" name="amountOptions" value="radio0" checked="checked"/>
+											Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</span>
+										<input type="text"
+										name="amountOptions:quantitySection:quantity"
+										size="8"
+										tabindex="6"
+						       class="amountQuantity"
+										value="0"/>
+										<br/>
+										</span>
+										
+										<span class="clearBoth">
+											<span class="orderDetailsCellRow">
+												<input class="radio wicket-id62" type="radio" tabindex="8" id="id75" name="amountOptions" value="radio1"/>
+												Amount &pound;&nbsp;&nbsp;
+											</span>
+											<input type="text" name="amountOptions:amount" size="8" tabindex="8" class="amountValue" value="0.00" disabled="disabled" id="id76"/>
+										
+									</span>
+								</div>								
+								<div class="clearBoth">
+								  <label for="charges">Charges:
+								  </label>&nbsp;
+									<span class="radioSpan"
+									      disabled="disabled"
+									      id="id77">
+									  <input name="chargesGroup:includeCharges"
+									      type="radio"
+										 disabled="disabled"
+									      value="I"
+									      id="id77-I"/>
+									  <label for="id77-I">Include
+									  </label>
+									  <input name="chargesGroup:includeCharges"
+									  type="radio"
+									  disabled="disabled"
+									 value="E"
+									  id="id77-E"/>
+									  <label for="id77-E">Exclude
+									  </label>
+									</span>
+								</div>
+								<div id="id78"
+								     style="display:none">
+								</div>
+								<div id="id79"
+								     style="display:none">
+								</div>
+								<div id="id7a"
+								     style="display:none">
+								</div>
+								<div class="clearBoth" id="submitOrderButton">
+									<input value="Next" type="button" tabindex="17" class="buttonAction buttons submitButton" name="submitOrderButton" id="id7b" onclick="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:submitOrderButton:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', 'submitOrderButton' ,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;; return false;" alt="Next" title="Next"/>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="feedbackContainer" id="id7c">
+  
+</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="floatLeft mediumSection" id="id7d">
+		<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+			<thead class="headers">
+				<tr>
+					<th class="mediumColumn
+						   left">Security info
+					</th>
+					<th class="right">Live Prices
+					sourced from the London Stock
+					Exchange. Refresh screen (F5)
+					  to update prices.
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="mediumColumn bold"
+					    valign="top">Security
+					</td>
+					<td class="rightColumn right"
+					    valign="top">
+					  <b>NONE SELECTED
+					  </b>
+					</td>
+				</tr>
+				<tr class="priceDetails" id="id7e">
+					<td class="mediumColumn
+						   bold">BidPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr class="priceDetails" id="id7f">
+					<td class="mediumColumn
+						   bold">OfferPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr id="id80" style="display:none">
+					</tr>
+				<tr>
+					<td class="mediumColumn
+						   bold">Current Holding
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+</div>
+		
+	</div>
+
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Buy & Sell
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1 selected">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2 selected">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Buy & Sell
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      <div id="id64">
+		<div id="accountSelectorPanel">
+	<div id="accountSelectorPanel" class="accountSelectorPanel">
+	  <div class="accountUserNote">
+	  </div>
+		<div class="accountSelector">
+			<label for="account"
+			       class="accountNameLabel">Account:
+			</label>
+			<select name="container:components:panels:35:panel:accountSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:35:panel:accountSelectorPanel:accountOptions:5:IOnChangeListener::&amp;container:components:panels:35:panel:accountSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+</option>
+<option value="0000060">Mr H Daniel ISA Account (0000060)
+</option>
+<option value="0000061">Mr H Daniel Nominee Client (0000061)
+</option>
+<option value="0000062">Mr H Daniel Nominee Client (0000062)
+</option>
+<option value="0000063">Mr H Daniel Nominee Client (0000063)
+</option>
+</select>
+			<span class="accountName">
+			</span>
+			<!-- To be shown when printing -->
+			<div id="accountInfoPrint"
+			class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+		</div>
+		
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">Available
+				  Cash:
+				</span>
+				<span class="accountCashValue">¬£
+				  9,924.75
+				</span>
+			</div>
+		
+				
+	</div>
+</div>
+		
+	</div>
+		
+			<div id="id65">
+		<div id="id66">
+<div class="bodyPanel ordersPanel" id="orderEntryPanel">
+	<span id="id67">
+
+		<div id="id68" style="display:none">
+	
+</div>
+
+	</span>
+	<div class="floatLeft wideSection">
+		<form action="?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:5:IFormSubmitListener::"
+		      id="id69" method="post" class="dateBasedForm"
+		      autocomplete="off">
+		  <div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden">
+		    <input type="hidden" name="id69_hf_0"
+			   id="id69_hf_0" />
+		  </div>
+			<fieldset>
+				<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+					<thead class="headers">
+						<tr>
+							<th colspan="2"
+							    class="left">Enter
+							order
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="shortColumn
+								   bold">Security
+							</td>
+							<td class="left">
+								<div id="id6a">
+	<input type="text" name="securityName:securityName" class="searchInput" size="30" maxlength="30" tabindex="1" autocomplete="off" value="" id="id61" onchange="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', null,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;" onblur="Wicket.$('submitOrderButton').setAttribute('disabled', 'true');Wicket.$('submitOrderButton').className = Wicket.$('submitOrderButton').className + ' disabled';self.document.body.className = self.document.body.className + ' busy';var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IBehaviorListener:1:', wicketSerialize(Wicket.$('id61')),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this), function() {return Wicket.$('id61') != null;}.bind(this));" alt="Name, Ticker or Sedol " title="Name, Ticker or Sedol "/>
+	<span>
+
+		<div id="id6b" style="display:none">
+	
+</div>
+
+	</span>
+	<a href="#" class="buttonAction buttons" id="id6c"
+	onclick="var
+	wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:stockSearchButton:5:IBehaviorListener:0:',function()
+	{ }.bind(this),function() { }.bind(this), function() {return
+	Wicket.$('id6c') != null;}.bind(this));return !wcall;">Find
+Stock
+	</a>												
+</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="shortColumn
+								   bold">Buy/Sell
+							</td>
+							<td class="left">
+								<select name="buyOrSell" class="typeSelector" tabindex="3" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:buyOrSell:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id6d')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id6d') != null;}.bind(this));" id="id6d">
+								  <option selected="selected" value="B">Buy
+								  </option>
+								  <option value="S">Sell
+								  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id6e">
+							<td class="shortColumn
+								   bold">Market
+							status
+							</td>
+							<td class="left
+								   bold">OPEN
+							</td>
+						</tr>
+						<tr class="orderTypeRow" id="id6f">
+							<td class="shortColumn
+								   bold">Order
+							Type
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="orderTypeRow:orderType" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:orderTypeRow:orderType:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id70')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id70') != null;}.bind(this));" id="id70">
+									  <option selected="selected" value="MKT">At Best
+									  </option>
+									  <option value="LIM">Limit
+									  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id71">
+							<td class="shortColumn
+		   bold">
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="clientCurrencyRow:clientCurrency" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:clientCurrencyRow:clientCurrency:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id72')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id72') != null;}.bind(this));" id="id72">
+									  <option value="EUR">EUR
+									  </option>
+									  <option selected="selected" value="GBP">GBP
+									  </option>
+									  <option value="USD">USD
+									  </option>
+</select>
+							</td>			
+						</tr>																		
+						<tr>
+							<td class="shortColumn
+							bold"
+							    valign="top">&nbsp;
+							</td>
+							<td class="left orderDetailsCell">
+								<div id="id62" class="clearBoth">
+									<span class="clearBoth" id="id73">
+										<span class="orderDetailsCellRow">
+											<input class="radio wicket-id62" type="radio" tabindex="5" id="id74" name="amountOptions" value="radio0" checked="checked"/>
+											Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</span>
+										<input type="text"
+										name="amountOptions:quantitySection:quantity"
+										size="8"
+										tabindex="6"
+						       class="amountQuantity"
+										value="0"/>
+										<br/>
+										</span>
+										
+										<span class="clearBoth">
+											<span class="orderDetailsCellRow">
+												<input class="radio wicket-id62" type="radio" tabindex="8" id="id75" name="amountOptions" value="radio1"/>
+												Amount &pound;&nbsp;&nbsp;
+											</span>
+											<input type="text" name="amountOptions:amount" size="8" tabindex="8" class="amountValue" value="0.00" disabled="disabled" id="id76"/>
+										
+									</span>
+								</div>								
+								<div class="clearBoth">
+								  <label for="charges">Charges:
+								  </label>&nbsp;
+									<span class="radioSpan"
+									      disabled="disabled"
+									      id="id77">
+									  <input name="chargesGroup:includeCharges"
+									      type="radio"
+										 disabled="disabled"
+									      value="I"
+									      id="id77-I"/>
+									  <label for="id77-I">Include
+									  </label>
+									  <input name="chargesGroup:includeCharges"
+									  type="radio"
+									  disabled="disabled"
+									 value="E"
+									  id="id77-E"/>
+									  <label for="id77-E">Exclude
+									  </label>
+									</span>
+								</div>
+								<div id="id78"
+								     style="display:none">
+								</div>
+								<div id="id79"
+								     style="display:none">
+								</div>
+								<div id="id7a"
+								     style="display:none">
+								</div>
+								<div class="clearBoth" id="submitOrderButton">
+									<input value="Next" type="button" tabindex="17" class="buttonAction buttons submitButton" name="submitOrderButton" id="id7b" onclick="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:submitOrderButton:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', 'submitOrderButton' ,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;; return false;" alt="Next" title="Next"/>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="feedbackContainer" id="id7c">
+  
+</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="floatLeft mediumSection" id="id7d">
+		<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+			<thead class="headers">
+				<tr>
+					<th class="mediumColumn
+						   left">Security info
+					</th>
+					<th class="right">Live Prices
+					sourced from the London Stock
+					Exchange. Refresh screen (F5)
+					  to update prices.
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="mediumColumn bold"
+					    valign="top">Security
+					</td>
+					<td class="rightColumn right"
+					    valign="top">
+					  <b>NONE SELECTED
+					  </b>
+					</td>
+				</tr>
+				<tr class="priceDetails" id="id7e">
+					<td class="mediumColumn
+						   bold">BidPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr class="priceDetails" id="id7f">
+					<td class="mediumColumn
+						   bold">OfferPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr id="id80" style="display:none">
+					</tr>
+				<tr>
+					<td class="mediumColumn
+						   bold">Current Holding
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+</div>
+		
+	</div>
+
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Buy & Sell
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1 selected">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2 selected">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Buy & Sell
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      <div id="id64">
+		<div id="accountSelectorPanel">
+	<div id="accountSelectorPanel" class="accountSelectorPanel">
+	  <div class="accountUserNote">
+	  </div>
+		<div class="accountSelector">
+			<label for="account"
+			       class="accountNameLabel">Account:
+			</label>
+			<select name="container:components:panels:35:panel:accountSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:35:panel:accountSelectorPanel:accountOptions:5:IOnChangeListener::&amp;container:components:panels:35:panel:accountSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+</option>
+<option value="0000060">Mr H Daniel ISA Account (0000060)
+</option>
+<option value="0000061">Mr H Daniel Nominee Client (0000061)
+</option>
+<option value="0000062">Mr H Daniel Nominee Client (0000062)
+</option>
+<option value="0000063">Mr H Daniel Nominee Client (0000063)
+</option>
+</select>
+			<span class="accountName">
+			</span>
+			<!-- To be shown when printing -->
+			<div id="accountInfoPrint"
+			class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+		</div>
+		
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">Available
+				  Cash:
+				</span>
+				<span class="accountCashValue">¬£
+				  9,924.75
+				</span>
+			</div>
+		
+				
+	</div>
+</div>
+		
+	</div>
+		
+			<div id="id65">
+		<div id="id66">
+<div class="bodyPanel ordersPanel" id="orderEntryPanel">
+	<span id="id67">
+
+		<div id="id68" style="display:none">
+	
+</div>
+
+	</span>
+	<div class="floatLeft wideSection">
+		<form action="?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:5:IFormSubmitListener::"
+		      id="id69" method="post" class="dateBasedForm"
+		      autocomplete="off">
+		  <div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden">
+		    <input type="hidden" name="id69_hf_0"
+			   id="id69_hf_0" />
+		  </div>
+			<fieldset>
+				<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+					<thead class="headers">
+						<tr>
+							<th colspan="2"
+							    class="left">Enter
+							order
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="shortColumn
+								   bold">Security
+							</td>
+							<td class="left">
+								<div id="id6a">
+	<input type="text" name="securityName:securityName" class="searchInput" size="30" maxlength="30" tabindex="1" autocomplete="off" value="" id="id61" onchange="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', null,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;" onblur="Wicket.$('submitOrderButton').setAttribute('disabled', 'true');Wicket.$('submitOrderButton').className = Wicket.$('submitOrderButton').className + ' disabled';self.document.body.className = self.document.body.className + ' busy';var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IBehaviorListener:1:', wicketSerialize(Wicket.$('id61')),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this), function() {return Wicket.$('id61') != null;}.bind(this));" alt="Name, Ticker or Sedol " title="Name, Ticker or Sedol "/>
+	<span>
+
+		<div id="id6b" style="display:none">
+	
+</div>
+
+	</span>
+	<a href="#" class="buttonAction buttons" id="id6c"
+	onclick="var
+	wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:stockSearchButton:5:IBehaviorListener:0:',function()
+	{ }.bind(this),function() { }.bind(this), function() {return
+	Wicket.$('id6c') != null;}.bind(this));return !wcall;">Find
+Stock
+	</a>												
+</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="shortColumn
+								   bold">Buy/Sell
+							</td>
+							<td class="left">
+								<select name="buyOrSell" class="typeSelector" tabindex="3" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:buyOrSell:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id6d')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id6d') != null;}.bind(this));" id="id6d">
+								  <option selected="selected" value="B">Buy
+								  </option>
+								  <option value="S">Sell
+								  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id6e">
+							<td class="shortColumn
+								   bold">Market
+							status
+							</td>
+							<td class="left
+								   bold">OPEN
+							</td>
+						</tr>
+						<tr class="orderTypeRow" id="id6f">
+							<td class="shortColumn
+								   bold">Order
+							Type
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="orderTypeRow:orderType" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:orderTypeRow:orderType:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id70')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id70') != null;}.bind(this));" id="id70">
+									  <option selected="selected" value="MKT">At Best
+									  </option>
+									  <option value="LIM">Limit
+									  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id71">
+							<td class="shortColumn
+		   bold">
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="clientCurrencyRow:clientCurrency" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:clientCurrencyRow:clientCurrency:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id72')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id72') != null;}.bind(this));" id="id72">
+									  <option value="EUR">EUR
+									  </option>
+									  <option selected="selected" value="GBP">GBP
+									  </option>
+									  <option value="USD">USD
+									  </option>
+</select>
+							</td>			
+						</tr>																		
+						<tr>
+							<td class="shortColumn
+							bold"
+							    valign="top">&nbsp;
+							</td>
+							<td class="left orderDetailsCell">
+								<div id="id62" class="clearBoth">
+									<span class="clearBoth" id="id73">
+										<span class="orderDetailsCellRow">
+											<input class="radio wicket-id62" type="radio" tabindex="5" id="id74" name="amountOptions" value="radio0" checked="checked"/>
+											Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</span>
+										<input type="text"
+										name="amountOptions:quantitySection:quantity"
+										size="8"
+										tabindex="6"
+						       class="amountQuantity"
+										value="0"/>
+										<br/>
+										</span>
+										
+										<span class="clearBoth">
+											<span class="orderDetailsCellRow">
+												<input class="radio wicket-id62" type="radio" tabindex="8" id="id75" name="amountOptions" value="radio1"/>
+												Amount &pound;&nbsp;&nbsp;
+											</span>
+											<input type="text" name="amountOptions:amount" size="8" tabindex="8" class="amountValue" value="0.00" disabled="disabled" id="id76"/>
+										
+									</span>
+								</div>								
+								<div class="clearBoth">
+								  <label for="charges">Charges:
+								  </label>&nbsp;
+									<span class="radioSpan"
+									      disabled="disabled"
+									      id="id77">
+									  <input name="chargesGroup:includeCharges"
+									      type="radio"
+										 disabled="disabled"
+									      value="I"
+									      id="id77-I"/>
+									  <label for="id77-I">Include
+									  </label>
+									  <input name="chargesGroup:includeCharges"
+									  type="radio"
+									  disabled="disabled"
+									 value="E"
+									  id="id77-E"/>
+									  <label for="id77-E">Exclude
+									  </label>
+									</span>
+								</div>
+								<div id="id78"
+								     style="display:none">
+								</div>
+								<div id="id79"
+								     style="display:none">
+								</div>
+								<div id="id7a"
+								     style="display:none">
+								</div>
+								<div class="clearBoth" id="submitOrderButton">
+									<input value="Next" type="button" tabindex="17" class="buttonAction buttons submitButton" name="submitOrderButton" id="id7b" onclick="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:submitOrderButton:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', 'submitOrderButton' ,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;; return false;" alt="Next" title="Next"/>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="feedbackContainer" id="id7c">
+  
+</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="floatLeft mediumSection" id="id7d">
+		<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+			<thead class="headers">
+				<tr>
+					<th class="mediumColumn
+						   left">Security info
+					</th>
+					<th class="right">Live Prices
+					sourced from the London Stock
+					Exchange. Refresh screen (F5)
+					  to update prices.
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="mediumColumn bold"
+					    valign="top">Security
+					</td>
+					<td class="rightColumn right"
+					    valign="top">
+					  <b>NONE SELECTED
+					  </b>
+					</td>
+				</tr>
+				<tr class="priceDetails" id="id7e">
+					<td class="mediumColumn
+						   bold">BidPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr class="priceDetails" id="id7f">
+					<td class="mediumColumn
+						   bold">OfferPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr id="id80" style="display:none">
+					</tr>
+				<tr>
+					<td class="mediumColumn
+						   bold">Current Holding
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+</div>
+		
+	</div>
+
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Buy & Sell
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1 selected">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2 selected">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Buy & Sell
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      <div id="id64">
+		<div id="accountSelectorPanel">
+	<div id="accountSelectorPanel" class="accountSelectorPanel">
+	  <div class="accountUserNote">
+	  </div>
+		<div class="accountSelector">
+			<label for="account"
+			       class="accountNameLabel">Account:
+			</label>
+			<select name="container:components:panels:35:panel:accountSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:35:panel:accountSelectorPanel:accountOptions:5:IOnChangeListener::&amp;container:components:panels:35:panel:accountSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+</option>
+<option value="0000060">Mr H Daniel ISA Account (0000060)
+</option>
+<option value="0000061">Mr H Daniel Nominee Client (0000061)
+</option>
+<option value="0000062">Mr H Daniel Nominee Client (0000062)
+</option>
+<option value="0000063">Mr H Daniel Nominee Client (0000063)
+</option>
+</select>
+			<span class="accountName">
+			</span>
+			<!-- To be shown when printing -->
+			<div id="accountInfoPrint"
+			class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+		</div>
+		
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">Available
+				  Cash:
+				</span>
+				<span class="accountCashValue">¬£
+				  9,924.75
+				</span>
+			</div>
+		
+				
+	</div>
+</div>
+		
+	</div>
+		
+			<div id="id65">
+		<div id="id66">
+<div class="bodyPanel ordersPanel" id="orderEntryPanel">
+	<span id="id67">
+
+		<div id="id68" style="display:none">
+	
+</div>
+
+	</span>
+	<div class="floatLeft wideSection">
+		<form action="?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:5:IFormSubmitListener::"
+		      id="id69" method="post" class="dateBasedForm"
+		      autocomplete="off">
+		  <div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden">
+		    <input type="hidden" name="id69_hf_0"
+			   id="id69_hf_0" />
+		  </div>
+			<fieldset>
+				<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+					<thead class="headers">
+						<tr>
+							<th colspan="2"
+							    class="left">Enter
+							order
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="shortColumn
+								   bold">Security
+							</td>
+							<td class="left">
+								<div id="id6a">
+	<input type="text" name="securityName:securityName" class="searchInput" size="30" maxlength="30" tabindex="1" autocomplete="off" value="" id="id61" onchange="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', null,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;" onblur="Wicket.$('submitOrderButton').setAttribute('disabled', 'true');Wicket.$('submitOrderButton').className = Wicket.$('submitOrderButton').className + ' disabled';self.document.body.className = self.document.body.className + ' busy';var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IBehaviorListener:1:', wicketSerialize(Wicket.$('id61')),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this), function() {return Wicket.$('id61') != null;}.bind(this));" alt="Name, Ticker or Sedol " title="Name, Ticker or Sedol "/>
+	<span>
+
+		<div id="id6b" style="display:none">
+	
+</div>
+
+	</span>
+	<a href="#" class="buttonAction buttons" id="id6c"
+	onclick="var
+	wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:stockSearchButton:5:IBehaviorListener:0:',function()
+	{ }.bind(this),function() { }.bind(this), function() {return
+	Wicket.$('id6c') != null;}.bind(this));return !wcall;">Find
+Stock
+	</a>												
+</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="shortColumn
+								   bold">Buy/Sell
+							</td>
+							<td class="left">
+								<select name="buyOrSell" class="typeSelector" tabindex="3" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:buyOrSell:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id6d')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id6d') != null;}.bind(this));" id="id6d">
+								  <option selected="selected" value="B">Buy
+								  </option>
+								  <option value="S">Sell
+								  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id6e">
+							<td class="shortColumn
+								   bold">Market
+							status
+							</td>
+							<td class="left
+								   bold">OPEN
+							</td>
+						</tr>
+						<tr class="orderTypeRow" id="id6f">
+							<td class="shortColumn
+								   bold">Order
+							Type
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="orderTypeRow:orderType" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:orderTypeRow:orderType:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id70')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id70') != null;}.bind(this));" id="id70">
+									  <option selected="selected" value="MKT">At Best
+									  </option>
+									  <option value="LIM">Limit
+									  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id71">
+							<td class="shortColumn
+		   bold">
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="clientCurrencyRow:clientCurrency" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:clientCurrencyRow:clientCurrency:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id72')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id72') != null;}.bind(this));" id="id72">
+									  <option value="EUR">EUR
+									  </option>
+									  <option selected="selected" value="GBP">GBP
+									  </option>
+									  <option value="USD">USD
+									  </option>
+</select>
+							</td>			
+						</tr>																		
+						<tr>
+							<td class="shortColumn
+							bold"
+							    valign="top">&nbsp;
+							</td>
+							<td class="left orderDetailsCell">
+								<div id="id62" class="clearBoth">
+									<span class="clearBoth" id="id73">
+										<span class="orderDetailsCellRow">
+											<input class="radio wicket-id62" type="radio" tabindex="5" id="id74" name="amountOptions" value="radio0" checked="checked"/>
+											Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</span>
+										<input type="text"
+										name="amountOptions:quantitySection:quantity"
+										size="8"
+										tabindex="6"
+						       class="amountQuantity"
+										value="0"/>
+										<br/>
+										</span>
+										
+										<span class="clearBoth">
+											<span class="orderDetailsCellRow">
+												<input class="radio wicket-id62" type="radio" tabindex="8" id="id75" name="amountOptions" value="radio1"/>
+												Amount &pound;&nbsp;&nbsp;
+											</span>
+											<input type="text" name="amountOptions:amount" size="8" tabindex="8" class="amountValue" value="0.00" disabled="disabled" id="id76"/>
+										
+									</span>
+								</div>								
+								<div class="clearBoth">
+								  <label for="charges">Charges:
+								  </label>&nbsp;
+									<span class="radioSpan"
+									      disabled="disabled"
+									      id="id77">
+									  <input name="chargesGroup:includeCharges"
+									      type="radio"
+										 disabled="disabled"
+									      value="I"
+									      id="id77-I"/>
+									  <label for="id77-I">Include
+									  </label>
+									  <input name="chargesGroup:includeCharges"
+									  type="radio"
+									  disabled="disabled"
+									 value="E"
+									  id="id77-E"/>
+									  <label for="id77-E">Exclude
+									  </label>
+									</span>
+								</div>
+								<div id="id78"
+								     style="display:none">
+								</div>
+								<div id="id79"
+								     style="display:none">
+								</div>
+								<div id="id7a"
+								     style="display:none">
+								</div>
+								<div class="clearBoth" id="submitOrderButton">
+									<input value="Next" type="button" tabindex="17" class="buttonAction buttons submitButton" name="submitOrderButton" id="id7b" onclick="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:submitOrderButton:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', 'submitOrderButton' ,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;; return false;" alt="Next" title="Next"/>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="feedbackContainer" id="id7c">
+  
+</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="floatLeft mediumSection" id="id7d">
+		<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+			<thead class="headers">
+				<tr>
+					<th class="mediumColumn
+						   left">Security info
+					</th>
+					<th class="right">Live Prices
+					sourced from the London Stock
+					Exchange. Refresh screen (F5)
+					  to update prices.
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="mediumColumn bold"
+					    valign="top">Security
+					</td>
+					<td class="rightColumn right"
+					    valign="top">
+					  <b>NONE SELECTED
+					  </b>
+					</td>
+				</tr>
+				<tr class="priceDetails" id="id7e">
+					<td class="mediumColumn
+						   bold">BidPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr class="priceDetails" id="id7f">
+					<td class="mediumColumn
+						   bold">OfferPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr id="id80" style="display:none">
+					</tr>
+				<tr>
+					<td class="mediumColumn
+						   bold">Current Holding
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+</div>
+		
+	</div>
+
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Buy & Sell
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1 selected">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2 selected">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Buy & Sell
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      <div id="id64">
+		<div id="accountSelectorPanel">
+	<div id="accountSelectorPanel" class="accountSelectorPanel">
+	  <div class="accountUserNote">
+	  </div>
+		<div class="accountSelector">
+			<label for="account"
+			       class="accountNameLabel">Account:
+			</label>
+			<select name="container:components:panels:35:panel:accountSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:35:panel:accountSelectorPanel:accountOptions:5:IOnChangeListener::&amp;container:components:panels:35:panel:accountSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+</option>
+<option value="0000060">Mr H Daniel ISA Account (0000060)
+</option>
+<option value="0000061">Mr H Daniel Nominee Client (0000061)
+</option>
+<option value="0000062">Mr H Daniel Nominee Client (0000062)
+</option>
+<option value="0000063">Mr H Daniel Nominee Client (0000063)
+</option>
+</select>
+			<span class="accountName">
+			</span>
+			<!-- To be shown when printing -->
+			<div id="accountInfoPrint"
+			class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+		</div>
+		
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">Available
+				  Cash:
+				</span>
+				<span class="accountCashValue">¬£
+				  9,924.75
+				</span>
+			</div>
+		
+				
+	</div>
+</div>
+		
+	</div>
+		
+			<div id="id65">
+		<div id="id66">
+<div class="bodyPanel ordersPanel" id="orderEntryPanel">
+	<span id="id67">
+
+		<div id="id68" style="display:none">
+	
+</div>
+
+	</span>
+	<div class="floatLeft wideSection">
+		<form action="?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:5:IFormSubmitListener::"
+		      id="id69" method="post" class="dateBasedForm"
+		      autocomplete="off">
+		  <div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden">
+		    <input type="hidden" name="id69_hf_0"
+			   id="id69_hf_0" />
+		  </div>
+			<fieldset>
+				<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+					<thead class="headers">
+						<tr>
+							<th colspan="2"
+							    class="left">Enter
+							order
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="shortColumn
+								   bold">Security
+							</td>
+							<td class="left">
+								<div id="id6a">
+	<input type="text" name="securityName:securityName" class="searchInput" size="30" maxlength="30" tabindex="1" autocomplete="off" value="" id="id61" onchange="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', null,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;" onblur="Wicket.$('submitOrderButton').setAttribute('disabled', 'true');Wicket.$('submitOrderButton').className = Wicket.$('submitOrderButton').className + ' disabled';self.document.body.className = self.document.body.className + ' busy';var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IBehaviorListener:1:', wicketSerialize(Wicket.$('id61')),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this), function() {return Wicket.$('id61') != null;}.bind(this));" alt="Name, Ticker or Sedol " title="Name, Ticker or Sedol "/>
+	<span>
+
+		<div id="id6b" style="display:none">
+	
+</div>
+
+	</span>
+	<a href="#" class="buttonAction buttons" id="id6c"
+	onclick="var
+	wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:stockSearchButton:5:IBehaviorListener:0:',function()
+	{ }.bind(this),function() { }.bind(this), function() {return
+	Wicket.$('id6c') != null;}.bind(this));return !wcall;">Find
+Stock
+	</a>												
+</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="shortColumn
+								   bold">Buy/Sell
+							</td>
+							<td class="left">
+								<select name="buyOrSell" class="typeSelector" tabindex="3" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:buyOrSell:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id6d')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id6d') != null;}.bind(this));" id="id6d">
+								  <option selected="selected" value="B">Buy
+								  </option>
+								  <option value="S">Sell
+								  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id6e">
+							<td class="shortColumn
+								   bold">Market
+							status
+							</td>
+							<td class="left
+								   bold">OPEN
+							</td>
+						</tr>
+						<tr class="orderTypeRow" id="id6f">
+							<td class="shortColumn
+								   bold">Order
+							Type
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="orderTypeRow:orderType" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:orderTypeRow:orderType:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id70')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id70') != null;}.bind(this));" id="id70">
+									  <option selected="selected" value="MKT">At Best
+									  </option>
+									  <option value="LIM">Limit
+									  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id71">
+							<td class="shortColumn
+		   bold">
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="clientCurrencyRow:clientCurrency" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:clientCurrencyRow:clientCurrency:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id72')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id72') != null;}.bind(this));" id="id72">
+									  <option value="EUR">EUR
+									  </option>
+									  <option selected="selected" value="GBP">GBP
+									  </option>
+									  <option value="USD">USD
+									  </option>
+</select>
+							</td>			
+						</tr>																		
+						<tr>
+							<td class="shortColumn
+							bold"
+							    valign="top">&nbsp;
+							</td>
+							<td class="left orderDetailsCell">
+								<div id="id62" class="clearBoth">
+									<span class="clearBoth" id="id73">
+										<span class="orderDetailsCellRow">
+											<input class="radio wicket-id62" type="radio" tabindex="5" id="id74" name="amountOptions" value="radio0" checked="checked"/>
+											Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</span>
+										<input type="text"
+										name="amountOptions:quantitySection:quantity"
+										size="8"
+										tabindex="6"
+						       class="amountQuantity"
+										value="0"/>
+										<br/>
+										</span>
+										
+										<span class="clearBoth">
+											<span class="orderDetailsCellRow">
+												<input class="radio wicket-id62" type="radio" tabindex="8" id="id75" name="amountOptions" value="radio1"/>
+												Amount &pound;&nbsp;&nbsp;
+											</span>
+											<input type="text" name="amountOptions:amount" size="8" tabindex="8" class="amountValue" value="0.00" disabled="disabled" id="id76"/>
+										
+									</span>
+								</div>								
+								<div class="clearBoth">
+								  <label for="charges">Charges:
+								  </label>&nbsp;
+									<span class="radioSpan"
+									      disabled="disabled"
+									      id="id77">
+									  <input name="chargesGroup:includeCharges"
+									      type="radio"
+										 disabled="disabled"
+									      value="I"
+									      id="id77-I"/>
+									  <label for="id77-I">Include
+									  </label>
+									  <input name="chargesGroup:includeCharges"
+									  type="radio"
+									  disabled="disabled"
+									 value="E"
+									  id="id77-E"/>
+									  <label for="id77-E">Exclude
+									  </label>
+									</span>
+								</div>
+								<div id="id78"
+								     style="display:none">
+								</div>
+								<div id="id79"
+								     style="display:none">
+								</div>
+								<div id="id7a"
+								     style="display:none">
+								</div>
+								<div class="clearBoth" id="submitOrderButton">
+									<input value="Next" type="button" tabindex="17" class="buttonAction buttons submitButton" name="submitOrderButton" id="id7b" onclick="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:submitOrderButton:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', 'submitOrderButton' ,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;; return false;" alt="Next" title="Next"/>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="feedbackContainer" id="id7c">
+  
+</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="floatLeft mediumSection" id="id7d">
+		<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+			<thead class="headers">
+				<tr>
+					<th class="mediumColumn
+						   left">Security info
+					</th>
+					<th class="right">Live Prices
+					sourced from the London Stock
+					Exchange. Refresh screen (F5)
+					  to update prices.
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="mediumColumn bold"
+					    valign="top">Security
+					</td>
+					<td class="rightColumn right"
+					    valign="top">
+					  <b>NONE SELECTED
+					  </b>
+					</td>
+				</tr>
+				<tr class="priceDetails" id="id7e">
+					<td class="mediumColumn
+						   bold">BidPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr class="priceDetails" id="id7f">
+					<td class="mediumColumn
+						   bold">OfferPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr id="id80" style="display:none">
+					</tr>
+				<tr>
+					<td class="mediumColumn
+						   bold">Current Holding
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+</div>
+		
+	</div>
+
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Buy & Sell
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1 selected">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2 selected">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Buy & Sell
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      <div id="id64">
+		<div id="accountSelectorPanel">
+	<div id="accountSelectorPanel" class="accountSelectorPanel">
+	  <div class="accountUserNote">
+	  </div>
+		<div class="accountSelector">
+			<label for="account"
+			       class="accountNameLabel">Account:
+			</label>
+			<select name="container:components:panels:35:panel:accountSelectorPanel:accountOptions" id="account" onchange="window.location.href='?wicket:interface=:127:container:components:panels:35:panel:accountSelectorPanel:accountOptions:5:IOnChangeListener::&amp;container:components:panels:35:panel:accountSelectorPanel:accountOptions=' + this.options[this.selectedIndex].value;">
+<option selected="selected" value="0000009">Mr H Daniel SIPP Account
+  (0000009)
+</option>
+<option value="0000060">Mr H Daniel ISA Account (0000060)
+</option>
+<option value="0000061">Mr H Daniel Nominee Client (0000061)
+</option>
+<option value="0000062">Mr H Daniel Nominee Client (0000062)
+</option>
+<option value="0000063">Mr H Daniel Nominee Client (0000063)
+</option>
+</select>
+			<span class="accountName">
+			</span>
+			<!-- To be shown when printing -->
+			<div id="accountInfoPrint"
+			class="accountInfoPrint">Mr H Daniel SIPP
+			  Account (0000009)
+			</div>
+		</div>
+		
+			<div class="accountCash" id="accountCash">
+				<span class="accountCashLabel">Available
+				  Cash:
+				</span>
+				<span class="accountCashValue">¬£
+				  9,924.75
+				</span>
+			</div>
+		
+				
+	</div>
+</div>
+		
+	</div>
+		
+			<div id="id65">
+		<div id="id66">
+<div class="bodyPanel ordersPanel" id="orderEntryPanel">
+	<span id="id67">
+
+		<div id="id68" style="display:none">
+	
+</div>
+
+	</span>
+	<div class="floatLeft wideSection">
+		<form action="?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:5:IFormSubmitListener::"
+		      id="id69" method="post" class="dateBasedForm"
+		      autocomplete="off">
+		  <div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden">
+		    <input type="hidden" name="id69_hf_0"
+			   id="id69_hf_0" />
+		  </div>
+			<fieldset>
+				<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+					<thead class="headers">
+						<tr>
+							<th colspan="2"
+							    class="left">Enter
+							order
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="shortColumn
+								   bold">Security
+							</td>
+							<td class="left">
+								<div id="id6a">
+	<input type="text" name="securityName:securityName" class="searchInput" size="30" maxlength="30" tabindex="1" autocomplete="off" value="" id="id61" onchange="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', null,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;" onblur="Wicket.$('submitOrderButton').setAttribute('disabled', 'true');Wicket.$('submitOrderButton').className = Wicket.$('submitOrderButton').className + ' disabled';self.document.body.className = self.document.body.className + ' busy';var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:securityName:5:IBehaviorListener:1:', wicketSerialize(Wicket.$('id61')),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this),function() { Wicket.$('submitOrderButton').removeAttribute('disabled');Wicket.$('submitOrderButton').className = new String(Wicket.$('submitOrderButton').className).replace(/[ ]?disabled/, '');self.document.body.className = new String(self.document.body.className).replace(/[ ]?busy/, '');}.bind(this), function() {return Wicket.$('id61') != null;}.bind(this));" alt="Name, Ticker or Sedol " title="Name, Ticker or Sedol "/>
+	<span>
+
+		<div id="id6b" style="display:none">
+	
+</div>
+
+	</span>
+	<a href="#" class="buttonAction buttons" id="id6c"
+	onclick="var
+	wcall=wicketAjaxGet('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:securityName:stockSearchButton:5:IBehaviorListener:0:',function()
+	{ }.bind(this),function() { }.bind(this), function() {return
+	Wicket.$('id6c') != null;}.bind(this));return !wcall;">Find
+Stock
+	</a>												
+</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="shortColumn
+								   bold">Buy/Sell
+							</td>
+							<td class="left">
+								<select name="buyOrSell" class="typeSelector" tabindex="3" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:buyOrSell:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id6d')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id6d') != null;}.bind(this));" id="id6d">
+								  <option selected="selected" value="B">Buy
+								  </option>
+								  <option value="S">Sell
+								  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id6e">
+							<td class="shortColumn
+								   bold">Market
+							status
+							</td>
+							<td class="left
+								   bold">OPEN
+							</td>
+						</tr>
+						<tr class="orderTypeRow" id="id6f">
+							<td class="shortColumn
+								   bold">Order
+							Type
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="orderTypeRow:orderType" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:orderTypeRow:orderType:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id70')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id70') != null;}.bind(this));" id="id70">
+									  <option selected="selected" value="MKT">At Best
+									  </option>
+									  <option value="LIM">Limit
+									  </option>
+</select>
+							</td>
+						</tr>
+						<tr id="id71">
+							<td class="shortColumn
+		   bold">
+							</td>
+							<td class="left orderDetailsCell">
+									<select name="clientCurrencyRow:clientCurrency" size="1" class="typeSelector" tabindex="4" onchange="var wcall=wicketAjaxPost('?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:clientCurrencyRow:clientCurrency:5:IBehaviorListener:0:', wicketSerialize(Wicket.$('id72')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id72') != null;}.bind(this));" id="id72">
+									  <option value="EUR">EUR
+									  </option>
+									  <option selected="selected" value="GBP">GBP
+									  </option>
+									  <option value="USD">USD
+									  </option>
+</select>
+							</td>			
+						</tr>																		
+						<tr>
+							<td class="shortColumn
+							bold"
+							    valign="top">&nbsp;
+							</td>
+							<td class="left orderDetailsCell">
+								<div id="id62" class="clearBoth">
+									<span class="clearBoth" id="id73">
+										<span class="orderDetailsCellRow">
+											<input class="radio wicket-id62" type="radio" tabindex="5" id="id74" name="amountOptions" value="radio0" checked="checked"/>
+											Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</span>
+										<input type="text"
+										name="amountOptions:quantitySection:quantity"
+										size="8"
+										tabindex="6"
+						       class="amountQuantity"
+										value="0"/>
+										<br/>
+										</span>
+										
+										<span class="clearBoth">
+											<span class="orderDetailsCellRow">
+												<input class="radio wicket-id62" type="radio" tabindex="8" id="id75" name="amountOptions" value="radio1"/>
+												Amount &pound;&nbsp;&nbsp;
+											</span>
+											<input type="text" name="amountOptions:amount" size="8" tabindex="8" class="amountValue" value="0.00" disabled="disabled" id="id76"/>
+										
+									</span>
+								</div>								
+								<div class="clearBoth">
+								  <label for="charges">Charges:
+								  </label>&nbsp;
+									<span class="radioSpan"
+									      disabled="disabled"
+									      id="id77">
+									  <input name="chargesGroup:includeCharges"
+									      type="radio"
+										 disabled="disabled"
+									      value="I"
+									      id="id77-I"/>
+									  <label for="id77-I">Include
+									  </label>
+									  <input name="chargesGroup:includeCharges"
+									  type="radio"
+									  disabled="disabled"
+									 value="E"
+									  id="id77-E"/>
+									  <label for="id77-E">Exclude
+									  </label>
+									</span>
+								</div>
+								<div id="id78"
+								     style="display:none">
+								</div>
+								<div id="id79"
+								     style="display:none">
+								</div>
+								<div id="id7a"
+								     style="display:none">
+								</div>
+								<div class="clearBoth" id="submitOrderButton">
+									<input value="Next" type="button" tabindex="17" class="buttonAction buttons submitButton" name="submitOrderButton" id="id7b" onclick="var wcall=wicketSubmitFormById('id69', '?wicket:interface=:127:container:components:panels:36:panel:granted:orderEntryForm:submitOrderButton:5:IActivePageBehaviorListener:0:&amp;wicket:ignoreIfNotActive=true', 'submitOrderButton' ,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('id69')}.bind(this));;; return false;" alt="Next" title="Next"/>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="feedbackContainer" id="id7c">
+  
+</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="floatLeft mediumSection" id="id7d">
+		<table class="dataTable zebraTable" cellspacing="0" cellpadding="0">
+			<thead class="headers">
+				<tr>
+					<th class="mediumColumn
+						   left">Security info
+					</th>
+					<th class="right">Live Prices
+					sourced from the London Stock
+					Exchange. Refresh screen (F5)
+					  to update prices.
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="mediumColumn bold"
+					    valign="top">Security
+					</td>
+					<td class="rightColumn right"
+					    valign="top">
+					  <b>NONE SELECTED
+					  </b>
+					</td>
+				</tr>
+				<tr class="priceDetails" id="id7e">
+					<td class="mediumColumn
+						   bold">BidPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr class="priceDetails" id="id7f">
+					<td class="mediumColumn
+						   bold">OfferPrice
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+					<tr id="id80" style="display:none">
+					</tr>
+				<tr>
+					<td class="mediumColumn
+						   bold">Current Holding
+					</td>
+					<td class="rightColumn right">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+</div>
+		
+	</div>
+
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>

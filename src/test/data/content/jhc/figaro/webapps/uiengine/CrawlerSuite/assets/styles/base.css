@@ -1,0 +1,1467 @@
+body {
+  margin: auto;
+  padding: 0px;
+  width: 985px;
+  font-family: arial, verdana, sans-serif;
+  font-size: small;
+}
+
+/* #container { */
+/*   width: 985px; */
+/* } */
+
+pre {
+  font: normal 12px Arial, Helvetica, sans-serif;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+fieldset {
+  border:none;
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding:1em;
+}
+
+fieldset legend {
+    display: none;
+}
+
+a:link,a:active, a:visited {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+label{
+  display: block;
+  float: left;
+  width: 140px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.left {
+  text-align: left;
+}
+
+.centre {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* general styles */
+div.floatLeft {
+  float: left;
+}
+.floatLeft {
+  float: left;
+}
+div.floatRight {
+  float: right;
+}
+.floatRight {
+  float: right;
+  padding-left: 15px;
+}
+.clear {
+  clear: both;
+}
+
+
+
+.gap {
+  height: 10px;
+}
+
+/* colours
+Plum Red          165   0  68   #C1002B
+Dark Grey         114 121 127   #72797F
+Text Grey          51  51  51   #333333
+Title Grey         85  85  85   #555555
+Border Grey       208 208 208   #D0D0D0
+Table Grey        229 229 229   #E5E5E5
+Table Grey-Light  242 242 242   #F2F2F2
+% plum            229 161 189   #E5A1BD
+*/
+
+/* do not colour positive numbers blue anymore
+.positive {
+  color: #0000FF;
+}
+*/
+
+.positive {
+    color: royalBlue;
+}
+
+.negative {
+  color: #FF0000;
+}
+
+.neutral {
+  color: #008C4A;
+}
+
+/* footer */
+.footerPanel {
+  border-top:1px solid #555555;
+  clear:both;
+  margin-left:0;
+  margin-top:0;
+  padding: 10px 0px 0px 10px;
+  position:relative;
+  font-size: 80%;
+  line-height: 140%;
+  bottom: 0;
+}
+.footerPanel p {
+}
+
+.footerPanelLeft {
+  font-size: 85%;
+  color:#555A62;
+}
+
+.footerPanelRight {
+  float: right;
+  position:relative;
+  top: -100px;
+}
+
+.footerPanel .footerInfo {
+  text-align: center;
+}
+.footerPanel .footerInfo p {
+  margin:0 0 5px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+.footerPanel .footerInfo .warning {
+  border: 0px solid #555555;
+  padding: 0px;
+  margin: 0px;
+}
+.footerPanel #partlogo {
+  left:865px;
+  position:absolute;
+  top:12px;
+}
+.footerPanel a.indent {
+  padding-left: 35px;
+}
+
+.legalPopupLink {
+  float: right;
+  position:relative;
+  top: -100px;  
+}
+
+/* AutoCompleteTextField */
+
+.wicket-aa-container{
+  position:absolute;
+  left:50px;
+  top:50px;
+  overflow:auto;
+  padding:0;
+  width:500px;
+
+}
+
+.wicket-aa {
+    position:relative;
+    width:100%;
+
+}
+.wicket-aa ul {
+  border-top: 1px solid #D0D0D0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  max-height: 300px;
+}
+
+.wicket-aa li {
+  background-color: #F2F8FD;
+  border: 1px solid #5E5F63;
+  border-top: 1px solid #F0F0F0;
+  padding: 3px;
+  margin: 0;
+  cursor: pointer;
+  color: #5E5F63;
+}
+
+.wicket-aa li.selected {
+  background: #e0e7ed none repeat scroll 0 0 !important;
+  color: #444242;
+}
+
+.dataTable {
+  border: 1px solid #DDDDDD;
+  border-spacing: 2px 2px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 18px;
+  max-width: 792px;
+}
+
+.dataTable thead th {
+  background: #7E9CB9 none repeat scroll 0 0;
+  border: 1px solid #7E9CB9;
+  color: white;
+  font-size: 95%;
+  font-weight: bold;
+  padding: 5px 8px 4px;
+
+}
+
+.dataTable th span {
+  float: left;
+}
+
+.dataTable th.rightAlign span {
+  float: right;
+  text-align: center;
+}
+
+/* if we are displaying the currency we will have two nested spans,
+  do not float them right as that would change the order */
+.dataTable th.rightAlign span span {
+  float: none;
+}
+
+.dataTable td.rightAlign span {
+  float: right;
+}
+.dataTable td.rightAlign span a {
+  float: right;
+}
+
+.dataTable thead th.wicket_orderNone a {
+    text-align:center;
+    float:center;
+}
+.dataTable thead th.wicket_orderNone a {
+    color: white;
+    font-size:95%;
+    font-weight: bold;
+}
+
+.dataTable thead th.wicket_orderNone a > span {
+  background-image: url(../images/arrow_up_down.gif);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding-right:25px;
+  cursor: pointer;
+}
+.dataTable thead th.wicket_orderUp a{
+    text-align:center;
+    float:center;
+}
+.dataTable thead th.wicket_orderUp a{
+    color: white;
+    font-size:95%;
+    font-weight: bold;
+}
+.dataTable thead th.wicket_orderUp a > span {
+  background-image: url(../images/arrow_up.gif);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding-right:25px;
+  cursor: pointer;
+}
+
+.dataTable thead th.wicket_orderDown a{
+    text-align:center;
+    float:center;
+}
+.dataTable thead th.wicket_orderDown a{
+    color: white;
+    font-size:95%;
+    font-weight: bold;
+}
+.dataTable thead th.wicket_orderDown a > span {
+  background-image: url(../images/arrow_down.gif);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding-right:25px;
+  cursor: pointer;
+}
+
+
+.dataTable thead th.wicket_orderDown.rightAlign a > span,
+.dataTable thead th.wicket_orderNone.rightAlign a > span,
+.dataTable thead th.wicket_orderUp.rightAlign a > span {
+  padding-right: 5px;
+}
+.dataTable thead th a {
+  text-decoration: none;
+}
+.dataTable tbody tr, .dataTable tbody tr.even {
+  background-color: #ffffff;
+}
+.dataTable tbody tr.odd, .dataTable tbody tr.alt {
+  background-color: #f9f9f9;
+  border: 1px solid #DDD;
+}
+
+.dataTable tbody td {
+  font-size:95%;
+  padding: 0.6em;
+}
+.dataTable .indicator {
+  text-align: center;
+}
+
+.dataTable .zeroValuedHolding_true {
+  cursor: help;
+  font-style: italic;
+  color: #1D407C;
+  background: transparent url(../images/exclamation_mark.gif) no-repeat 0px 0px;
+  padding-left: 7px;
+}
+
+table.dataTable td.icon {
+  width: 13px;
+  padding: 2px 2px 3px;
+}
+
+table tfoot tr.norecords-tr td.norecords-td span.norecords {
+    color: #555A62;
+    display: block;
+    padding-top: 7px;
+    text-align: center;
+}
+
+table tfoot {
+	border: 1px solid #DDDDDD;
+}
+
+.searchMatch {
+  font-weight: bold;
+  color: #3780c4;
+}
+
+/* help panel styles */
+.infoTree > .groupInfoContent > .groupInfoContents {
+  padding-left: 0px !important;
+}
+
+.groupInfoContents, .pageInfoContents {
+  padding-left: 15px;
+}
+
+.infoContentTitle {
+    margin-bottom: 0px;
+}
+
+.pageInfoContents help {
+    margin-top: 10px;
+}
+
+.groupInfoContents div{
+    margin-top: 10px;
+}
+
+.wicket-ajax-indicator {
+
+}
+
+.research #sbox-btn-close {
+  display: none;
+}
+
+
+
+
+/* Modal Window overrides */
+
+div.wicket-modal div.jhc_client div.w_left,
+div.wicket-modal div.jhc_client div.w_right {
+  background-image: url('../images/frame-darkgrey-2-alpha.png');
+  _background-image: url('../images/frame-darkgrey-2-ie.png');
+}
+
+
+div.wicket-modal div.jhc_client div.w_top,
+div.wicket-modal div.jhc_client div.w_bottom,
+div.wicket-modal div.jhc_client div.w_topLeft,
+div.wicket-modal div.jhc_client div.w_topRight,
+div.wicket-modal div.jhc_client div.w_bottomRight,
+div.wicket-modal div.jhc_client div.w_bottomLeft,
+div.wicket-modal div.jhc_client a.w_close {
+  background-image: url('../images/frame-darkgrey-1-alpha.png');
+  _background-image: url('../images/frame-darkgrey-1-ie.png');
+}
+
+div.wicket-modal div.jhc_client div.w_caption {
+  background-image:url("../images/modal_header.png");
+  color:#FFFFFF;
+  height:20px;
+  padding:8px 5px 5px;
+  text-shadow:0 -1px 0 #3F3F3F;
+}
+
+
+ul.literature li {
+  min-height: 25px;
+  list-style: none;
+  margin-left: -40px;
+}
+
+
+/* buttons */
+.buttons, .printButton, .messagesButton {
+  background:#425F7B;
+  border: 1px solid #000000;
+  color:white;
+  cursor:pointer;
+  display:inline;
+  font-size: 90%;
+  line-height:110%;
+  margin-left:5px;
+  padding: 4px 10px;
+  text-decoration:none;
+  font-weight: bold;
+}  /* overflow used to compensate for IE's button width bug */
+
+.buttons[disabled], .printButton[disabled], .messagesButton[disabled] {
+	background: darkgrey;
+	color: lightgrey;
+	cursor: default;
+}
+
+.printButton {
+  position: relative;
+  top: 5px;
+  margin-left: -15px;
+}
+
+.messagesButton {
+  position: relative;
+  top: 5px;
+  margin-left: -15px;
+}
+
+.buttonAction {
+  display:inline;
+}
+.formButton,.buttonAction{
+}
+
+.buttonBack {
+}
+
+html body input.disabled {
+  color: #808080;
+  background: #CCCCCC;
+}
+body {
+  margin: auto;
+  padding: 0px;
+  width: 985px;
+  font-family: arial, verdana, sans-serif;
+  font-size: small;
+}
+
+/* #container { */
+/*   width: 985px; */
+/* } */
+
+pre {
+  font: normal 12px Arial, Helvetica, sans-serif;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+fieldset {
+  border:none;
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding:1em;
+}
+
+fieldset legend {
+    display: none;
+}
+
+a:link,a:active, a:visited {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+label{
+  display: block;
+  float: left;
+  width: 140px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.left {
+  text-align: left;
+}
+
+.centre {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* general styles */
+div.floatLeft {
+  float: left;
+}
+.floatLeft {
+  float: left;
+}
+div.floatRight {
+  float: right;
+}
+.floatRight {
+  float: right;
+  padding-left: 15px;
+}
+.clear {
+  clear: both;
+}
+
+
+
+.gap {
+  height: 10px;
+}
+
+/* colours
+Plum Red          165   0  68   #C1002B
+Dark Grey         114 121 127   #72797F
+Text Grey          51  51  51   #333333
+Title Grey         85  85  85   #555555
+Border Grey       208 208 208   #D0D0D0
+Table Grey        229 229 229   #E5E5E5
+Table Grey-Light  242 242 242   #F2F2F2
+% plum            229 161 189   #E5A1BD
+*/
+
+/* do not colour positive numbers blue anymore
+.positive {
+  color: #0000FF;
+}
+*/
+
+.positive {
+    color: royalBlue;
+}
+
+.negative {
+  color: #FF0000;
+}
+
+.neutral {
+  color: #008C4A;
+}
+
+/* footer */
+.footerPanel {
+  border-top:1px solid #555555;
+  clear:both;
+  margin-left:0;
+  margin-top:0;
+  padding: 10px 0px 0px 10px;
+  position:relative;
+  font-size: 80%;
+  line-height: 140%;
+  bottom: 0;
+}
+.footerPanel p {
+}
+
+.footerPanelLeft {
+  font-size: 85%;
+  color:#555A62;
+}
+
+.footerPanelRight {
+  float: right;
+  position:relative;
+  top: -100px;
+}
+
+.footerPanel .footerInfo {
+  text-align: center;
+}
+.footerPanel .footerInfo p {
+  margin:0 0 5px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+.footerPanel .footerInfo .warning {
+  border: 0px solid #555555;
+  padding: 0px;
+  margin: 0px;
+}
+.footerPanel #partlogo {
+  left:865px;
+  position:absolute;
+  top:12px;
+}
+.footerPanel a.indent {
+  padding-left: 35px;
+}
+
+.legalPopupLink {
+  float: right;
+  position:relative;
+  top: -100px;  
+}
+
+/* AutoCompleteTextField */
+
+.wicket-aa-container{
+  position:absolute;
+  left:50px;
+  top:50px;
+  overflow:auto;
+  padding:0;
+  width:500px;
+
+}
+
+.wicket-aa {
+    position:relative;
+    width:100%;
+
+}
+.wicket-aa ul {
+  border-top: 1px solid #D0D0D0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  max-height: 300px;
+}
+
+.wicket-aa li {
+  background-color: #F2F8FD;
+  border: 1px solid #5E5F63;
+  border-top: 1px solid #F0F0F0;
+  padding: 3px;
+  margin: 0;
+  cursor: pointer;
+  color: #5E5F63;
+}
+
+.wicket-aa li.selected {
+  background: #e0e7ed none repeat scroll 0 0 !important;
+  color: #444242;
+}
+
+.dataTable {
+  border: 1px solid #DDDDDD;
+  border-spacing: 2px 2px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 18px;
+  max-width: 792px;
+}
+
+.dataTable thead th {
+  background: #7E9CB9 none repeat scroll 0 0;
+  border: 1px solid #7E9CB9;
+  color: white;
+  font-size: 95%;
+  font-weight: bold;
+  padding: 5px 8px 4px;
+
+}
+
+.dataTable th span {
+  float: left;
+}
+
+.dataTable th.rightAlign span {
+  float: right;
+  text-align: center;
+}
+
+/* if we are displaying the currency we will have two nested spans,
+  do not float them right as that would change the order */
+.dataTable th.rightAlign span span {
+  float: none;
+}
+
+.dataTable td.rightAlign span {
+  float: right;
+}
+.dataTable td.rightAlign span a {
+  float: right;
+}
+
+.dataTable thead th.wicket_orderNone a {
+    text-align:center;
+    float:center;
+}
+.dataTable thead th.wicket_orderNone a {
+    color: white;
+    font-size:95%;
+    font-weight: bold;
+}
+
+.dataTable thead th.wicket_orderNone a > span {
+  background-image: url(../images/arrow_up_down.gif);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding-right:25px;
+  cursor: pointer;
+}
+.dataTable thead th.wicket_orderUp a{
+    text-align:center;
+    float:center;
+}
+.dataTable thead th.wicket_orderUp a{
+    color: white;
+    font-size:95%;
+    font-weight: bold;
+}
+.dataTable thead th.wicket_orderUp a > span {
+  background-image: url(../images/arrow_up.gif);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding-right:25px;
+  cursor: pointer;
+}
+
+.dataTable thead th.wicket_orderDown a{
+    text-align:center;
+    float:center;
+}
+.dataTable thead th.wicket_orderDown a{
+    color: white;
+    font-size:95%;
+    font-weight: bold;
+}
+.dataTable thead th.wicket_orderDown a > span {
+  background-image: url(../images/arrow_down.gif);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding-right:25px;
+  cursor: pointer;
+}
+
+
+.dataTable thead th.wicket_orderDown.rightAlign a > span,
+.dataTable thead th.wicket_orderNone.rightAlign a > span,
+.dataTable thead th.wicket_orderUp.rightAlign a > span {
+  padding-right: 5px;
+}
+.dataTable thead th a {
+  text-decoration: none;
+}
+.dataTable tbody tr, .dataTable tbody tr.even {
+  background-color: #ffffff;
+}
+.dataTable tbody tr.odd, .dataTable tbody tr.alt {
+  background-color: #f9f9f9;
+  border: 1px solid #DDD;
+}
+
+.dataTable tbody td {
+  font-size:95%;
+  padding: 0.6em;
+}
+.dataTable .indicator {
+  text-align: center;
+}
+
+.dataTable .zeroValuedHolding_true {
+  cursor: help;
+  font-style: italic;
+  color: #1D407C;
+  background: transparent url(../images/exclamation_mark.gif) no-repeat 0px 0px;
+  padding-left: 7px;
+}
+
+table.dataTable td.icon {
+  width: 13px;
+  padding: 2px 2px 3px;
+}
+
+table tfoot tr.norecords-tr td.norecords-td span.norecords {
+    color: #555A62;
+    display: block;
+    padding-top: 7px;
+    text-align: center;
+}
+
+table tfoot {
+	border: 1px solid #DDDDDD;
+}
+
+.searchMatch {
+  font-weight: bold;
+  color: #3780c4;
+}
+
+/* help panel styles */
+.infoTree > .groupInfoContent > .groupInfoContents {
+  padding-left: 0px !important;
+}
+
+.groupInfoContents, .pageInfoContents {
+  padding-left: 15px;
+}
+
+.infoContentTitle {
+    margin-bottom: 0px;
+}
+
+.pageInfoContents help {
+    margin-top: 10px;
+}
+
+.groupInfoContents div{
+    margin-top: 10px;
+}
+
+.wicket-ajax-indicator {
+
+}
+
+.research #sbox-btn-close {
+  display: none;
+}
+
+
+
+
+/* Modal Window overrides */
+
+div.wicket-modal div.jhc_client div.w_left,
+div.wicket-modal div.jhc_client div.w_right {
+  background-image: url('../images/frame-darkgrey-2-alpha.png');
+  _background-image: url('../images/frame-darkgrey-2-ie.png');
+}
+
+
+div.wicket-modal div.jhc_client div.w_top,
+div.wicket-modal div.jhc_client div.w_bottom,
+div.wicket-modal div.jhc_client div.w_topLeft,
+div.wicket-modal div.jhc_client div.w_topRight,
+div.wicket-modal div.jhc_client div.w_bottomRight,
+div.wicket-modal div.jhc_client div.w_bottomLeft,
+div.wicket-modal div.jhc_client a.w_close {
+  background-image: url('../images/frame-darkgrey-1-alpha.png');
+  _background-image: url('../images/frame-darkgrey-1-ie.png');
+}
+
+div.wicket-modal div.jhc_client div.w_caption {
+  background-image:url("../images/modal_header.png");
+  color:#FFFFFF;
+  height:20px;
+  padding:8px 5px 5px;
+  text-shadow:0 -1px 0 #3F3F3F;
+}
+
+
+ul.literature li {
+  min-height: 25px;
+  list-style: none;
+  margin-left: -40px;
+}
+
+
+/* buttons */
+.buttons, .printButton, .messagesButton {
+  background:#425F7B;
+  border: 1px solid #000000;
+  color:white;
+  cursor:pointer;
+  display:inline;
+  font-size: 90%;
+  line-height:110%;
+  margin-left:5px;
+  padding: 4px 10px;
+  text-decoration:none;
+  font-weight: bold;
+}  /* overflow used to compensate for IE's button width bug */
+
+.buttons[disabled], .printButton[disabled], .messagesButton[disabled] {
+	background: darkgrey;
+	color: lightgrey;
+	cursor: default;
+}
+
+.printButton {
+  position: relative;
+  top: 5px;
+  margin-left: -15px;
+}
+
+.messagesButton {
+  position: relative;
+  top: 5px;
+  margin-left: -15px;
+}
+
+.buttonAction {
+  display:inline;
+}
+.formButton,.buttonAction{
+}
+
+.buttonBack {
+}
+
+html body input.disabled {
+  color: #808080;
+  background: #CCCCCC;
+}
+body {
+  margin: auto;
+  padding: 0px;
+  width: 985px;
+  font-family: arial, verdana, sans-serif;
+  font-size: small;
+}
+
+/* #container { */
+/*   width: 985px; */
+/* } */
+
+pre {
+  font: normal 12px Arial, Helvetica, sans-serif;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+fieldset {
+  border:none;
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding:1em;
+}
+
+fieldset legend {
+    display: none;
+}
+
+a:link,a:active, a:visited {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+label{
+  display: block;
+  float: left;
+  width: 140px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.left {
+  text-align: left;
+}
+
+.centre {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* general styles */
+div.floatLeft {
+  float: left;
+}
+.floatLeft {
+  float: left;
+}
+div.floatRight {
+  float: right;
+}
+.floatRight {
+  float: right;
+  padding-left: 15px;
+}
+.clear {
+  clear: both;
+}
+
+
+
+.gap {
+  height: 10px;
+}
+
+/* colours
+Plum Red          165   0  68   #C1002B
+Dark Grey         114 121 127   #72797F
+Text Grey          51  51  51   #333333
+Title Grey         85  85  85   #555555
+Border Grey       208 208 208   #D0D0D0
+Table Grey        229 229 229   #E5E5E5
+Table Grey-Light  242 242 242   #F2F2F2
+% plum            229 161 189   #E5A1BD
+*/
+
+/* do not colour positive numbers blue anymore
+.positive {
+  color: #0000FF;
+}
+*/
+
+.positive {
+    color: royalBlue;
+}
+
+.negative {
+  color: #FF0000;
+}
+
+.neutral {
+  color: #008C4A;
+}
+
+/* footer */
+.footerPanel {
+  border-top:1px solid #555555;
+  clear:both;
+  margin-left:0;
+  margin-top:0;
+  padding: 10px 0px 0px 10px;
+  position:relative;
+  font-size: 80%;
+  line-height: 140%;
+  bottom: 0;
+}
+.footerPanel p {
+}
+
+.footerPanelLeft {
+  font-size: 85%;
+  color:#555A62;
+}
+
+.footerPanelRight {
+  float: right;
+  position:relative;
+  top: -100px;
+}
+
+.footerPanel .footerInfo {
+  text-align: center;
+}
+.footerPanel .footerInfo p {
+  margin:0 0 5px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+.footerPanel .footerInfo .warning {
+  border: 0px solid #555555;
+  padding: 0px;
+  margin: 0px;
+}
+.footerPanel #partlogo {
+  left:865px;
+  position:absolute;
+  top:12px;
+}
+.footerPanel a.indent {
+  padding-left: 35px;
+}
+
+.legalPopupLink {
+  float: right;
+  position:relative;
+  top: -100px;  
+}
+
+/* AutoCompleteTextField */
+
+.wicket-aa-container{
+  position:absolute;
+  left:50px;
+  top:50px;
+  overflow:auto;
+  padding:0;
+  width:500px;
+
+}
+
+.wicket-aa {
+    position:relative;
+    width:100%;
+
+}
+.wicket-aa ul {
+  border-top: 1px solid #D0D0D0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  max-height: 300px;
+}
+
+.wicket-aa li {
+  background-color: #F2F8FD;
+  border: 1px solid #5E5F63;
+  border-top: 1px solid #F0F0F0;
+  padding: 3px;
+  margin: 0;
+  cursor: pointer;
+  color: #5E5F63;
+}
+
+.wicket-aa li.selected {
+  background: #e0e7ed none repeat scroll 0 0 !important;
+  color: #444242;
+}
+
+.dataTable {
+  border: 1px solid #DDDDDD;
+  border-spacing: 2px 2px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 18px;
+  max-width: 792px;
+}
+
+.dataTable thead th {
+  background: #7E9CB9 none repeat scroll 0 0;
+  border: 1px solid #7E9CB9;
+  color: white;
+  font-size: 95%;
+  font-weight: bold;
+  padding: 5px 8px 4px;
+
+}
+
+.dataTable th span {
+  float: left;
+}
+
+.dataTable th.rightAlign span {
+  float: right;
+  text-align: center;
+}
+
+/* if we are displaying the currency we will have two nested spans,
+  do not float them right as that would change the order */
+.dataTable th.rightAlign span span {
+  float: none;
+}
+
+.dataTable td.rightAlign span {
+  float: right;
+}
+.dataTable td.rightAlign span a {
+  float: right;
+}
+
+.dataTable thead th.wicket_orderNone a {
+    text-align:center;
+    float:center;
+}
+.dataTable thead th.wicket_orderNone a {
+    color: white;
+    font-size:95%;
+    font-weight: bold;
+}
+
+.dataTable thead th.wicket_orderNone a > span {
+  background-image: url(../images/arrow_up_down.gif);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding-right:25px;
+  cursor: pointer;
+}
+.dataTable thead th.wicket_orderUp a{
+    text-align:center;
+    float:center;
+}
+.dataTable thead th.wicket_orderUp a{
+    color: white;
+    font-size:95%;
+    font-weight: bold;
+}
+.dataTable thead th.wicket_orderUp a > span {
+  background-image: url(../images/arrow_up.gif);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding-right:25px;
+  cursor: pointer;
+}
+
+.dataTable thead th.wicket_orderDown a{
+    text-align:center;
+    float:center;
+}
+.dataTable thead th.wicket_orderDown a{
+    color: white;
+    font-size:95%;
+    font-weight: bold;
+}
+.dataTable thead th.wicket_orderDown a > span {
+  background-image: url(../images/arrow_down.gif);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding-right:25px;
+  cursor: pointer;
+}
+
+
+.dataTable thead th.wicket_orderDown.rightAlign a > span,
+.dataTable thead th.wicket_orderNone.rightAlign a > span,
+.dataTable thead th.wicket_orderUp.rightAlign a > span {
+  padding-right: 5px;
+}
+.dataTable thead th a {
+  text-decoration: none;
+}
+.dataTable tbody tr, .dataTable tbody tr.even {
+  background-color: #ffffff;
+}
+.dataTable tbody tr.odd, .dataTable tbody tr.alt {
+  background-color: #f9f9f9;
+  border: 1px solid #DDD;
+}
+
+.dataTable tbody td {
+  font-size:95%;
+  padding: 0.6em;
+}
+.dataTable .indicator {
+  text-align: center;
+}
+
+.dataTable .zeroValuedHolding_true {
+  cursor: help;
+  font-style: italic;
+  color: #1D407C;
+  background: transparent url(../images/exclamation_mark.gif) no-repeat 0px 0px;
+  padding-left: 7px;
+}
+
+table.dataTable td.icon {
+  width: 13px;
+  padding: 2px 2px 3px;
+}
+
+table tfoot tr.norecords-tr td.norecords-td span.norecords {
+    color: #555A62;
+    display: block;
+    padding-top: 7px;
+    text-align: center;
+}
+
+table tfoot {
+	border: 1px solid #DDDDDD;
+}
+
+.searchMatch {
+  font-weight: bold;
+  color: #3780c4;
+}
+
+/* help panel styles */
+.infoTree > .groupInfoContent > .groupInfoContents {
+  padding-left: 0px !important;
+}
+
+.groupInfoContents, .pageInfoContents {
+  padding-left: 15px;
+}
+
+.infoContentTitle {
+    margin-bottom: 0px;
+}
+
+.pageInfoContents help {
+    margin-top: 10px;
+}
+
+.groupInfoContents div{
+    margin-top: 10px;
+}
+
+.wicket-ajax-indicator {
+
+}
+
+.research #sbox-btn-close {
+  display: none;
+}
+
+
+
+
+/* Modal Window overrides */
+
+div.wicket-modal div.jhc_client div.w_left,
+div.wicket-modal div.jhc_client div.w_right {
+  background-image: url('../images/frame-darkgrey-2-alpha.png');
+  _background-image: url('../images/frame-darkgrey-2-ie.png');
+}
+
+
+div.wicket-modal div.jhc_client div.w_top,
+div.wicket-modal div.jhc_client div.w_bottom,
+div.wicket-modal div.jhc_client div.w_topLeft,
+div.wicket-modal div.jhc_client div.w_topRight,
+div.wicket-modal div.jhc_client div.w_bottomRight,
+div.wicket-modal div.jhc_client div.w_bottomLeft,
+div.wicket-modal div.jhc_client a.w_close {
+  background-image: url('../images/frame-darkgrey-1-alpha.png');
+  _background-image: url('../images/frame-darkgrey-1-ie.png');
+}
+
+div.wicket-modal div.jhc_client div.w_caption {
+  background-image:url("../images/modal_header.png");
+  color:#FFFFFF;
+  height:20px;
+  padding:8px 5px 5px;
+  text-shadow:0 -1px 0 #3F3F3F;
+}
+
+
+ul.literature li {
+  min-height: 25px;
+  list-style: none;
+  margin-left: -40px;
+}
+
+
+/* buttons */
+.buttons, .printButton, .messagesButton {
+  background:#425F7B;
+  border: 1px solid #000000;
+  color:white;
+  cursor:pointer;
+  display:inline;
+  font-size: 90%;
+  line-height:110%;
+  margin-left:5px;
+  padding: 4px 10px;
+  text-decoration:none;
+  font-weight: bold;
+}  /* overflow used to compensate for IE's button width bug */
+
+.buttons[disabled], .printButton[disabled], .messagesButton[disabled] {
+	background: darkgrey;
+	color: lightgrey;
+	cursor: default;
+}
+
+.printButton {
+  position: relative;
+  top: 5px;
+  margin-left: -15px;
+}
+
+.messagesButton {
+  position: relative;
+  top: 5px;
+  margin-left: -15px;
+}
+
+.buttonAction {
+  display:inline;
+}
+.formButton,.buttonAction{
+}
+
+.buttonBack {
+}
+
+html body input.disabled {
+  color: #808080;
+  background: #CCCCCC;
+}

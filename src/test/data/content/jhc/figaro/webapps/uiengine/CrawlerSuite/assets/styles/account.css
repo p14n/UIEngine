@@ -1,0 +1,120 @@
+/* accounts */
+ .accountSelectorPanel {
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background: url(../images/menuBackground.png) repeat-y;
+  clear:both;  
+  height:25px;
+}
+.accountSelector{
+  float:left;
+  height:100%;
+  padding-left: 18px;
+}
+.accountName {
+  width: 120px;
+  display: none;
+  float:left;
+}
+.accountNameLabel {
+  display: inline;
+  float: left;
+  font-variant: small-caps;
+  margin: 3px 0px 1px 0px;
+    width:65px;
+}
+
+.accountCash {
+  display: inline;
+  margin: 3px 0px 1px 0px;
+  width:250px;
+  float:right;
+  text-align:right;
+  display: inline;
+  font-variant: small-caps;
+}
+.accountInfoPrint {
+  /* display when printing*/
+  display:none;
+}
+/* accounts */
+ .accountSelectorPanel {
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background: url(../images/menuBackground.png) repeat-y;
+  clear:both;  
+  height:25px;
+}
+.accountSelector{
+  float:left;
+  height:100%;
+  padding-left: 18px;
+}
+.accountName {
+  width: 120px;
+  display: none;
+  float:left;
+}
+.accountNameLabel {
+  display: inline;
+  float: left;
+  font-variant: small-caps;
+  margin: 3px 0px 1px 0px;
+    width:65px;
+}
+
+.accountCash {
+  display: inline;
+  margin: 3px 0px 1px 0px;
+  width:250px;
+  float:right;
+  text-align:right;
+  display: inline;
+  font-variant: small-caps;
+}
+.accountInfoPrint {
+  /* display when printing*/
+  display:none;
+}
+/* accounts */
+ .accountSelectorPanel {
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background: url(../images/menuBackground.png) repeat-y;
+  clear:both;  
+  height:25px;
+}
+.accountSelector{
+  float:left;
+  height:100%;
+  padding-left: 18px;
+}
+.accountName {
+  width: 120px;
+  display: none;
+  float:left;
+}
+.accountNameLabel {
+  display: inline;
+  float: left;
+  font-variant: small-caps;
+  margin: 3px 0px 1px 0px;
+    width:65px;
+}
+
+.accountCash {
+  display: inline;
+  margin: 3px 0px 1px 0px;
+  width:250px;
+  float:right;
+  text-align:right;
+  display: inline;
+  font-variant: small-caps;
+}
+.accountInfoPrint {
+  /* display when printing*/
+  display:none;
+}

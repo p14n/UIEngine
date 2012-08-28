@@ -1,0 +1,500 @@
+.stockSearchInput .searchInput {
+    margin-left: 20px;
+}
+
+.stockSearchInput .overTxtSpan {
+    left: 25px;
+    position: absolute;
+    top: 2px;
+}
+
+div.watchlistStockSearchInputPanel {
+    width: 296px;
+    float: left;
+    margin-right: 9px;
+    margin-top: 3px
+}
+
+.watchlist form {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.stockRemoveButton {
+    float: right;
+}
+
+.watchlistTable .selection {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30px;
+}
+
+.watchlist table.dataTable td.icon {
+    width: 25px;
+    padding-top: 7px;
+}
+
+.watchlist .bodyPanel {
+    background: url("../images/menuBackground.png") repeat-y scroll 0 0 transparent;
+    padding-bottom: 20px;
+}
+
+div.watchlistTableContainer .watchlistTable {
+    margin-left: 0px;
+}
+
+.watchlistTableContainer  {
+	border: 1px solid #DDDDDD;
+    margin-left: 20px;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.watchlist .formButtonPanel {
+    height: 20px;
+}
+
+.watchlistTable span.usingClosePrice, .usingClosePriceContainer {
+	border: 1px solid darkGray;
+    background: none repeat scroll 0 0 gainsboro;
+    display: block;
+    min-width: 50px;
+    padding-right: 2px !important;
+}
+
+.watchlistTable thead .percentChange span {
+    min-width: 65px;
+}
+
+.watchlistTable tbody .rightAlign span {
+    text-align: right;
+    padding-right: 1px;
+    min-width: 50px;
+}
+
+.dataTable span.zeroValuedHolding_true {
+    background: url("../images/exclamation_mark.gif") no-repeat scroll 0 0;
+    border: none;
+    color: black;
+    cursor: help;
+    font-style: italic;
+    padding-left: 7px;
+    min-width: 37px;
+}
+
+div.watchlistWidgetContainer .emptyListMessage, div.watchlistMaxSizeMessage {
+    color: #555A62;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+div.watchlistWidgetContainer .emptyListMessage {
+	padding-top: 10px;
+}
+
+div.watchlistMaxSizeMessage {
+    float: left;
+    position: absolute;
+}
+.stockSearchInput .searchInput {
+    margin-left: 20px;
+}
+
+.stockSearchInput .overTxtSpan {
+    left: 25px;
+    position: absolute;
+    top: 2px;
+}
+
+div.watchlistStockSearchInputPanel {
+    width: 296px;
+    float: left;
+    margin-right: 9px;
+    margin-top: 3px
+}
+
+.watchlist form {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.stockRemoveButton {
+    float: right;
+}
+
+.watchlistTable .selection {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30px;
+}
+
+.watchlist table.dataTable td.icon {
+    width: 25px;
+    padding-top: 7px;
+}
+
+.watchlist .bodyPanel {
+    background: url("../images/menuBackground.png") repeat-y scroll 0 0 transparent;
+    padding-bottom: 20px;
+}
+
+div.watchlistTableContainer .watchlistTable {
+    margin-left: 0px;
+}
+
+.watchlistTableContainer  {
+	border: 1px solid #DDDDDD;
+    margin-left: 20px;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.watchlist .formButtonPanel {
+    height: 20px;
+}
+
+.watchlistTable span.usingClosePrice, .usingClosePriceContainer {
+	border: 1px solid darkGray;
+    background: none repeat scroll 0 0 gainsboro;
+    display: block;
+    min-width: 50px;
+    padding-right: 2px !important;
+}
+
+.watchlistTable thead .percentChange span {
+    min-width: 65px;
+}
+
+.watchlistTable tbody .rightAlign span {
+    text-align: right;
+    padding-right: 1px;
+    min-width: 50px;
+}
+
+.dataTable span.zeroValuedHolding_true {
+    background: url("../images/exclamation_mark.gif") no-repeat scroll 0 0;
+    border: none;
+    color: black;
+    cursor: help;
+    font-style: italic;
+    padding-left: 7px;
+    min-width: 37px;
+}
+
+div.watchlistWidgetContainer .emptyListMessage, div.watchlistMaxSizeMessage {
+    color: #555A62;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+div.watchlistWidgetContainer .emptyListMessage {
+	padding-top: 10px;
+}
+
+div.watchlistMaxSizeMessage {
+    float: left;
+    position: absolute;
+}
+.stockSearchInput .searchInput {
+    margin-left: 20px;
+}
+
+.stockSearchInput .overTxtSpan {
+    left: 25px;
+    position: absolute;
+    top: 2px;
+}
+
+div.watchlistStockSearchInputPanel {
+    width: 296px;
+    float: left;
+    margin-right: 9px;
+    margin-top: 3px
+}
+
+.watchlist form {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.stockRemoveButton {
+    float: right;
+}
+
+.watchlistTable .selection {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30px;
+}
+
+.watchlist table.dataTable td.icon {
+    width: 25px;
+    padding-top: 7px;
+}
+
+.watchlist .bodyPanel {
+    background: url("../images/menuBackground.png") repeat-y scroll 0 0 transparent;
+    padding-bottom: 20px;
+}
+
+div.watchlistTableContainer .watchlistTable {
+    margin-left: 0px;
+}
+
+.watchlistTableContainer  {
+	border: 1px solid #DDDDDD;
+    margin-left: 20px;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.watchlist .formButtonPanel {
+    height: 20px;
+}
+
+.watchlistTable span.usingClosePrice, .usingClosePriceContainer {
+	border: 1px solid darkGray;
+    background: none repeat scroll 0 0 gainsboro;
+    display: block;
+    min-width: 50px;
+    padding-right: 2px !important;
+}
+
+.watchlistTable thead .percentChange span {
+    min-width: 65px;
+}
+
+.watchlistTable tbody .rightAlign span {
+    text-align: right;
+    padding-right: 1px;
+    min-width: 50px;
+}
+
+.dataTable span.zeroValuedHolding_true {
+    background: url("../images/exclamation_mark.gif") no-repeat scroll 0 0;
+    border: none;
+    color: black;
+    cursor: help;
+    font-style: italic;
+    padding-left: 7px;
+    min-width: 37px;
+}
+
+div.watchlistWidgetContainer .emptyListMessage, div.watchlistMaxSizeMessage {
+    color: #555A62;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+div.watchlistWidgetContainer .emptyListMessage {
+	padding-top: 10px;
+}
+
+div.watchlistMaxSizeMessage {
+    float: left;
+    position: absolute;
+}
+.stockSearchInput .searchInput {
+    margin-left: 20px;
+}
+
+.stockSearchInput .overTxtSpan {
+    left: 25px;
+    position: absolute;
+    top: 2px;
+}
+
+div.watchlistStockSearchInputPanel {
+    width: 296px;
+    float: left;
+    margin-right: 9px;
+    margin-top: 3px
+}
+
+.watchlist form {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.stockRemoveButton {
+    float: right;
+}
+
+.watchlistTable .selection {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30px;
+}
+
+.watchlist table.dataTable td.icon {
+    width: 25px;
+    padding-top: 7px;
+}
+
+.watchlist .bodyPanel {
+    background: url("../images/menuBackground.png") repeat-y scroll 0 0 transparent;
+    padding-bottom: 20px;
+}
+
+div.watchlistTableContainer .watchlistTable {
+    margin-left: 0px;
+}
+
+.watchlistTableContainer  {
+	border: 1px solid #DDDDDD;
+    margin-left: 20px;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.watchlist .formButtonPanel {
+    height: 20px;
+}
+
+.watchlistTable span.usingClosePrice, .usingClosePriceContainer {
+	border: 1px solid darkGray;
+    background: none repeat scroll 0 0 gainsboro;
+    display: block;
+    min-width: 50px;
+    padding-right: 2px !important;
+}
+
+.watchlistTable thead .percentChange span {
+    min-width: 65px;
+}
+
+.watchlistTable tbody .rightAlign span {
+    text-align: right;
+    padding-right: 1px;
+    min-width: 50px;
+}
+
+.dataTable span.zeroValuedHolding_true {
+    background: url("../images/exclamation_mark.gif") no-repeat scroll 0 0;
+    border: none;
+    color: black;
+    cursor: help;
+    font-style: italic;
+    padding-left: 7px;
+    min-width: 37px;
+}
+
+div.watchlistWidgetContainer .emptyListMessage, div.watchlistMaxSizeMessage {
+    color: #555A62;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+div.watchlistWidgetContainer .emptyListMessage {
+	padding-top: 10px;
+}
+
+div.watchlistMaxSizeMessage {
+    float: left;
+    position: absolute;
+}
+.stockSearchInput .searchInput {
+    margin-left: 20px;
+}
+
+.stockSearchInput .overTxtSpan {
+    left: 25px;
+    position: absolute;
+    top: 2px;
+}
+
+div.watchlistStockSearchInputPanel {
+    width: 296px;
+    float: left;
+    margin-right: 9px;
+    margin-top: 3px
+}
+
+.watchlist form {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.stockRemoveButton {
+    float: right;
+}
+
+.watchlistTable .selection {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30px;
+}
+
+.watchlist table.dataTable td.icon {
+    width: 25px;
+    padding-top: 7px;
+}
+
+.watchlist .bodyPanel {
+    background: url("../images/menuBackground.png") repeat-y scroll 0 0 transparent;
+    padding-bottom: 20px;
+}
+
+div.watchlistTableContainer .watchlistTable {
+    margin-left: 0px;
+}
+
+.watchlistTableContainer  {
+	border: 1px solid #DDDDDD;
+    margin-left: 20px;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.watchlist .formButtonPanel {
+    height: 20px;
+}
+
+.watchlistTable span.usingClosePrice, .usingClosePriceContainer {
+	border: 1px solid darkGray;
+    background: none repeat scroll 0 0 gainsboro;
+    display: block;
+    min-width: 50px;
+    padding-right: 2px !important;
+}
+
+.watchlistTable thead .percentChange span {
+    min-width: 65px;
+}
+
+.watchlistTable tbody .rightAlign span {
+    text-align: right;
+    padding-right: 1px;
+    min-width: 50px;
+}
+
+.dataTable span.zeroValuedHolding_true {
+    background: url("../images/exclamation_mark.gif") no-repeat scroll 0 0;
+    border: none;
+    color: black;
+    cursor: help;
+    font-style: italic;
+    padding-left: 7px;
+    min-width: 37px;
+}
+
+div.watchlistWidgetContainer .emptyListMessage, div.watchlistMaxSizeMessage {
+    color: #555A62;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+div.watchlistWidgetContainer .emptyListMessage {
+	padding-top: 10px;
+}
+
+div.watchlistMaxSizeMessage {
+    float: left;
+    position: absolute;
+}

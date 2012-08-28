@@ -1,0 +1,2001 @@
+
+
+#headerLogoLink {
+  text-decoration: none;
+  height: 75px;
+  width: 194px;
+}
+
+#headerLogo {
+  position: absolute;
+  float: left;
+  display: inline;
+  top: 10px;
+  z-index: -1000;
+/*   left: 13px; */
+/*   height: 88px; */
+/*   width: 197px; */
+}
+
+ #headerPanel{
+  float: left;
+  height: 75px;
+  margin-bottom: 20px;
+  width: 244px;
+}
+
+#logoutButtonPanel { 
+  float: right;
+  top: 64px;
+  color: white;
+  padding-top: 66px;
+}
+
+#changeClientButtonPanel {
+  position: absolute;
+  left: 650px;
+  top: 10px;
+}
+
+/* div.loginSubmitButton input.buttonAction, div.formButtonPanel input.buttonAction { */
+/*     background: none repeat scroll 0 0 #008C4A; */
+/* } */
+
+div input.submitButton,
+div a.submitButton {
+    background: none repeat scroll 0 0 #008C4A;
+}
+
+#logoutButtonPanel a, #changeClientButtonPanel a, #changeUserButtonPanel a {
+  border: 1px solid #000000;  
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 1px;
+  background: #425F7B;
+}
+
+#resetButton {
+  visibility: hidden;
+}
+
+.headerDetails {
+  margin-top:2px;
+  padding-top: 10px;
+  padding-right: 10px;
+  float: left;
+}
+
+.headerDetails .timestamp{
+  position: absolute;
+  left: 780px;
+  top: 10px;
+}
+.headerDetails .label {
+  position: relative;
+  float: left;
+  width: 84px;
+  font-size: 90%;
+  font-weight: bold;
+  line-height: 110%;
+}
+
+.headerDetails .detail {
+  display: block;
+  font-size: 90%;
+  font-weight: normal;
+  line-height: 110%;
+  float: right;
+}
+
+
+body > span {
+  width: 100%;
+  display: block;
+  postition:absolute;
+}
+
+.staffUserPanel .headerDetails {
+  border: 1px solid white;
+  padding: 5px 10px;
+}
+
+.staffUserPanel .headerDetails .label, .staffUserPanel .headerDetails .detail {
+  display: inline;
+  height: auto;
+}
+
+.clientPanel, .adviserPanel, .loggedInUserPanel {
+  position: absolute;
+  display: block;
+  margin-left: 335px;
+  margin-top: 10px;
+}
+
+/* navigation styles */
+#navigationPanel{
+	border-bottom: 1px solid #555555;
+}
+
+#navigationPanel > ul {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  clear:both;
+  background: #9BB97D;
+  border-bottom: 3px solid #FFFFFF
+}
+
+#navigationPanel > ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+  menu-left: 14px;
+}
+
+#navigationPanel > ul > li {
+  float: left;
+  color: #FFFFFF;
+  background: #9BB97D;
+  padding: 12px 5px 12px 10px;
+  margin: 0;
+  border-right: 4px #FFFFFF solid;
+  font-size: 100%;
+  display: inline;
+  width: 144px;
+  height: 16px;
+}
+
+ul.menus {
+  display: none;
+}
+
+li.selected > ul.menus {
+  display: block;
+  position: relative;
+  border-top: none;
+  font-size: 90%;
+  padding: 2px 0 0;
+  margin-left: -10px;
+  margin-top: 0;
+  top: 17px;
+  background: white;
+  width: 159px;
+  z-index: 1000; /* show above title panel */
+}
+
+li.level1:nth-child(2) > ul.menus {
+	margin-left: -173px;
+}
+
+li.level1:nth-child(3) > ul.menus {
+    margin-left: -336px;
+}
+
+li.level1:nth-child(4) > ul.menus {
+	margin-left: -499px
+}
+
+li.level1:nth-child(5) > ul.menus {
+    margin-left: -662px;
+}
+
+#navigationPanel li.selected > a {
+    color: #008C4A;
+}
+
+li.selected ul.menus li {
+  display: block;
+  padding: 9px 12px 9px 10px;
+  border-bottom: 3px solid #FFFFFF ;
+  background: #9BB97D;
+  width: 137px;
+  height: 15px;
+}
+
+/* highlighted states*/
+li.selected {
+  background: #d2e0c7 !important;
+}
+
+#navigationPanel > ul > li > ul.menus > li > ul.menus {
+  visibility:hidden;
+}
+#navigationPanel > ul > li > ul.menus > li > ul.menus li {
+  width: 140px;
+}
+
+/* generic body content */
+.supportInfoPanel {
+  clear: left;
+  height: 32px;
+  position: relative;
+}
+
+.supportInfoPanel > .supportTitleAndProduct {
+  padding: 34px 0 0 195px;
+  font-size: 165%;
+  font-weight: bold;
+  background: url(../images/menuBackground.png) repeat-y;
+  float:left;
+  color:#555A62;
+  margin-top: 2px;
+}
+
+.supportInfoPanel > .supportTitle {
+  padding: 7px 0px 0px 175px; /* CANGED: was 7px 0px 0px 148px */
+  font-size: 165%;
+  font-weight: bold;
+  background: url(../images/menuBackground.png) repeat-y;
+  float:left;
+  color:#555A62;
+}
+
+.supportInfoPanel > .supportLinks {
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+
+.supportInfoPanel > .supportLinks div {
+  display:inline;
+}
+
+.accountSummaryPanel, .accountSummaryHeaderPanel, .accountSummaryChartPanel, .accountSummaryMarketingMessagePanel,
+.accountSelectorPanel, .portfolioHeaderPanel, .portfolioSelectorPanel, .portfolioRatesTotalPanel, .portfolioItemsPanel,
+.secureMessagesPanel {
+  padding-left: 175px;
+}
+
+
+
+
+.unreadMessagesInfoPanel {
+  display: inline;
+  float: left;
+  position: relative;
+  width: 50%;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+
+.feedbackContainer {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/* Note: feedbackPanel may either be a div or the ul element...
+  the following style should only apply to the div when it's added as a separate figaro web component to the page */
+div.feedbackPanel {
+  padding: 0px 0px 20px 180px;
+  margin-top: 0;
+  background: url(../images/menuBackground.png) repeat-y;
+  float:left;
+  width: 805px
+}
+
+.feedbackPanel ul {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.feedbackPanelERROR {
+  color: #da5f1a;
+}
+
+.feedbackPanelWARNING {
+  color: #da5f1a;
+}
+
+.sso-login-error .feedbackPanel {
+  padding: 0;
+  background: none;
+}
+
+.sso-login-error .feedbackPanel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bodyPanel {
+  clear: left;
+  min-height: 300px;
+  padding: 10px 0px 0px 175px;
+  margin-bottom: 0px;
+  background: url(../images/menuBackground.png) repeat-y;
+}
+
+.bodyPanel table {
+  border-collapse: collapse;
+}
+
+.bodyPanel.backButtonPanel {
+  min-height: 100px;
+}
+
+
+html body.busy * {
+  cursor: wait;
+}
+
+/* main content */
+.sectionHeading {
+  margin: 0px 0px 10px 0px;
+  font-size: 18px;
+  color: #555555;
+}
+
+.sectionSubHeading {
+  margin: 20px 0px 10px 0px;
+  font-size: 14px;
+  color: #555555;
+  font-weight: bold;
+}
+
+.infoSection {
+  color:#333333;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:12px;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  line-height:normal;
+}
+
+.userWarning {
+  color: red;
+}
+
+table .price {
+  text-align: right;
+}
+
+table .count {
+  text-align: right;
+}
+
+table .quantity {
+  text-align: right;
+}
+
+table .percent {
+  text-align: right;
+}
+
+table .icon {
+  text-align: center;
+}
+
+.stockSearchInputPanel {
+  z-index: 100;
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  width: 300px;
+}
+
+
+.stockSearchInputPanel div.overTxtDiv {
+  position: absolute;
+  font-weight: bold;
+  font-family: arial, helvetica, verdana;
+  font-size: 12px;
+  color: #666;
+  line-height: normal;
+  position: absolute;  
+  padding-left:50px;
+  top: 2px;  
+  left:0px;
+  margin-left:15px;
+  
+  
+}
+
+.stockSearchInputPanel .searchInput {
+  float: left;
+  font-size: 11px;
+  color: black;
+  height: 16px;
+  padding: 2px 2px 1px 2px;
+  margin-top: -1px;
+}
+
+
+.stockSearchInputPanel .buttonAction {
+  float: left;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 0 10px;
+  /*
+  padding: 1px 2px 0 2px;
+
+  top: -1px;
+  font-size: 11px;
+  font-weight: bold;
+  height: 16px;
+  */
+}
+
+/* form layout */
+.formInputAreaPanel {
+  display: -moz-inline-box;
+  display: inline-block;
+}
+
+.formButtonAreaPanel {
+  display: -moz-inline-box;
+  display: inline-block;
+  margin: 0 0 1px 10px;
+}
+
+.formButtonAreaPanel div {
+  padding: 0 3px 0 0;
+  float: left;
+}
+
+.formButtonAreaPanel div input {
+  margin: 0;
+}
+
+*html .formInputAreaPanel {
+  display:inline;
+}  /* for IE 6 */
+
+html .formInputAreaPanel {
+  display:inline;
+}  /* for IE 7 */
+
+* html .formButtonAreaPanel {
+  display:inline;
+}  /* for IE 6 */
+
+html .formButtonAreaPanel {
+  display:inline;
+}  /* for IE 7 */
+
+
+
+fieldset div {
+  vertical-align: bottom;
+  margin-bottom: 5px;
+}
+
+/* redirect indicator, when redirecting to new page (used by the Digital Look callback) */
+.redirectIndicatorBackground {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  -moz-opacity:0.7;
+  background-color: black;
+  filter: alpha(opacity=70);
+  background-image: none;
+}
+
+.redirectIndicator {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #1D407C;
+  padding: 3px 5px 3px 23px;
+  background-color: white;
+  background-image: url(../images/spinner.gif);
+  background-repeat: no-repeat;
+  background-position: 3px 3px;
+  z-index: 1001;
+}
+
+.legendPanel {
+  clear: both;
+  padding: 0px 0px 10px 148px;
+  background: url(../images/menuBackground.png) repeat-y;
+}
+
+.legendPanel .usingClosePrice-key img {
+	top: 4px;
+}
+
+.loginFields {
+    border: 1px solid lightgray;
+    padding: 30px 50px;
+}
+
+.legendContainer {
+  background-color: #f2f2f2;
+  padding: 5px 0 6px 5px;
+  margin-left: 45px;
+}
+
+.legendPanel .label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333333;
+  margin-right: 6px;
+}
+
+.legendPanel ul {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.legendPanel li {
+  font-size: 12px;
+  font-weight: normal;
+  display: inline;
+  color: black;
+  margin: 0 14px 0 0;
+}
+
+.legendPanel li img {
+  position: relative;
+  top: 1px;
+  margin: 0 2px 0 0;
+}
+
+div.unused, .legendPanel li.unused {
+  display: none;
+}
+
+
+
+.legalDisclaimerPanel {
+  padding-top: 10px;
+  padding-bottom: 10px;  
+  padding-left: 10px;
+  padding-right: 10px;    
+}
+
+/* prototype */
+.confirmationPanel {
+	padding-bottom: 5px;
+}
+
+.confirmationMessage label {
+	padding: 5px;
+}
+
+.confirmationMessage label {
+	width: auto;
+}
+
+/* Date Selector Panel styling */
+
+.dateBasedForm span.overTxtSpan {
+    color: #666666;
+    font-weight: bold;
+    left: 5px;
+    top: 0;
+    position: absolute;
+}
+
+.dateInput {
+    clear: both;
+}
+
+.dateInput .value {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.dateSelectorPanel {
+	width: 100%;
+}
+
+.dateSelectorPanel, .dateSelectorPanel .intervalDropDown, .dateSelectorPanel .dateInputPanel {
+	float: left;
+}
+
+.dateSelectorPanel .intervalDropDown, .dateSelectorPanel .dateInputPanel {
+	margin-bottom: 0px;	
+}
+
+.dateSelectorPanel .dateInputPanel {
+	padding-left: 40px;
+}
+
+.dateSelectorPanel .dateInputPanel label {
+	width:auto;
+	padding-right: 10px;
+}
+
+/* Message and print button styling */
+
+input.messageButton {
+	background: url(../images/mail.png) no-repeat right #FFFFFF;
+	position:relative;
+}
+
+.messageSection>div {
+	float: right;	
+}
+
+.messagesCounterSectionCss {
+	position: relative;
+	top: 3px;
+	
+}
+
+.messagesCounterSectionCss .messagesButton {
+    background: url("../images/mail.png") no-repeat scroll left center #FFFFFF;
+    padding: 6px 13px 9px 29px;
+    position: relative;
+	color: #555A62;
+	border: none;
+}
+
+.printSectionCss .printButton {
+    background: url("../images/printer.png") no-repeat scroll left center #FFFFFF;
+    border: medium none;
+    color: transparent;
+    margin-left: 10px;
+    padding: 6px 0px 9px;
+    float: right;
+}
+
+.printSectionCss span {
+    display: none;
+}
+
+.helpPanel p {
+    margin-left: 20px;
+}
+
+.staffUserPanel {
+	position: absolute;
+	border: none;
+	left: auto;
+	margin-left: 324px;
+	top: 43px;
+}
+
+.staffUserPanel .headerDetails .detail {
+    font-variant: small-caps;
+}
+
+div#changeUserButtonPanel.headerButtonPanel div.headerButton {
+	position: absolute;
+	margin-left: 817px;
+	top: 66px;
+}
+
+
+#headerLogoLink {
+  text-decoration: none;
+  height: 75px;
+  width: 194px;
+}
+
+#headerLogo {
+  position: absolute;
+  float: left;
+  display: inline;
+  top: 10px;
+  z-index: -1000;
+/*   left: 13px; */
+/*   height: 88px; */
+/*   width: 197px; */
+}
+
+ #headerPanel{
+  float: left;
+  height: 75px;
+  margin-bottom: 20px;
+  width: 244px;
+}
+
+#logoutButtonPanel { 
+  float: right;
+  top: 64px;
+  color: white;
+  padding-top: 66px;
+}
+
+#changeClientButtonPanel {
+  position: absolute;
+  left: 650px;
+  top: 10px;
+}
+
+/* div.loginSubmitButton input.buttonAction, div.formButtonPanel input.buttonAction { */
+/*     background: none repeat scroll 0 0 #008C4A; */
+/* } */
+
+div input.submitButton,
+div a.submitButton {
+    background: none repeat scroll 0 0 #008C4A;
+}
+
+#logoutButtonPanel a, #changeClientButtonPanel a, #changeUserButtonPanel a {
+  border: 1px solid #000000;  
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 1px;
+  background: #425F7B;
+}
+
+#resetButton {
+  visibility: hidden;
+}
+
+.headerDetails {
+  margin-top:2px;
+  padding-top: 10px;
+  padding-right: 10px;
+  float: left;
+}
+
+.headerDetails .timestamp{
+  position: absolute;
+  left: 780px;
+  top: 10px;
+}
+.headerDetails .label {
+  position: relative;
+  float: left;
+  width: 84px;
+  font-size: 90%;
+  font-weight: bold;
+  line-height: 110%;
+}
+
+.headerDetails .detail {
+  display: block;
+  font-size: 90%;
+  font-weight: normal;
+  line-height: 110%;
+  float: right;
+}
+
+
+body > span {
+  width: 100%;
+  display: block;
+  postition:absolute;
+}
+
+.staffUserPanel .headerDetails {
+  border: 1px solid white;
+  padding: 5px 10px;
+}
+
+.staffUserPanel .headerDetails .label, .staffUserPanel .headerDetails .detail {
+  display: inline;
+  height: auto;
+}
+
+.clientPanel, .adviserPanel, .loggedInUserPanel {
+  position: absolute;
+  display: block;
+  margin-left: 335px;
+  margin-top: 10px;
+}
+
+/* navigation styles */
+#navigationPanel{
+	border-bottom: 1px solid #555555;
+}
+
+#navigationPanel > ul {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  clear:both;
+  background: #9BB97D;
+  border-bottom: 3px solid #FFFFFF
+}
+
+#navigationPanel > ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+  menu-left: 14px;
+}
+
+#navigationPanel > ul > li {
+  float: left;
+  color: #FFFFFF;
+  background: #9BB97D;
+  padding: 12px 5px 12px 10px;
+  margin: 0;
+  border-right: 4px #FFFFFF solid;
+  font-size: 100%;
+  display: inline;
+  width: 144px;
+  height: 16px;
+}
+
+ul.menus {
+  display: none;
+}
+
+li.selected > ul.menus {
+  display: block;
+  position: relative;
+  border-top: none;
+  font-size: 90%;
+  padding: 2px 0 0;
+  margin-left: -10px;
+  margin-top: 0;
+  top: 17px;
+  background: white;
+  width: 159px;
+  z-index: 1000; /* show above title panel */
+}
+
+li.level1:nth-child(2) > ul.menus {
+	margin-left: -173px;
+}
+
+li.level1:nth-child(3) > ul.menus {
+    margin-left: -336px;
+}
+
+li.level1:nth-child(4) > ul.menus {
+	margin-left: -499px
+}
+
+li.level1:nth-child(5) > ul.menus {
+    margin-left: -662px;
+}
+
+#navigationPanel li.selected > a {
+    color: #008C4A;
+}
+
+li.selected ul.menus li {
+  display: block;
+  padding: 9px 12px 9px 10px;
+  border-bottom: 3px solid #FFFFFF ;
+  background: #9BB97D;
+  width: 137px;
+  height: 15px;
+}
+
+/* highlighted states*/
+li.selected {
+  background: #d2e0c7 !important;
+}
+
+#navigationPanel > ul > li > ul.menus > li > ul.menus {
+  visibility:hidden;
+}
+#navigationPanel > ul > li > ul.menus > li > ul.menus li {
+  width: 140px;
+}
+
+/* generic body content */
+.supportInfoPanel {
+  clear: left;
+  height: 32px;
+  position: relative;
+}
+
+.supportInfoPanel > .supportTitleAndProduct {
+  padding: 34px 0 0 195px;
+  font-size: 165%;
+  font-weight: bold;
+  background: url(../images/menuBackground.png) repeat-y;
+  float:left;
+  color:#555A62;
+  margin-top: 2px;
+}
+
+.supportInfoPanel > .supportTitle {
+  padding: 7px 0px 0px 175px; /* CANGED: was 7px 0px 0px 148px */
+  font-size: 165%;
+  font-weight: bold;
+  background: url(../images/menuBackground.png) repeat-y;
+  float:left;
+  color:#555A62;
+}
+
+.supportInfoPanel > .supportLinks {
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+
+.supportInfoPanel > .supportLinks div {
+  display:inline;
+}
+
+.accountSummaryPanel, .accountSummaryHeaderPanel, .accountSummaryChartPanel, .accountSummaryMarketingMessagePanel,
+.accountSelectorPanel, .portfolioHeaderPanel, .portfolioSelectorPanel, .portfolioRatesTotalPanel, .portfolioItemsPanel,
+.secureMessagesPanel {
+  padding-left: 175px;
+}
+
+
+
+
+.unreadMessagesInfoPanel {
+  display: inline;
+  float: left;
+  position: relative;
+  width: 50%;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+
+.feedbackContainer {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/* Note: feedbackPanel may either be a div or the ul element...
+  the following style should only apply to the div when it's added as a separate figaro web component to the page */
+div.feedbackPanel {
+  padding: 0px 0px 20px 180px;
+  margin-top: 0;
+  background: url(../images/menuBackground.png) repeat-y;
+  float:left;
+  width: 805px
+}
+
+.feedbackPanel ul {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.feedbackPanelERROR {
+  color: #da5f1a;
+}
+
+.feedbackPanelWARNING {
+  color: #da5f1a;
+}
+
+.sso-login-error .feedbackPanel {
+  padding: 0;
+  background: none;
+}
+
+.sso-login-error .feedbackPanel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bodyPanel {
+  clear: left;
+  min-height: 300px;
+  padding: 10px 0px 0px 175px;
+  margin-bottom: 0px;
+  background: url(../images/menuBackground.png) repeat-y;
+}
+
+.bodyPanel table {
+  border-collapse: collapse;
+}
+
+.bodyPanel.backButtonPanel {
+  min-height: 100px;
+}
+
+
+html body.busy * {
+  cursor: wait;
+}
+
+/* main content */
+.sectionHeading {
+  margin: 0px 0px 10px 0px;
+  font-size: 18px;
+  color: #555555;
+}
+
+.sectionSubHeading {
+  margin: 20px 0px 10px 0px;
+  font-size: 14px;
+  color: #555555;
+  font-weight: bold;
+}
+
+.infoSection {
+  color:#333333;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:12px;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  line-height:normal;
+}
+
+.userWarning {
+  color: red;
+}
+
+table .price {
+  text-align: right;
+}
+
+table .count {
+  text-align: right;
+}
+
+table .quantity {
+  text-align: right;
+}
+
+table .percent {
+  text-align: right;
+}
+
+table .icon {
+  text-align: center;
+}
+
+.stockSearchInputPanel {
+  z-index: 100;
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  width: 300px;
+}
+
+
+.stockSearchInputPanel div.overTxtDiv {
+  position: absolute;
+  font-weight: bold;
+  font-family: arial, helvetica, verdana;
+  font-size: 12px;
+  color: #666;
+  line-height: normal;
+  position: absolute;  
+  padding-left:50px;
+  top: 2px;  
+  left:0px;
+  margin-left:15px;
+  
+  
+}
+
+.stockSearchInputPanel .searchInput {
+  float: left;
+  font-size: 11px;
+  color: black;
+  height: 16px;
+  padding: 2px 2px 1px 2px;
+  margin-top: -1px;
+}
+
+
+.stockSearchInputPanel .buttonAction {
+  float: left;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 0 10px;
+  /*
+  padding: 1px 2px 0 2px;
+
+  top: -1px;
+  font-size: 11px;
+  font-weight: bold;
+  height: 16px;
+  */
+}
+
+/* form layout */
+.formInputAreaPanel {
+  display: -moz-inline-box;
+  display: inline-block;
+}
+
+.formButtonAreaPanel {
+  display: -moz-inline-box;
+  display: inline-block;
+  margin: 0 0 1px 10px;
+}
+
+.formButtonAreaPanel div {
+  padding: 0 3px 0 0;
+  float: left;
+}
+
+.formButtonAreaPanel div input {
+  margin: 0;
+}
+
+*html .formInputAreaPanel {
+  display:inline;
+}  /* for IE 6 */
+
+html .formInputAreaPanel {
+  display:inline;
+}  /* for IE 7 */
+
+* html .formButtonAreaPanel {
+  display:inline;
+}  /* for IE 6 */
+
+html .formButtonAreaPanel {
+  display:inline;
+}  /* for IE 7 */
+
+
+
+fieldset div {
+  vertical-align: bottom;
+  margin-bottom: 5px;
+}
+
+/* redirect indicator, when redirecting to new page (used by the Digital Look callback) */
+.redirectIndicatorBackground {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  -moz-opacity:0.7;
+  background-color: black;
+  filter: alpha(opacity=70);
+  background-image: none;
+}
+
+.redirectIndicator {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #1D407C;
+  padding: 3px 5px 3px 23px;
+  background-color: white;
+  background-image: url(../images/spinner.gif);
+  background-repeat: no-repeat;
+  background-position: 3px 3px;
+  z-index: 1001;
+}
+
+.legendPanel {
+  clear: both;
+  padding: 0px 0px 10px 148px;
+  background: url(../images/menuBackground.png) repeat-y;
+}
+
+.legendPanel .usingClosePrice-key img {
+	top: 4px;
+}
+
+.loginFields {
+    border: 1px solid lightgray;
+    padding: 30px 50px;
+}
+
+.legendContainer {
+  background-color: #f2f2f2;
+  padding: 5px 0 6px 5px;
+  margin-left: 45px;
+}
+
+.legendPanel .label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333333;
+  margin-right: 6px;
+}
+
+.legendPanel ul {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.legendPanel li {
+  font-size: 12px;
+  font-weight: normal;
+  display: inline;
+  color: black;
+  margin: 0 14px 0 0;
+}
+
+.legendPanel li img {
+  position: relative;
+  top: 1px;
+  margin: 0 2px 0 0;
+}
+
+div.unused, .legendPanel li.unused {
+  display: none;
+}
+
+
+
+.legalDisclaimerPanel {
+  padding-top: 10px;
+  padding-bottom: 10px;  
+  padding-left: 10px;
+  padding-right: 10px;    
+}
+
+/* prototype */
+.confirmationPanel {
+	padding-bottom: 5px;
+}
+
+.confirmationMessage label {
+	padding: 5px;
+}
+
+.confirmationMessage label {
+	width: auto;
+}
+
+/* Date Selector Panel styling */
+
+.dateBasedForm span.overTxtSpan {
+    color: #666666;
+    font-weight: bold;
+    left: 5px;
+    top: 0;
+    position: absolute;
+}
+
+.dateInput {
+    clear: both;
+}
+
+.dateInput .value {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.dateSelectorPanel {
+	width: 100%;
+}
+
+.dateSelectorPanel, .dateSelectorPanel .intervalDropDown, .dateSelectorPanel .dateInputPanel {
+	float: left;
+}
+
+.dateSelectorPanel .intervalDropDown, .dateSelectorPanel .dateInputPanel {
+	margin-bottom: 0px;	
+}
+
+.dateSelectorPanel .dateInputPanel {
+	padding-left: 40px;
+}
+
+.dateSelectorPanel .dateInputPanel label {
+	width:auto;
+	padding-right: 10px;
+}
+
+/* Message and print button styling */
+
+input.messageButton {
+	background: url(../images/mail.png) no-repeat right #FFFFFF;
+	position:relative;
+}
+
+.messageSection>div {
+	float: right;	
+}
+
+.messagesCounterSectionCss {
+	position: relative;
+	top: 3px;
+	
+}
+
+.messagesCounterSectionCss .messagesButton {
+    background: url("../images/mail.png") no-repeat scroll left center #FFFFFF;
+    padding: 6px 13px 9px 29px;
+    position: relative;
+	color: #555A62;
+	border: none;
+}
+
+.printSectionCss .printButton {
+    background: url("../images/printer.png") no-repeat scroll left center #FFFFFF;
+    border: medium none;
+    color: transparent;
+    margin-left: 10px;
+    padding: 6px 0px 9px;
+    float: right;
+}
+
+.printSectionCss span {
+    display: none;
+}
+
+.helpPanel p {
+    margin-left: 20px;
+}
+
+.staffUserPanel {
+	position: absolute;
+	border: none;
+	left: auto;
+	margin-left: 324px;
+	top: 43px;
+}
+
+.staffUserPanel .headerDetails .detail {
+    font-variant: small-caps;
+}
+
+div#changeUserButtonPanel.headerButtonPanel div.headerButton {
+	position: absolute;
+	margin-left: 817px;
+	top: 66px;
+}
+
+
+#headerLogoLink {
+  text-decoration: none;
+  height: 75px;
+  width: 194px;
+}
+
+#headerLogo {
+  position: absolute;
+  float: left;
+  display: inline;
+  top: 10px;
+  z-index: -1000;
+/*   left: 13px; */
+/*   height: 88px; */
+/*   width: 197px; */
+}
+
+ #headerPanel{
+  float: left;
+  height: 75px;
+  margin-bottom: 20px;
+  width: 244px;
+}
+
+#logoutButtonPanel { 
+  float: right;
+  top: 64px;
+  color: white;
+  padding-top: 66px;
+}
+
+#changeClientButtonPanel {
+  position: absolute;
+  left: 650px;
+  top: 10px;
+}
+
+/* div.loginSubmitButton input.buttonAction, div.formButtonPanel input.buttonAction { */
+/*     background: none repeat scroll 0 0 #008C4A; */
+/* } */
+
+div input.submitButton,
+div a.submitButton {
+    background: none repeat scroll 0 0 #008C4A;
+}
+
+#logoutButtonPanel a, #changeClientButtonPanel a, #changeUserButtonPanel a {
+  border: 1px solid #000000;  
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 1px;
+  background: #425F7B;
+}
+
+#resetButton {
+  visibility: hidden;
+}
+
+.headerDetails {
+  margin-top:2px;
+  padding-top: 10px;
+  padding-right: 10px;
+  float: left;
+}
+
+.headerDetails .timestamp{
+  position: absolute;
+  left: 780px;
+  top: 10px;
+}
+.headerDetails .label {
+  position: relative;
+  float: left;
+  width: 84px;
+  font-size: 90%;
+  font-weight: bold;
+  line-height: 110%;
+}
+
+.headerDetails .detail {
+  display: block;
+  font-size: 90%;
+  font-weight: normal;
+  line-height: 110%;
+  float: right;
+}
+
+
+body > span {
+  width: 100%;
+  display: block;
+  postition:absolute;
+}
+
+.staffUserPanel .headerDetails {
+  border: 1px solid white;
+  padding: 5px 10px;
+}
+
+.staffUserPanel .headerDetails .label, .staffUserPanel .headerDetails .detail {
+  display: inline;
+  height: auto;
+}
+
+.clientPanel, .adviserPanel, .loggedInUserPanel {
+  position: absolute;
+  display: block;
+  margin-left: 335px;
+  margin-top: 10px;
+}
+
+/* navigation styles */
+#navigationPanel{
+	border-bottom: 1px solid #555555;
+}
+
+#navigationPanel > ul {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  clear:both;
+  background: #9BB97D;
+  border-bottom: 3px solid #FFFFFF
+}
+
+#navigationPanel > ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+  menu-left: 14px;
+}
+
+#navigationPanel > ul > li {
+  float: left;
+  color: #FFFFFF;
+  background: #9BB97D;
+  padding: 12px 5px 12px 10px;
+  margin: 0;
+  border-right: 4px #FFFFFF solid;
+  font-size: 100%;
+  display: inline;
+  width: 144px;
+  height: 16px;
+}
+
+ul.menus {
+  display: none;
+}
+
+li.selected > ul.menus {
+  display: block;
+  position: relative;
+  border-top: none;
+  font-size: 90%;
+  padding: 2px 0 0;
+  margin-left: -10px;
+  margin-top: 0;
+  top: 17px;
+  background: white;
+  width: 159px;
+  z-index: 1000; /* show above title panel */
+}
+
+li.level1:nth-child(2) > ul.menus {
+	margin-left: -173px;
+}
+
+li.level1:nth-child(3) > ul.menus {
+    margin-left: -336px;
+}
+
+li.level1:nth-child(4) > ul.menus {
+	margin-left: -499px
+}
+
+li.level1:nth-child(5) > ul.menus {
+    margin-left: -662px;
+}
+
+#navigationPanel li.selected > a {
+    color: #008C4A;
+}
+
+li.selected ul.menus li {
+  display: block;
+  padding: 9px 12px 9px 10px;
+  border-bottom: 3px solid #FFFFFF ;
+  background: #9BB97D;
+  width: 137px;
+  height: 15px;
+}
+
+/* highlighted states*/
+li.selected {
+  background: #d2e0c7 !important;
+}
+
+#navigationPanel > ul > li > ul.menus > li > ul.menus {
+  visibility:hidden;
+}
+#navigationPanel > ul > li > ul.menus > li > ul.menus li {
+  width: 140px;
+}
+
+/* generic body content */
+.supportInfoPanel {
+  clear: left;
+  height: 32px;
+  position: relative;
+}
+
+.supportInfoPanel > .supportTitleAndProduct {
+  padding: 34px 0 0 195px;
+  font-size: 165%;
+  font-weight: bold;
+  background: url(../images/menuBackground.png) repeat-y;
+  float:left;
+  color:#555A62;
+  margin-top: 2px;
+}
+
+.supportInfoPanel > .supportTitle {
+  padding: 7px 0px 0px 175px; /* CANGED: was 7px 0px 0px 148px */
+  font-size: 165%;
+  font-weight: bold;
+  background: url(../images/menuBackground.png) repeat-y;
+  float:left;
+  color:#555A62;
+}
+
+.supportInfoPanel > .supportLinks {
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+
+.supportInfoPanel > .supportLinks div {
+  display:inline;
+}
+
+.accountSummaryPanel, .accountSummaryHeaderPanel, .accountSummaryChartPanel, .accountSummaryMarketingMessagePanel,
+.accountSelectorPanel, .portfolioHeaderPanel, .portfolioSelectorPanel, .portfolioRatesTotalPanel, .portfolioItemsPanel,
+.secureMessagesPanel {
+  padding-left: 175px;
+}
+
+
+
+
+.unreadMessagesInfoPanel {
+  display: inline;
+  float: left;
+  position: relative;
+  width: 50%;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+
+.feedbackContainer {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/* Note: feedbackPanel may either be a div or the ul element...
+  the following style should only apply to the div when it's added as a separate figaro web component to the page */
+div.feedbackPanel {
+  padding: 0px 0px 20px 180px;
+  margin-top: 0;
+  background: url(../images/menuBackground.png) repeat-y;
+  float:left;
+  width: 805px
+}
+
+.feedbackPanel ul {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.feedbackPanelERROR {
+  color: #da5f1a;
+}
+
+.feedbackPanelWARNING {
+  color: #da5f1a;
+}
+
+.sso-login-error .feedbackPanel {
+  padding: 0;
+  background: none;
+}
+
+.sso-login-error .feedbackPanel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bodyPanel {
+  clear: left;
+  min-height: 300px;
+  padding: 10px 0px 0px 175px;
+  margin-bottom: 0px;
+  background: url(../images/menuBackground.png) repeat-y;
+}
+
+.bodyPanel table {
+  border-collapse: collapse;
+}
+
+.bodyPanel.backButtonPanel {
+  min-height: 100px;
+}
+
+
+html body.busy * {
+  cursor: wait;
+}
+
+/* main content */
+.sectionHeading {
+  margin: 0px 0px 10px 0px;
+  font-size: 18px;
+  color: #555555;
+}
+
+.sectionSubHeading {
+  margin: 20px 0px 10px 0px;
+  font-size: 14px;
+  color: #555555;
+  font-weight: bold;
+}
+
+.infoSection {
+  color:#333333;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:12px;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  line-height:normal;
+}
+
+.userWarning {
+  color: red;
+}
+
+table .price {
+  text-align: right;
+}
+
+table .count {
+  text-align: right;
+}
+
+table .quantity {
+  text-align: right;
+}
+
+table .percent {
+  text-align: right;
+}
+
+table .icon {
+  text-align: center;
+}
+
+.stockSearchInputPanel {
+  z-index: 100;
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  width: 300px;
+}
+
+
+.stockSearchInputPanel div.overTxtDiv {
+  position: absolute;
+  font-weight: bold;
+  font-family: arial, helvetica, verdana;
+  font-size: 12px;
+  color: #666;
+  line-height: normal;
+  position: absolute;  
+  padding-left:50px;
+  top: 2px;  
+  left:0px;
+  margin-left:15px;
+  
+  
+}
+
+.stockSearchInputPanel .searchInput {
+  float: left;
+  font-size: 11px;
+  color: black;
+  height: 16px;
+  padding: 2px 2px 1px 2px;
+  margin-top: -1px;
+}
+
+
+.stockSearchInputPanel .buttonAction {
+  float: left;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 0 10px;
+  /*
+  padding: 1px 2px 0 2px;
+
+  top: -1px;
+  font-size: 11px;
+  font-weight: bold;
+  height: 16px;
+  */
+}
+
+/* form layout */
+.formInputAreaPanel {
+  display: -moz-inline-box;
+  display: inline-block;
+}
+
+.formButtonAreaPanel {
+  display: -moz-inline-box;
+  display: inline-block;
+  margin: 0 0 1px 10px;
+}
+
+.formButtonAreaPanel div {
+  padding: 0 3px 0 0;
+  float: left;
+}
+
+.formButtonAreaPanel div input {
+  margin: 0;
+}
+
+*html .formInputAreaPanel {
+  display:inline;
+}  /* for IE 6 */
+
+html .formInputAreaPanel {
+  display:inline;
+}  /* for IE 7 */
+
+* html .formButtonAreaPanel {
+  display:inline;
+}  /* for IE 6 */
+
+html .formButtonAreaPanel {
+  display:inline;
+}  /* for IE 7 */
+
+
+
+fieldset div {
+  vertical-align: bottom;
+  margin-bottom: 5px;
+}
+
+/* redirect indicator, when redirecting to new page (used by the Digital Look callback) */
+.redirectIndicatorBackground {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  -moz-opacity:0.7;
+  background-color: black;
+  filter: alpha(opacity=70);
+  background-image: none;
+}
+
+.redirectIndicator {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #1D407C;
+  padding: 3px 5px 3px 23px;
+  background-color: white;
+  background-image: url(../images/spinner.gif);
+  background-repeat: no-repeat;
+  background-position: 3px 3px;
+  z-index: 1001;
+}
+
+.legendPanel {
+  clear: both;
+  padding: 0px 0px 10px 148px;
+  background: url(../images/menuBackground.png) repeat-y;
+}
+
+.legendPanel .usingClosePrice-key img {
+	top: 4px;
+}
+
+.loginFields {
+    border: 1px solid lightgray;
+    padding: 30px 50px;
+}
+
+.legendContainer {
+  background-color: #f2f2f2;
+  padding: 5px 0 6px 5px;
+  margin-left: 45px;
+}
+
+.legendPanel .label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333333;
+  margin-right: 6px;
+}
+
+.legendPanel ul {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.legendPanel li {
+  font-size: 12px;
+  font-weight: normal;
+  display: inline;
+  color: black;
+  margin: 0 14px 0 0;
+}
+
+.legendPanel li img {
+  position: relative;
+  top: 1px;
+  margin: 0 2px 0 0;
+}
+
+div.unused, .legendPanel li.unused {
+  display: none;
+}
+
+
+
+.legalDisclaimerPanel {
+  padding-top: 10px;
+  padding-bottom: 10px;  
+  padding-left: 10px;
+  padding-right: 10px;    
+}
+
+/* prototype */
+.confirmationPanel {
+	padding-bottom: 5px;
+}
+
+.confirmationMessage label {
+	padding: 5px;
+}
+
+.confirmationMessage label {
+	width: auto;
+}
+
+/* Date Selector Panel styling */
+
+.dateBasedForm span.overTxtSpan {
+    color: #666666;
+    font-weight: bold;
+    left: 5px;
+    top: 0;
+    position: absolute;
+}
+
+.dateInput {
+    clear: both;
+}
+
+.dateInput .value {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.dateSelectorPanel {
+	width: 100%;
+}
+
+.dateSelectorPanel, .dateSelectorPanel .intervalDropDown, .dateSelectorPanel .dateInputPanel {
+	float: left;
+}
+
+.dateSelectorPanel .intervalDropDown, .dateSelectorPanel .dateInputPanel {
+	margin-bottom: 0px;	
+}
+
+.dateSelectorPanel .dateInputPanel {
+	padding-left: 40px;
+}
+
+.dateSelectorPanel .dateInputPanel label {
+	width:auto;
+	padding-right: 10px;
+}
+
+/* Message and print button styling */
+
+input.messageButton {
+	background: url(../images/mail.png) no-repeat right #FFFFFF;
+	position:relative;
+}
+
+.messageSection>div {
+	float: right;	
+}
+
+.messagesCounterSectionCss {
+	position: relative;
+	top: 3px;
+	
+}
+
+.messagesCounterSectionCss .messagesButton {
+    background: url("../images/mail.png") no-repeat scroll left center #FFFFFF;
+    padding: 6px 13px 9px 29px;
+    position: relative;
+	color: #555A62;
+	border: none;
+}
+
+.printSectionCss .printButton {
+    background: url("../images/printer.png") no-repeat scroll left center #FFFFFF;
+    border: medium none;
+    color: transparent;
+    margin-left: 10px;
+    padding: 6px 0px 9px;
+    float: right;
+}
+
+.printSectionCss span {
+    display: none;
+}
+
+.helpPanel p {
+    margin-left: 20px;
+}
+
+.staffUserPanel {
+	position: absolute;
+	border: none;
+	left: auto;
+	margin-left: 324px;
+	top: 43px;
+}
+
+.staffUserPanel .headerDetails .detail {
+    font-variant: small-caps;
+}
+
+div#changeUserButtonPanel.headerButtonPanel div.headerButton {
+	position: absolute;
+	margin-left: 817px;
+	top: 66px;
+}

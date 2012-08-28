@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/" xml:lang="en" lang="en">  
+  <head>
+    <title>MODX Revolution - Account Summary
+    </title>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/watchlist.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/modal.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/account.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/context.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/stockSearch.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.css" media="screen,projection,tv" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/accountSummary.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/base.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/SqueezeBox/SqueezeBox.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/scripts/plugins/Revealer/headers.css" />
+
+  </head>
+  <body>
+    <div id="container" class="account-summary enquiries-pagegroup">
+      
+      
+      <div id="id13">
+	<div id="headerPanel">
+	  <a id="headerLogoLink" href="#" title="home page">
+	    <img src="assets/images/longLogo.png" id="headerLogo" alt="logo" title="logo"/>
+	  </a>
+	</div>
+      </div>
+      
+      <div id="id14">
+	<div class="clientPanel">
+	  <div class="headerDetails">
+	    <span class="label">Client:
+	    </span>
+	    <span class="detail">00000010004 | Mr
+	      H Daniel
+	    </span>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="id15">
+	<div id="logoutButtonPanel" class="headerButtonPanel">
+	  <div class="headerButton">
+	    <a href="logout" class="buttonStop
+				    buttons logoutButton" alt="Admin
+							       Logout" title="Logout">Logout
+	    </a>
+	  </div>
+	</div>
+      </div>
+      
+      <div id="navigationPanel">
+
+<!--menu ffs -->
+<ul><!-- rowTpl -->
+<li class="first level1 selected">
+<a href="index.php?id=2" title="My Portfolio" >My Portfolio</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2 selected">
+<a href="index.php?id=2" title="Account Summary" >Account Summary</a>
+
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level2">
+<a href="index.php?id=108" title="Portfolio" >Portfolio</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+<!-- rowTpl -->
+<li class="last level1">
+<a href="index.php?id=110" title="Dealing" >Dealing</a>
+<ul id="topnav" class=" menus"><!-- rowTpl -->
+<li class="first level2">
+<a href="index.php?id=110" title="Buy & Sell" >Buy & Sell</a>
+
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+</li>
+
+<!-- rowTpl -->
+
+</ul>
+
+      </div>
+      
+      <div id="id17">
+	<div id="supportInfoPanel" class="supportInfoPanel">
+	  <!-- Page title-->
+	  <div class="supportTitleAndProduct">
+	    <span id="supportTitle"
+		  class="supportTitle">Account Summary
+	    </span>
+	    <!-- DAP - Job 171613. Included product name to page title -->
+	    
+	  </div>
+	  <!-- help/print/messages links-->
+	  <div class="supportLinks">
+	    
+	    <span>
+	      <span class="printSectionCss">
+		<span>>
+		</span>	
+		<a href="javascript:window.print();" class="printButton" alt="Print" title="Print">
+		  Print
+		</a>
+	      </span>
+	    </span>
+	    <span id="id10">
+	      <div>
+		<img alt="Loading..."
+		     src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif"/>
+	      </div>
+	    </span>	
+	  </div>
+	</div>
+      </div>
+
+<!-- Other content-->
+      			<div id="id18">
+		<div class="accountSummaryPanel accountSummaryTablePanel">
+			<table cellpadding="0" cellspacing="0" class="dataTable" summary="Account Summary">
+<thead>
+  
+	<tr class="headers">
+		
+			<th class="wicket_orderNone"><a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:topToolbars:2:toolbar:headers:1:header:orderByLink::ILinkListener::"><span>Account Number</span></a></th>
+		
+			<th class="wicket_orderUp"><a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:topToolbars:2:toolbar:headers:2:header:orderByLink::ILinkListener::"><span>Account Name</span></a></th>
+		
+			<th class="wicket_orderNone"><a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:topToolbars:2:toolbar:headers:3:header:orderByLink::ILinkListener::"><span>Product</span></a></th>
+		
+			<th class="rightAlign"><span>Cash</span></th>
+		
+			<th class="rightAlign"><span>Stock</span></th>
+		
+			<th class="rightAlign"><span>Total</span></th>
+		
+			<th class="rightAlign"><span>Active Orders</span></th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+	
+</tfoot>
+<tbody>
+	<tr class="even">
+		<td>
+			<span>
+	<a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:body:rows:1:cells:1:cell:link::ILinkListener::">
+		0000009
+	</a>
+</span>
+		</td><td>
+			<span>Mr H Daniel</span>
+		</td><td>
+			<span>SIPP Account</span>
+		</td><td class="rightAlign">
+			<span>£ 6,203.75</span>
+		</td><td class="rightAlign">
+			<span class="zeroValuedHolding_false">£ 122.23</span>
+		</td><td class="rightAlign">
+			<span class="zeroValuedHolding_false">£ 6,325.98</span>
+		</td><td class="rightAlign">
+			<span>
+	<a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:body:rows:1:cells:7:cell:link::ILinkListener::">
+		2
+	</a>
+</span>
+		</td>
+	</tr><tr class="odd">
+		<td>
+			<span>
+	<a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:body:rows:2:cells:1:cell:link::ILinkListener::">
+		0000060
+	</a>
+</span>
+		</td><td>
+			<span>Mr H Daniel</span>
+		</td><td>
+			<span>ISA Account</span>
+		</td><td class="rightAlign">
+			<span>£ 0.00</span>
+		</td><td class="rightAlign">
+			<span class="zeroValuedHolding_false">£ 0.00</span>
+		</td><td class="rightAlign">
+			<span class="zeroValuedHolding_false">£ 0.00</span>
+		</td><td class="rightAlign">
+			<span>
+	<a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:body:rows:2:cells:7:cell:link::ILinkListener::">
+		0
+	</a>
+</span>
+		</td>
+	</tr><tr class="even">
+		<td>
+			<span>
+	<a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:body:rows:3:cells:1:cell:link::ILinkListener::">
+		0000061
+	</a>
+</span>
+		</td><td>
+			<span>Mr H Daniel</span>
+		</td><td>
+			<span>Nominee Client</span>
+		</td><td class="rightAlign">
+			<span>£ 0.00</span>
+		</td><td class="rightAlign">
+			<span class="zeroValuedHolding_false">£ 0.00</span>
+		</td><td class="rightAlign">
+			<span class="zeroValuedHolding_false">£ 0.00</span>
+		</td><td class="rightAlign">
+			<span>
+	<a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:body:rows:3:cells:7:cell:link::ILinkListener::">
+		0
+	</a>
+</span>
+		</td>
+	</tr><tr class="odd">
+		<td>
+			<span>
+	<a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:body:rows:4:cells:1:cell:link::ILinkListener::">
+		0000062
+	</a>
+</span>
+		</td><td>
+			<span>Mr H Daniel</span>
+		</td><td>
+			<span>Nominee Client</span>
+		</td><td class="rightAlign">
+			<span>£ 0.00</span>
+		</td><td class="rightAlign">
+			<span class="zeroValuedHolding_false">£ 0.00</span>
+		</td><td class="rightAlign">
+			<span class="zeroValuedHolding_false">£ 0.00</span>
+		</td><td class="rightAlign">
+			<span>
+	<a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:body:rows:4:cells:7:cell:link::ILinkListener::">
+		0
+	</a>
+</span>
+		</td>
+	</tr><tr class="even">
+		<td>
+			<span>
+	<a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:body:rows:5:cells:1:cell:link::ILinkListener::">
+		0000063
+	</a>
+</span>
+		</td><td>
+			<span>Mr H Daniel</span>
+		</td><td>
+			<span>Nominee Client</span>
+		</td><td class="rightAlign">
+			<span>£ 0.00</span>
+		</td><td class="rightAlign">
+			<span class="zeroValuedHolding_false">£ 0.00</span>
+		</td><td class="rightAlign">
+			<span class="zeroValuedHolding_false">£ 0.00</span>
+		</td><td class="rightAlign">
+			<span>
+	<a href="?wicket:interface=:127:container:components:panels:9:panel:accountSummaryTable:body:rows:5:cells:7:cell:link::ILinkListener::">
+		0
+	</a>
+</span>
+		</td>
+	</tr>
+</tbody>
+</table>
+		</div>
+	</div>
+		
+			<div id="id19">
+		<div class="bodyPanel accountSummaryInformationPanel">
+			<p>
+				Note: Active orders are orders that have been recently dealt but not settled in the market, orders that have not been dealt, or orders that have been cancelled today.
+			</p>
+			<div>
+		<p>UK Equity prices 15 minutes delayed. Other prices latest available.</p>
+
+	</div>
+
+		</div>
+
+	</div>
+		
+			<div id="id1a">
+		<div class="bodyPanel watchlistPanel">
+			<div class="watchlistWidgetContainer">
+				<span class="watchlistTitle">Watchlist</span>
+				
+				<div class="emptyListMessage">There are no items in your watchlist.</div>
+				<div class="watchlistLink"><a href="?wicket:interface=:127:container:components:panels:11:panel:editableListLink::ILinkListener::">Edit My Watchlist</a></div>
+			</div>
+		</div>
+	</div>
+		
+			<div id="id1b">
+		<div class="legendPanel" id="id11">
+			<div class="legendContainer">
+				<span class="label">Key:</span>
+				<ul>
+					
+						<li class="zero-valued-key">
+							<img src="assets/images/exclamation_mark.gif" class="imagePanel" title="One or more prices not available" alt="One or more prices not available"/>
+							<span>One or more prices not available</span>
+						</li>
+					
+						<li class="value-unavailable-key">
+							<img src="assets/images/icon_unavailable.gif" class="imagePanel" title="The book cost is not available in this currency" alt="The book cost is not available in this currency"/>
+							<span>Book cost not available in this currency</span>
+						</li>
+					
+						<li class="usingClosePrice-key">
+							<img src="assets/images/closePrice.png" class="imagePanel" title="No live price available; using last close price" alt="[Warning: Property for 'usingClosePrice.alt' not found]"/>
+							<span>No live price available; using last close price</span>
+						</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+      <div id="id1c">
+	<div class="feedbackPanel" id="id1d">
+	  
+	</div>
+      </div>
+      
+      <div id="id1e">
+	<div id="footerPanel" class="footerPanel">
+	  <div id="footerInfo" class="footerInfo">
+	    <p class="warning">
+	      A Division of Brewin Dolphin Ltd. Member of the London Stock Exchange, Authorised and Regulated by the Financial Services Authority No 124444. 
+	    </p>
+	    <p>
+	      Registered in England and Wales number 2135876 at 12 Smithfield Street, London EC1A 9BD VAT No. GB-690 8994 69.
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+      
+    </div>
+    <div>
+
+      <div id="id1f" style="display:none">
+	
+      </div>
+
+    </div>
+  </body>
+</html>

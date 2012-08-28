@@ -1,0 +1,522 @@
+/* portfolio */
+ .portfolioHeaderPanel, .portfolioSelectorPanel, .portfolioRatesTotalPanel, .portfolioItemsPanel {
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  background: url(../images/menuBackground.png) repeat-y;
+}
+
+.portfolioRatesTotalPanel {
+	padding-bottom: 31px;
+}
+
+.portfolioItemsPanel {
+    background: url("../images/menuBackground.png") repeat-y scroll 0 0 transparent;
+    width: 100%;
+    min-height:300px; 
+    max-width: 805px;
+}
+
+.portfolioRatesTotalPanel {
+  min-height: 240px;
+}
+
+.portfolioSelectorPanel {
+  clear:both;
+}
+
+#combinedButton, #refreshButton {
+  float: left;
+}
+
+#downloadButton, #pdfButton {
+  float: right;
+}
+
+#portfolioTotalsTable {
+  width: 350px;
+  float: right;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+#portfolioTotalsTable td.dataRegularHeader {
+  font-weight: normal;
+}
+
+#portfolioTotalsTable td.dataRegularHeader {
+  font-weight: normal;
+}
+
+#portfolioTotalsTable td.dataRegularHeaderR.total {
+  font-weight: normal;
+}
+
+.portfolioTable.dataTable {
+  margin-top: 15px;
+}
+
+.exRatesTable.dataTable {
+  width: 165px;
+  margin: 0 0 0 10px;
+  float: right;
+  position: relative;
+}
+
+.exRatesTable td.exCurrency {
+  width: 55px;
+  font-weight: bold;
+}
+
+.exRatesTable td.exRate {
+  width: 110px;
+}
+
+.portfolioTotalPanel tbody tr {
+  background-color: #f2f2f2;
+}
+
+.portfolioTotalPanel tbody tr.alt {
+  background-color: #e5e5e5;
+}
+
+.portfolioTotalPanel tbody td {
+  color:#333333;
+  font-size:11px;
+  padding:2px 3px 3px;
+}
+
+.portfolioTotalPanel .dataRegularHeader {
+  font-weight: bold;
+}
+
+.portfolioTotalPanel .sectionSubHeading {
+  margin: 10px 0px 10px 0px;
+}
+
+.portfolioTotalPanel td .positive {
+  color: black;
+}
+
+.dataRegularHeaderR {
+  text-align: right;
+}
+
+table.dataTable tfoot td {
+  color: black;
+  font-size: 95%;
+  padding: 0.6em;
+  border:1px solid #DDDDDD;
+}
+
+table td.instrumentName {
+  width: 290px;
+}
+
+table.dataTable td.icon {
+  width: 13px;
+  padding: 2px 2px 3px;
+}
+
+table td.quantity {
+  width: 60px;
+}
+
+table td.mid {
+  width: 70px;
+}
+
+table td.value {
+  width: 70px;
+}
+
+table td.bookcost {
+  width: 70px;
+}
+
+table td.change {
+  width: 60px;
+}
+
+table td.percentChange {
+  width: 80px;
+}
+
+table.portfolioTable {
+
+}
+
+table.portfolioTable tfoot td.footerTotal {
+  background-color: #E5E5E5;
+  font-weight: bold;
+}
+
+
+table.portfolioTable tfoot td.footerTotalBlank {
+  background-color: #E5E5E5;
+}
+
+#currencyProviderContainer {
+    position:relative;
+    top:-50px;
+    left:550px;
+}
+
+#messagePanelMessage {
+position:relative;
+	left:47px;
+}
+
+#messagePanelContainer {
+	  padding: 0px 0px 10px 148px;
+  background: url(../images/menuBackground.png) repeat-y;
+
+}
+/* portfolio */
+ .portfolioHeaderPanel, .portfolioSelectorPanel, .portfolioRatesTotalPanel, .portfolioItemsPanel {
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  background: url(../images/menuBackground.png) repeat-y;
+}
+
+.portfolioRatesTotalPanel {
+	padding-bottom: 31px;
+}
+
+.portfolioItemsPanel {
+    background: url("../images/menuBackground.png") repeat-y scroll 0 0 transparent;
+    width: 100%;
+    min-height:300px; 
+    max-width: 805px;
+}
+
+.portfolioRatesTotalPanel {
+  min-height: 240px;
+}
+
+.portfolioSelectorPanel {
+  clear:both;
+}
+
+#combinedButton, #refreshButton {
+  float: left;
+}
+
+#downloadButton, #pdfButton {
+  float: right;
+}
+
+#portfolioTotalsTable {
+  width: 350px;
+  float: right;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+#portfolioTotalsTable td.dataRegularHeader {
+  font-weight: normal;
+}
+
+#portfolioTotalsTable td.dataRegularHeader {
+  font-weight: normal;
+}
+
+#portfolioTotalsTable td.dataRegularHeaderR.total {
+  font-weight: normal;
+}
+
+.portfolioTable.dataTable {
+  margin-top: 15px;
+}
+
+.exRatesTable.dataTable {
+  width: 165px;
+  margin: 0 0 0 10px;
+  float: right;
+  position: relative;
+}
+
+.exRatesTable td.exCurrency {
+  width: 55px;
+  font-weight: bold;
+}
+
+.exRatesTable td.exRate {
+  width: 110px;
+}
+
+.portfolioTotalPanel tbody tr {
+  background-color: #f2f2f2;
+}
+
+.portfolioTotalPanel tbody tr.alt {
+  background-color: #e5e5e5;
+}
+
+.portfolioTotalPanel tbody td {
+  color:#333333;
+  font-size:11px;
+  padding:2px 3px 3px;
+}
+
+.portfolioTotalPanel .dataRegularHeader {
+  font-weight: bold;
+}
+
+.portfolioTotalPanel .sectionSubHeading {
+  margin: 10px 0px 10px 0px;
+}
+
+.portfolioTotalPanel td .positive {
+  color: black;
+}
+
+.dataRegularHeaderR {
+  text-align: right;
+}
+
+table.dataTable tfoot td {
+  color: black;
+  font-size: 95%;
+  padding: 0.6em;
+  border:1px solid #DDDDDD;
+}
+
+table td.instrumentName {
+  width: 290px;
+}
+
+table.dataTable td.icon {
+  width: 13px;
+  padding: 2px 2px 3px;
+}
+
+table td.quantity {
+  width: 60px;
+}
+
+table td.mid {
+  width: 70px;
+}
+
+table td.value {
+  width: 70px;
+}
+
+table td.bookcost {
+  width: 70px;
+}
+
+table td.change {
+  width: 60px;
+}
+
+table td.percentChange {
+  width: 80px;
+}
+
+table.portfolioTable {
+
+}
+
+table.portfolioTable tfoot td.footerTotal {
+  background-color: #E5E5E5;
+  font-weight: bold;
+}
+
+
+table.portfolioTable tfoot td.footerTotalBlank {
+  background-color: #E5E5E5;
+}
+
+#currencyProviderContainer {
+    position:relative;
+    top:-50px;
+    left:550px;
+}
+
+#messagePanelMessage {
+position:relative;
+	left:47px;
+}
+
+#messagePanelContainer {
+	  padding: 0px 0px 10px 148px;
+  background: url(../images/menuBackground.png) repeat-y;
+
+}
+/* portfolio */
+ .portfolioHeaderPanel, .portfolioSelectorPanel, .portfolioRatesTotalPanel, .portfolioItemsPanel {
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  background: url(../images/menuBackground.png) repeat-y;
+}
+
+.portfolioRatesTotalPanel {
+	padding-bottom: 31px;
+}
+
+.portfolioItemsPanel {
+    background: url("../images/menuBackground.png") repeat-y scroll 0 0 transparent;
+    width: 100%;
+    min-height:300px; 
+    max-width: 805px;
+}
+
+.portfolioRatesTotalPanel {
+  min-height: 240px;
+}
+
+.portfolioSelectorPanel {
+  clear:both;
+}
+
+#combinedButton, #refreshButton {
+  float: left;
+}
+
+#downloadButton, #pdfButton {
+  float: right;
+}
+
+#portfolioTotalsTable {
+  width: 350px;
+  float: right;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+#portfolioTotalsTable td.dataRegularHeader {
+  font-weight: normal;
+}
+
+#portfolioTotalsTable td.dataRegularHeader {
+  font-weight: normal;
+}
+
+#portfolioTotalsTable td.dataRegularHeaderR.total {
+  font-weight: normal;
+}
+
+.portfolioTable.dataTable {
+  margin-top: 15px;
+}
+
+.exRatesTable.dataTable {
+  width: 165px;
+  margin: 0 0 0 10px;
+  float: right;
+  position: relative;
+}
+
+.exRatesTable td.exCurrency {
+  width: 55px;
+  font-weight: bold;
+}
+
+.exRatesTable td.exRate {
+  width: 110px;
+}
+
+.portfolioTotalPanel tbody tr {
+  background-color: #f2f2f2;
+}
+
+.portfolioTotalPanel tbody tr.alt {
+  background-color: #e5e5e5;
+}
+
+.portfolioTotalPanel tbody td {
+  color:#333333;
+  font-size:11px;
+  padding:2px 3px 3px;
+}
+
+.portfolioTotalPanel .dataRegularHeader {
+  font-weight: bold;
+}
+
+.portfolioTotalPanel .sectionSubHeading {
+  margin: 10px 0px 10px 0px;
+}
+
+.portfolioTotalPanel td .positive {
+  color: black;
+}
+
+.dataRegularHeaderR {
+  text-align: right;
+}
+
+table.dataTable tfoot td {
+  color: black;
+  font-size: 95%;
+  padding: 0.6em;
+  border:1px solid #DDDDDD;
+}
+
+table td.instrumentName {
+  width: 290px;
+}
+
+table.dataTable td.icon {
+  width: 13px;
+  padding: 2px 2px 3px;
+}
+
+table td.quantity {
+  width: 60px;
+}
+
+table td.mid {
+  width: 70px;
+}
+
+table td.value {
+  width: 70px;
+}
+
+table td.bookcost {
+  width: 70px;
+}
+
+table td.change {
+  width: 60px;
+}
+
+table td.percentChange {
+  width: 80px;
+}
+
+table.portfolioTable {
+
+}
+
+table.portfolioTable tfoot td.footerTotal {
+  background-color: #E5E5E5;
+  font-weight: bold;
+}
+
+
+table.portfolioTable tfoot td.footerTotalBlank {
+  background-color: #E5E5E5;
+}
+
+#currencyProviderContainer {
+    position:relative;
+    top:-50px;
+    left:550px;
+}
+
+#messagePanelMessage {
+position:relative;
+	left:47px;
+}
+
+#messagePanelContainer {
+	  padding: 0px 0px 10px 148px;
+  background: url(../images/menuBackground.png) repeat-y;
+
+}

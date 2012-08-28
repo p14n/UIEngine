@@ -1,0 +1,195 @@
+/* stock search */
+
+.stockSearchInputPanel .formBox{
+  position: absolute;
+  left: 720px;
+  top: 87px;
+  width: 265px;
+  height:10px;
+}
+
+
+
+.formButtonAreaPanel {
+  display:inline-block;
+  margin:0 0 1px 10px;
+}
+
+a.stock-node-link, a.stock-node-link:ACTIVE, a.stock-node-link:FOCUS, a.stock-node-link:LINK, a.stock-node-link:VISITED {
+  text-decoration: none;
+}
+
+
+div.stockSearchInput {
+	position: relative;
+}
+
+.stockSearchInputPanel span.overTxtSpan {
+	position: absolute;
+	margin-left: 0;
+	display: block;
+	left: 5px;
+	top: 2px;
+
+	font-weight: bold;
+	font-family: arial, helvetica, verdana;
+	font-size: 12px;
+	color: #666;	
+	line-height: normal;
+}
+
+.searchInput {
+  font-size: 11px;
+  color: black;
+  height: 16px;
+  padding: 2px 2px 1px 2px;
+  margin-top: -1px;
+  display:inline;
+}
+
+.stockSearchInputPanel .buttonAction {
+  float: right;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 0 1%;
+  display:inline;
+  /*
+  padding: 1px 2px 0 2px;
+
+  top: -1px;
+  font-size: 11px;
+  font-weight: bold;
+  height: 16px;
+  */
+}
+/* stock search */
+
+.stockSearchInputPanel .formBox{
+  position: absolute;
+  left: 720px;
+  top: 87px;
+  width: 265px;
+  height:10px;
+}
+
+
+
+.formButtonAreaPanel {
+  display:inline-block;
+  margin:0 0 1px 10px;
+}
+
+a.stock-node-link, a.stock-node-link:ACTIVE, a.stock-node-link:FOCUS, a.stock-node-link:LINK, a.stock-node-link:VISITED {
+  text-decoration: none;
+}
+
+
+div.stockSearchInput {
+	position: relative;
+}
+
+.stockSearchInputPanel span.overTxtSpan {
+	position: absolute;
+	margin-left: 0;
+	display: block;
+	left: 5px;
+	top: 2px;
+
+	font-weight: bold;
+	font-family: arial, helvetica, verdana;
+	font-size: 12px;
+	color: #666;	
+	line-height: normal;
+}
+
+.searchInput {
+  font-size: 11px;
+  color: black;
+  height: 16px;
+  padding: 2px 2px 1px 2px;
+  margin-top: -1px;
+  display:inline;
+}
+
+.stockSearchInputPanel .buttonAction {
+  float: right;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 0 1%;
+  display:inline;
+  /*
+  padding: 1px 2px 0 2px;
+
+  top: -1px;
+  font-size: 11px;
+  font-weight: bold;
+  height: 16px;
+  */
+}
+/* stock search */
+
+.stockSearchInputPanel .formBox{
+  position: absolute;
+  left: 720px;
+  top: 87px;
+  width: 265px;
+  height:10px;
+}
+
+
+
+.formButtonAreaPanel {
+  display:inline-block;
+  margin:0 0 1px 10px;
+}
+
+a.stock-node-link, a.stock-node-link:ACTIVE, a.stock-node-link:FOCUS, a.stock-node-link:LINK, a.stock-node-link:VISITED {
+  text-decoration: none;
+}
+
+
+div.stockSearchInput {
+	position: relative;
+}
+
+.stockSearchInputPanel span.overTxtSpan {
+	position: absolute;
+	margin-left: 0;
+	display: block;
+	left: 5px;
+	top: 2px;
+
+	font-weight: bold;
+	font-family: arial, helvetica, verdana;
+	font-size: 12px;
+	color: #666;	
+	line-height: normal;
+}
+
+.searchInput {
+  font-size: 11px;
+  color: black;
+  height: 16px;
+  padding: 2px 2px 1px 2px;
+  margin-top: -1px;
+  display:inline;
+}
+
+.stockSearchInputPanel .buttonAction {
+  float: right;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 0 1%;
+  display:inline;
+  /*
+  padding: 1px 2px 0 2px;
+
+  top: -1px;
+  font-size: 11px;
+  font-weight: bold;
+  height: 16px;
+  */
+}

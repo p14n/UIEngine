@@ -1,0 +1,500 @@
+:q
+q
+exit
+ensime generate
+exit
+test
+compile
+reload
+list 
+help
+actions
+update
+
+quit
+update
+quit
+reload
+reload plugins
+exit
+quit
+update
+quit
+exit
+compile
+update
+quit
+compile
+exit
+compile
+ensime generate
+compile
+ensime generate
+quit
+exit
+ensime generate conf
+ensime generate
+exit
+test-only jhc.figaro.webapps.uiengine.JavascriptComponentSuite
+list
+commands
+actions
+help
+action
+actions
+exit
+test-only jhc.figaro.webapps.uiengine.JavascriptComponentSuite
+get-jars
+unmanaged-jars
+export-jars
+test-only jhc.figaro.webapps.uiengine.JavascriptComponentSuite
+test
+exit
+compile
+exit
+ensime generate
+exit
+test
+help
+show version
+about
+exit
+test
+compile
+test
+compile test
+compile
+test
+show dependencies
+show all-dependencies
+actions
+commands
+reload
+show all-dependencies
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+</script>
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+[info] - Adds dynamic script to the page
+test
+compile
+test
+compile
+[info]   at org.apache.wicket.request.handler.PageProvider.resolvePageInstance(PageProvider.java:264)
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+[error] {file:/Users/home/workspaces/scala/FWUIEngine/}default-93fda9/compile:compile: Compilation failed
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test-only DynamicHtmlPageSuite
+test-only *Suite
+test-only *.Dynamic*Suite
+compile
+test-only *.Dynamic*Suite
+compile
+test-only *.Dynamic*Suite
+compile
+test
+compile
+test
+compile
+test
+[info]   at org.apache.wicket.MarkupContainer.internalInitialize(MarkupContainer.java:1002)
+> 
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+[error] {file:/Users/home/workspaces/scala/FWUIEngine/}default-93fda9/test:test: Tests unsuccessful
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+test-only *.UIComponent*
+compile
+test-only *.UIComponent*
+test
+clean
+test
+compile
+test-only *.DynamicHtmlC*
+compile
+[info]   at org.apache.wicket.request.handler.render.WebPageRenderer.renderPage(WebPageRenderer.java:105)
+test-only *.DynamicHtmlC*
+compile
+test-only *.DynamicHtmlC*
+compile
+celan
+clean
+compile
+test
+compile
+test
+compile
+test-only *.UIC*
+compile
+test-only *.UIC*
+compile
+mpile
+test
+compile
+test
+test-only *.UI*
+compile
+test-only *.UI*
+compile
+test-only *.UI*
+test
+compile
+clean
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+[success] Total time: 0 s, completed Jul 12, 2012 7:01:26 AM
+test-only *.Crawler*
+compile
+test-only *.ContentF*
+compile
+help
+commands
+command
+commands list
+  !n                                   Execute the command with index n, as shown by the !: commanactionsd
+actions
+action
+command
+commands
+build-dependencies
+ependencies
+all-dependencies
+exit
+commands
+build-dependencies
+help
+compile
+all-dependencies
+compile
+ensime generate
+exit
+test
+compile
+test
+compile
+test
+compile
+test
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+exit
+test-only *.Crawler*
+exit
+test-only *.Crawler*
+q
+exit
+test
+exit
+help
+run
+clean
+run
+quit
+exit
+run
+test
+run
+ensime generate
+exit
+test
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+test-only *.Crawler*
+compile
+run
+compile
+run
+exit
+run
+test
+run
+test
+run
+test
+test-only *.ContentMapper*
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+test-only ContentMapper
+test-only ContentMapper*
+test-only *.ContentMapper*
+compile
+test-only *.ContentMapper*
+compile
+test-only *.ContentMapper*
+compile
+test-only *.ContentMapper*
+compile
+test-only *.ContentMapper*
+compile
+test-only *.ContentMapper*
+compile
+test-only *.ContentMapper*
+test
+compile
+test
+compile
+exit
+compile
+exit
+compile
+compile -deprecation
+exit
+ensime generate
+exizt
+exit
+test-only *.UIComponentCreator*
+compile
+test-only *.UIComponentCreator*
+compile
+test-only *.UIComponentCreator*
+compile
+test-only *.UIComponentCreator*
+compile
+test-only *.UIComponentCreator*
+compile
+test-only *.UIComponentCreator*
+[info]   at jhc.figaro.webapps.uiengine.UIComponentCreatorSuite$$anonfun$1.apply$mcV$sp(UIComponentCreatorTest.scala:8)
+test-only *.UIComponentCreator*
+compile
+test-only *.UIComponentCreator*
+compile
+test-only *.UIComponentCreator*
+compile
+test-only *.UIComponentCreator*
+compile
+test-only *.UIComponentCreator*
+compile
+test-only *.UIComponentCreator*
+compile
+test-only *.UIComponentCreator*
+compile
+test
+compile
+clean compile
+clean
+compile
+clean
+compile
+clean
+compilee
+compile
+test
+compile
+test
+test-only *.UIComponentCreator*
+compile
+[info]   java.lang.ClassCastException: java.lang.reflect.Method cannot be cast to scala.Function1
+clean
+compile

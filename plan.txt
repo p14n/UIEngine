@@ -1,0 +1,6 @@
+1. Copy modx files to a local directory
+2. Create a component 
+3. Add component to page
+4. Create catalog
+5. Create admin for content
+6. Create admin for component
