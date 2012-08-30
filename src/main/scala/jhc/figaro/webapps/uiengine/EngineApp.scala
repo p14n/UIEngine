@@ -17,7 +17,7 @@ class EngineApp extends WebApplication {
     getPageSettings().addComponentResolver(
       new UIComponentResolver(componentCreator.createComponent))
     mount(new ContentMapper(new FileContentResolver(rootFileContentPath),
-			 null))
+			 componentCreator.createHeaderComponent))
   }
 }
 

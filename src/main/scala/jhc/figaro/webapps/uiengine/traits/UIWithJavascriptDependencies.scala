@@ -1,5 +1,5 @@
 package jhc.figaro.webapps.uiengine.traits
 
-trait UIComponentWithJavascriptDependencies {
+trait UIWithJavascriptDependencies {
     def listJavascriptDependencies : Array[String]
 }

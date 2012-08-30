@@ -1,9 +1,3 @@
-:q
-q
-exit
-ensime generate
-exit
-test
 compile
 reload
 list 
@@ -497,4 +491,10 @@ test-only *.UIComponentCreator*
 compile
 [info]   java.lang.ClassCastException: java.lang.reflect.Method cannot be cast to scala.Function1
 clean
+compile
+test
+compile
+test
+compile
+test
 compile

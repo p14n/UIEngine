@@ -1,6 +1,10 @@
 package jhc.figaro.webapps.uiengine
 import java.lang.annotation.Annotation
 import java.lang.reflect.Method
+import jhc.figaro.webapps.uiengine.HeaderComponent
+import jhc.figaro.webapps.uiengine.traits.UIWithDynamicJavascript
+import jhc.figaro.webapps.uiengine.traits.UIWithJavascriptDependencies
+import jhc.figaro.webapps.uiengine.traits.UIWithPageComponent
 
 import org.apache.wicket.Component
 import org.reflections.Reflections
@@ -11,67 +15,62 @@ object UIComponentCreator {
 
   val annotationClass = classOf[UIComponent];
 
-  def findComponentObjectsOnClasspath(packagePrefix: String):Map[String,Class[_]] = {
+  def findComponentObjectsOnClasspath(packagePrefix: String):Map[String,_] = {
 
     val reflections = new Reflections(packagePrefix);
     val annotated = asSet(reflections.getTypesAnnotatedWith(annotationClass));
     //Now turn this set of classes into a map of annotation property 'name' and the class
     annotated.groupBy( 
       _.getAnnotation(annotationClass).asInstanceOf[UIComponent].name())
-	.mapValues(_.head)
+	.mapValues(_.head.newInstance())
 
   }
-  def findCreatorMethodOnClass(uiClass: Class[_]): String => Component = {
-    val method = findFirstMethodWithAnnotation(uiClass,classOf[UIComponentCreationMethod])
-    if(method != null){
-      val params = method.getParameterTypes();
-      if (!(params != null && params.length==1 && params(0) == classOf[String]
-	  && method.getReturnType() == classOf[Component]))
-	  throw new IllegalArgumentException(method.getName()+
-		" does not have a String as the sole argument and returns a Component");
-      return method.asInstanceOf[String => Component];
-    }
-    a => null
-  }
-  def findFirstMethodWithAnnotation(uiClass: Class[_],
-				   annotationClass: Class[_ <: Annotation]): Method = {
-    val methods = uiClass.getDeclaredMethods();
-    for(val method <- methods) {
-      if(method.getAnnotation(annotationClass) != null){
-	return method
-      }
-    }
+  def findCreatorMethodOnClass(uiObject: Object): String => Component = {
+    if(uiObject.isInstanceOf[UIWithPageComponent])
+      return uiObject.asInstanceOf[UIWithPageComponent].createComponent
     null
+  }
 
-  }
-  def findDynamicJavascriptMethodOnClass(uiClass: Class[_]): String => String = {
-    val method = findFirstMethodWithAnnotation(uiClass,classOf[UIDynamicJavaScriptMethod])
-    if(method != null){
-      val params = method.getParameterTypes();
-      if (!(params != null && params.length==1 && params(0) == classOf[String]
-	  && method.getReturnType() == classOf[String]))
-	  throw new IllegalArgumentException(method.getName()+
-		" does not have a String as the sole argument and returns a String");
-      return method.asInstanceOf[String => String]
-    }
+  def findDynamicJavascriptMethodOnObject(uiObject:Object): String => String = {
+    if(uiObject.isInstanceOf[UIWithDynamicJavascript])
+      return uiObject.asInstanceOf[UIWithDynamicJavascript].createDynamicJavascript
     null
   }
+  def findJavascriptDependencyMethodOnObject(uiObject:Object): Array[String] = {
+    if(uiObject.isInstanceOf[UIWithJavascriptDependencies])
+      return uiObject.asInstanceOf[UIWithJavascriptDependencies].listJavascriptDependencies
+    null
+  }
+
 }
-class UIComponentCreator(availableComponents: Map[String,Class[_]]) {
-  def getDefinition(uiType: String):Class[_] = {
+class UIComponentCreator(availableComponents: Map[String,_]) {
+  def getDefinition(uiType: String):Object = {
     if (!availableComponents.contains(uiType))
       throw new IllegalArgumentException(uiType+" is not known as a component name");
-    availableComponents(uiType)
+    availableComponents(uiType).asInstanceOf[AnyRef]
   }
   def createComponent(uiType:String, id:String): Component = {
     val definition = getDefinition(uiType)
-    UIComponentCreator.findCreatorMethodOnClass(definition)(id)
-  }
-  def createDynamicJavascript(uiType: String, id: String): String = {
-    val definition = getDefinition(uiType)
-    val method = UIComponentCreator.findDynamicJavascriptMethodOnClass(definition)
+    val method = UIComponentCreator.findCreatorMethodOnClass(definition)
     if (method == null) return null
     method(id)
   }
+  def createJavascriptDependencies(uiType: String): Array[String] = {
+    val definition = getDefinition(uiType)
+    val method = UIComponentCreator.findJavascriptDependencyMethodOnObject(definition)
+    if (method == null) return null
+    method
+  }
+  def createDynamicJavascript(uiType: String, id: String): String = {
+    val definition = getDefinition(uiType)
+    val method = UIComponentCreator.findDynamicJavascriptMethodOnObject(definition)
+    if (method == null) return null
+    method(id)
+  }
+def createHeaderComponent(uiType: String, id: String): Component = {
+    val deps = createJavascriptDependencies(uiType)
+    val script = createDynamicJavascript(uiType,id)
+    if(deps == null && script == null ) return null
+    new HeaderComponent(id,{script},{deps})
 }
-
+}
