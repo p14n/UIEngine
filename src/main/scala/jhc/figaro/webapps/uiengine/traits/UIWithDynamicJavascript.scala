@@ -1,5 +1,11 @@
 package jhc.figaro.webapps.uiengine.traits
+import org.apache.wicket.request.resource.PackageResourceReference
 
 trait UIWithDynamicJavascript {
-    def createDynamicJavascript(id: String): String
+
+  def wrapInDocLoad(script: String): String = {
+    "document.onload = function(e){"+script+"};" 
+  }
+
+   def createDynamicJavascript(id: String): String
 }

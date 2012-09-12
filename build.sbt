@@ -19,3 +19,5 @@ libraryDependencies += "junit" % "junit" % "4.8.2"
 libraryDependencies += "com.github.scala-incubator.io" %% "scala-io-file" % "0.2.0"
 
 libraryDependencies += "org.reflections" % "reflections" % "0.9.8"
+
+libraryDependencies += "org.neo4j" % "neo4j" % "1.7.2"

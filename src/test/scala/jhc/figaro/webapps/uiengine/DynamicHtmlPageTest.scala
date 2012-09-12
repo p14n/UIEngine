@@ -8,13 +8,13 @@ import org.apache.wicket.Page
 class DynamicHtmlPageSuite extends FunSuite {
 
   val html = "<html><body><span>This is my html</span></body></html>"
-  def htmlCreator = { html }
+  def htmlCreator = () => { html }
 
   test("should display html from supplied function"){
     
     val t = new WicketTester()
     t.startPage(new ITestPageSource(){
-      def getTestPage(): Page = { new DynamicHtmlPage(htmlCreator,{ null }) }
+      def getTestPage(): Page = { new DynamicHtmlPage(htmlCreator,{ null },{null}) }
     })
 
     val page = t.getLastResponseAsString()

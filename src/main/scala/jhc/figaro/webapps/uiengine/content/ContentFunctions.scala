@@ -19,6 +19,7 @@ object ContentFunctions {
   }
 
   def streamFromFile(filename: String): InputStream = {
+    println("streaming from file "+filename)
     new FileInputStream(filename)
   }
 

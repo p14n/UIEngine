@@ -12,7 +12,7 @@ class FileContentResolver(rootPath: String) extends ContentResolver {
   override def resolve(path: String): Content = {
     try {
 
-      val extensionStart = path.lastIndexOf(".")
+      val extensionStart = path.lastIndexOf(".") + 1
       val extension = if(extensionStart > 0) path.substring(extensionStart) else ""
 
       if(imageQualifiers.contains(extension))
@@ -24,12 +24,13 @@ class FileContentResolver(rootPath: String) extends ContentResolver {
       return content("text/html",path)
 
     } catch {
-      case _ => ;
+      case e => //e.printStackTrace()
     }
     return null
   }
  def content(contentType: String, path: String): Content = {
-   return new Content(contentType,createByteArray(streamFromFile(rootPath+path)),"UTF-8");
+   val fullPath = rootPath + path;
+   return new Content(contentType,createByteArray(streamFromFile(fullPath)),"UTF-8");
  }							     
  def createByteArray(in: InputStream): Array[Byte] = {
    Resource.fromInputStream(in).byteArray

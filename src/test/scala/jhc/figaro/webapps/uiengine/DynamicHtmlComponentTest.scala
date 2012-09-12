@@ -12,9 +12,9 @@ import org.apache.wicket.util.resource.StringResourceStream
 
 class JavascriptPage extends WebPage with IMarkupResourceStreamProvider {
 
-  val jsCreator = { "myCall('myparam')" }
+  val jsCreator = () => { "myCall('myparam')" }
   val scriptCreator = { Array("/scripts/amazing.js") }
-  val htmlCreator = { "<span id=\"test\"/>" }
+  val htmlCreator = { "<span></span>" }
 
   add(new HeaderComponent("headjscomp",jsCreator,scriptCreator))
   add(new DynamicHtmlComponent(
@@ -59,6 +59,6 @@ myCall('myparam')
 
   test("Adds html to the page") {
     val page = createPage()
-    assertTrue("Should find html appended to the tag",page.indexOf("<span id=\"test\"/>") > -1)
+    assertTrue("Should find html appended to the tag",page.indexOf("<span id=\"jscomp\" ></span>") > -1)
   }
 }

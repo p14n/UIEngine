@@ -29,7 +29,7 @@ class ContentMapperSuite extends FunSuite {
     val resolver = createResolver("my_test_page","html");
 
     val request = mockRequest("my_test_page")
-    val mapper = new ContentMapper(resolver,{null});
+    val mapper = new ContentMapper(resolver,{null},{null});
     val handler = mapper.mapRequest(request).asInstanceOf[RenderPageRequestHandler];
     
     assert(handler.isInstanceOf[RenderPageRequestHandler]);
