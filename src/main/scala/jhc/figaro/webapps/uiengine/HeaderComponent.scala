@@ -15,14 +15,14 @@ class HeaderComponent(
 
   add(new Behavior() {
     override def renderHead(component: Component, response: IHeaderResponse) {
-      if(dynamicJavascript != null) {
-	val str = dynamicJavascript()
-	if(str!=null) response renderJavaScript(str, "js_"+id)
-      }
       if(scripts!=null){
 	scripts foreach( script =>
 	  response renderJavaScriptReference(script)
 	)
+      }
+      if(dynamicJavascript != null) {
+	val str = dynamicJavascript()
+	if(str!=null) response renderJavaScript(str, "js_"+id)
       }
     }
   })

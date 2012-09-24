@@ -5,7 +5,7 @@ import jhc.figaro.webapps.uiengine.traits.UIWithPageComponent
 import org.apache.wicket.Component
 import org.apache.wicket.markup.html.basic.Label
 
-@UIComponent(name="test_ui")
+@UIComponent(name="test_ui",description="test")
 class TestAnnotatedComponent extends UIWithJavascriptDependencies 
   with UIWithDynamicJavascript with UIWithPageComponent {
 

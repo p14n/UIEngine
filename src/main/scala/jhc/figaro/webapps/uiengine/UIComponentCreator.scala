@@ -16,14 +16,14 @@ object UIComponentCreator {
 
   val annotationClass = classOf[UIComponent];
 
-  def findComponentObjectsOnClasspath(packagePrefix: String): Map[String, _] = {
+  def findComponentObjectsOnClasspath(packagePrefix: String): Map[String, Serializable] = {
 
     val reflections = new Reflections(packagePrefix);
     val annotated = asScalaSet(reflections.getTypesAnnotatedWith(annotationClass));
     //Now turn this set of classes into a map of annotation property 'name' and the class
     annotated.groupBy(
       _.getAnnotation(annotationClass).asInstanceOf[UIComponent].name())
-      .mapValues(_.head.newInstance())
+      .mapValues(_.head.newInstance().asInstanceOf[Serializable])
 
   }
   def findCreatorMethodOnClass(uiObject: Object): String => Component = {
