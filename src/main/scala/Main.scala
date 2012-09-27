@@ -1,12 +1,14 @@
 import java.util.Date
 import java.io.File
 import jhc.figaro.webapps.uiengine.EngineServer
+import jhc.figaro.webapps.uiengine.PropertyStore
 import jhc.figaro.webapps.uiengine.content.Crawler
 
 object Main {
 
   def main(args : Array[String]) : Unit = { 
 
+    PropertyStore.addOrDefault(if(args.length > 0) args(0) else null )
     new EngineServer().start
 
   }

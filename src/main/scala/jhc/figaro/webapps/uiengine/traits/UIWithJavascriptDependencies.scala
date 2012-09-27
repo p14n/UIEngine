@@ -1,4 +1,5 @@
 package jhc.figaro.webapps.uiengine.traits
+import jhc.figaro.webapps.uiengine.PropertyStore
 import scripts.Scripts
 import org.apache.wicket.request.cycle.RequestCycle
 import org.apache.wicket.request.resource.PackageResourceReference
@@ -22,6 +23,8 @@ trait UIWithJavascriptDependencies {
     urlFor(mootoolsMoreRef)
   }
   def classpathJs(fileInScriptsPackage: String): String = {
+    if(PropertyStore.has("resource.dir"))
+      return "scripts/"+fileInScriptsPackage
     urlFor(new PackageResourceReference(scripts,fileInScriptsPackage))
   }
 
