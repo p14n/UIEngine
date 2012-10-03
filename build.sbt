@@ -20,4 +20,7 @@ libraryDependencies += "com.github.scala-incubator.io" %% "scala-io-file" % "0.2
 
 libraryDependencies += "org.reflections" % "reflections" % "0.9.8"
 
-libraryDependencies += "org.neo4j" % "neo4j" % "1.7.2"
+libraryDependencies += "com.orientechnologies" % "orientdb-enterprise" % "1.1.0"
+
+libraryDependencies += "com.orientechnologies" % "orientdb-server" % "1.1.0"
+
