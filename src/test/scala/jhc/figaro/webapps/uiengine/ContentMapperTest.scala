@@ -19,7 +19,7 @@ class ContentMapperSuite extends FunSuite {
   def createResolver(expectedPath: String, contentType: String): ContentResolver = {
     new ContentResolver(){
       override def resolve(path: String): Content = {
-	if(path == expectedPath) return Content(contentType,"".getBytes(),"UTF-8")
+	if(path == expectedPath) return Content(path,contentType,200,"UTF-8",null,"".getBytes())
 	null
       }
     }

@@ -12,8 +12,8 @@ class CrawlerSuite extends FunSuite {
 			 "uiengine/CrawlerSuite/";
    def index = new File(dir + "index.html")
    if(index.exists()) index.delete()
-   def crawler = new Crawler("https://www.google.co.uk/","index.html",dir,0)
-   crawler.fetch()
+   def crawler = new Crawler("https://www.google.co.uk/","index.html",null,0)
+   crawler.fetch(null)
    assert(index.exists())
  }
 

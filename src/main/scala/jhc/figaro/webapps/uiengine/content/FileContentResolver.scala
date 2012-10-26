@@ -8,7 +8,6 @@ class FileContentResolver(rootPath: String) extends ContentResolver {
 
   val imageQualifiers = Set("gif","png")
   
-
   override def resolve(path: String): Content = {
     try {
 
@@ -30,7 +29,7 @@ class FileContentResolver(rootPath: String) extends ContentResolver {
   }
  def content(contentType: String, path: String): Content = {
    val fullPath = rootPath + path;
-   return new Content(contentType,createByteArray(streamFromFile(fullPath)),"UTF-8");
+   return new Content(path,contentType,200,"UTF-8",null,createByteArray(streamFromFile(fullPath)));
  }							     
  def createByteArray(in: InputStream): Array[Byte] = {
    Resource.fromInputStream(in).byteArray
