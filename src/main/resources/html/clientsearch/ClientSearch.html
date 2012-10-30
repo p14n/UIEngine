@@ -1,0 +1,34 @@
+	<div ng-app="ClientSearch">
+		<div class="client.search" ng-controller="ClientSearchController">
+			<div class="formBox">
+					<fieldset>
+						<legend>${client.search.form.legend}</legend>
+						<label for="providerCustomerFormName">${client.search.form.label}:</label>
+						<input tabindex="1" size="" id="providerCustomerFormName"  />
+					</fieldset>
+				<div wicket:id="feedback"/>
+			</div>	
+			<div class="providerCustomerList"> 
+				<table cellpadding="0" cellspacing="0" class="IFAClientList dataTable" id="providerCustomerList">
+					<tr class="headers">
+						<th><span>${client.name.label}</span></th>
+						<th><span>${client.number.label}</span></th>
+					</tr>
+					<tbody class="clientrow" ng-repeat="client in clients">
+						<tr>
+							<td class="searchable">{{client.name}}</td>
+							<td class="searchable">{{client.number}}</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<span>${client.account.label}</span>:
+								<span class="searchable">{{client.account}}</span>
+								<span>${client.external.ref.label}</span>:
+								<span class="searchable">{{client.external}}</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>

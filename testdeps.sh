@@ -1,0 +1,1 @@
+mvn -DoutputDirectory="lib/default" dependency:copy-dependencies
