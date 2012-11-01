@@ -23,5 +23,6 @@ class AdminMenu(id:String,selected:Class[_<:WebPage]) extends Panel(id) {
     link.setEnabled(page != selected)
 										   
   }
+  add(list)
 }
 

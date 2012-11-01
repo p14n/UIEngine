@@ -10,22 +10,33 @@ import jhc.figaro.webapps.uiengine.content.Content
 import jhc.figaro.webapps.uiengine.content.ContentWriter
 import jhc.figaro.webapps.uiengine.content.ContentSource
 import scala.collection.JavaConversions._
+import org.slf4j.LoggerFactory
+import java.util.ArrayList
 
 class DBService extends ContentWriter {
+
+  val log = LoggerFactory.getLogger(classOf[DBService])
 
   def conn():OGraphDatabase = {
     new OGraphDatabase (ODatabaseRecordThreadLocal.INSTANCE
 			.get().asInstanceOf[ODatabaseRecordTx]);
   }
   def qry(sql:String):List[ODocument] = {
-    List(conn().query(new OSQLSynchQuery[ODocument](sql)))
+    try {
+      val results:ArrayList[ODocument] = conn().query(new OSQLSynchQuery[ODocument](sql));
+      if(results!=null) return results.toList
+    } catch {
+      case e:Throwable => log.error("failed to execute query "+sql, 
+        e)
+    }
+    List[ODocument]()
   }
 
   def getContentSources():List[ContentSource] = {
-    qry("select from ContentSource").map(c => {
-      val feeders = c.field("feeders")
+    qry("select from ContentSource").map((c:ODocument) => {
+      val feeders:String = c.field("feeders")
       new ContentSource(c.field("rootUrl"),
-	     (if(feeders!=null) (feeders.toString().split(",").toList) else null))
+       (if( feeders == null ) null else (feeders.toString().split(",").toList)))
     })
   }
 
@@ -42,14 +53,14 @@ class DBService extends ContentWriter {
     })
   }
   def getCurrentVersion():Int = {
-    qry("select from ContentVersion where current='true'").foreach(c => {
+    qry("select from ContentVersion where current = 'true'").foreach(c => {
       return c.field("versionNumber").toString().toInt
     })
     newVersion()
   }
   def newVersion():Int = {
     var currentVersionNumber = 0
-    qry("select from ContentVersion where current='true'").foreach(c => {
+    qry("select from ContentVersion where current = 'true'").foreach(c => {
       currentVersionNumber = c.field("versionNumber").toString().toInt
       c.field("current","false")
       c.save()
@@ -70,15 +81,15 @@ class DBService extends ContentWriter {
     val record = new ORecordBytes(conn(), content.content);
     doc.field("content",record)
     doc.save()
-    qry("select from ContentVersion where current='true'").foreach(c => {
+    qry("select from ContentVersion where current = 'true'").foreach(c => {
       val edge = conn.createEdge(doc,c)
       edge.field("type","belongsto")
       edge.save()
     })
   }
   def updateContent(content:Content):Boolean = {
-    qry("select from Content where in[@type='belongsto'].out.current='true' "+
-  "and path='"+content.path+"'").foreach(doc => {
+    qry("select from Content where in[@type='belongsto'].out.current = 'true' "+
+  "and path = '"+content.path+"'").foreach(doc => {
       doc.field("role",content.role)
       doc.field("status",content.status)
       doc.field("charset",content.charset)
@@ -91,7 +102,7 @@ class DBService extends ContentWriter {
     false
   }
   def getContent():List[Content] = {
-    qry("select from Content where in[@type='belongsto'].out.current='true' ")
+    qry("select from Content where in[@type='belongsto'].out.current = 'true' ")
     .map(doc => {
       val record:ORecordBytes = doc.field("content");
       new Content(doc.field("path"),doc.field("contentType"),

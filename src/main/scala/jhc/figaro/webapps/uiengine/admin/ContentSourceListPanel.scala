@@ -16,6 +16,7 @@ class ContentSourceListPanel(id:String,
 			     model:IModel[java.util.List[ContentSource]],
 			   db:DBService) extends Panel(id) {
 
+  setOutputMarkupId(true)
   add(new ListView("list",model){
     override def populateItem(item:ListItem[ContentSource]){
       item.add(new ContentSourcePanel("contentSource",item.getModel()) {

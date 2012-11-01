@@ -4,6 +4,7 @@ import com.orientechnologies.orient.core.exception.OStorageException
 import com.orientechnologies.orient.server.OServer
 import com.orientechnologies.orient.server.OServerMain
 import java.io.File
+import com.orientechnologies.orient.core.metadata.schema.OSchema
 
 class OrientDBServer {
 
@@ -23,9 +24,16 @@ class OrientDBServer {
       db.open(dbUser,dbPass)
     } catch {
       case e:OStorageException => {
-	db.create()
+       db.create()
       }
     }
+    addClasses(db)
+  }
+  def addClasses(db:OGraphDatabase){
+    val schema = db.getMetadata().getSchema()
+    List("Content","ContentSource","ContentVersion").foreach( n => {
+      if(!schema.existsClass(n)) db.createVertexType(n)
+    })
   }
 
   def shutdown(){

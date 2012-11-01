@@ -25,8 +25,13 @@ abstract class ContentSourcePanel(id:String,
   setOutputMarkupId(true)
   add(new Label("root",new PropertyModel(source,"rootUrl")))
   val panel = this;
-  val feeders = new ListView[String]("feeders",
-		      LDM.of(() => {asList(source.getObject().feeders)})){
+
+  val feederModel = LDM.of(() => {
+    val src = source.getObject()
+    if(src.feeders == null) new ArrayList[String]() else asList(src.feeders)
+  })
+
+  val feeders = new ListView[String]("feeders",feederModel){
     override def populateItem(item:ListItem[String]){
       val path = item.getModelObject()
       item.add(new Label("path",path))
