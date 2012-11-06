@@ -41,6 +41,7 @@
                 <directory>src/main/scala</directory>
                 <includes>
                     <include>**/*.html</include>
+                    <include>**/*.js</include>
                 </includes>
             </resource>
         </resources>

@@ -21,7 +21,7 @@ class AdminMenu(id:String,selected:Class[_<:WebPage]) extends Panel(id) {
     link.add(new Label("page",name.substring(0,name.indexOf("Page"))))
     listItem.add(link)
     link.setEnabled(page != selected)
-										   
+    list.add(listItem)    
   }
   add(list)
 }

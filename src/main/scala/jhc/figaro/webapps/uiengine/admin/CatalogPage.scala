@@ -6,7 +6,8 @@ import org.apache.wicket.model.Model
 
 class CatalogPage extends WebPage() {
 
-  add(new ComponentListPanel("components",LDM.of(
+	add(new AdminMenu("navigation",classOf[CatalogPage]))
+	add(new ComponentListPanel("components",LDM.of(
     () => { findComponentObjectsOnClasspath("jhc") })))
 
 }

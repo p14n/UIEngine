@@ -34,9 +34,13 @@ class DBService extends ContentWriter {
 
   def getContentSources():List[ContentSource] = {
     qry("select from ContentSource").map((c:ODocument) => {
+
       val feeders:String = c.field("feeders")
-      new ContentSource(c.field("rootUrl"),
-       (if( feeders == null ) null else (feeders.toString().split(",").toList)))
+      val splitFeeders = (
+        if( feeders == null || feeders.length() == 0 ) null 
+        else (feeders.toString().split(",").toList))
+
+      new ContentSource(c.field("rootUrl"),splitFeeders)
     })
   }
 
@@ -47,9 +51,14 @@ class DBService extends ContentWriter {
     doc.save()
   }
   def updateContentSource(cs:ContentSource){
-    qry("select from ContentSource where rootUrl='"+cs.rootUrl+"'").foreach(c => {
+    qry("select from ContentSource where rootUrl = '"+cs.rootUrl+"'").foreach(c => {
       c.field("feeders",if(cs.feeders==null) null else cs.feeders.mkString(","))
       c.save()
+    })
+  }
+  def deleteContentSource(rootPath:String){
+    qry("select from ContentSource where rootUrl = '"+rootPath+"'").foreach(c => {
+      conn().removeVertex(c)
     })
   }
   def getCurrentVersion():Int = {

@@ -1,12 +1,16 @@
 <html><body>
 <wicket:panel>
-<ul class="content-source-list" wicket:id="list">
-	<li><div wicket:id="contentSource"></div></li>
+<ul class="content-source-list">
+	<li wicket:id="list">
+		<div wicket:id="contentSource"></div>
+	</li>
 </ul>
 <div class="content-source-form">
 	<form wicket:id="form">
-		<input type="text" wicket:id="rootUrl"></input>
-		<input type="submit" wicket:id="submit"></input>
+		<div>
+			<input type="text" wicket:id="rootUrl"></input>
+			<input type="submit" wicket:id="submit" value="Add a new content source"></input>
+		</div>
 	</form>
 </div>
 </wicket:panel>
