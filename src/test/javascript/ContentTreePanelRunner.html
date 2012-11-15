@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Content Tree Panel Spec Runner</title>
+        <link rel="shortcut icon" type="image/png" href="lib/jasmine-1.1.0/jasmine_favicon.png">
+        <link rel="stylesheet" type="text/css" href="lib/jasmine-1.1.0/jasmine.css">
+        <script type="text/javascript" src="lib/jquery-1.7.1.js"></script>
+        <script type="text/javascript" src="lib/jasmine-1.1.0/jasmine.js"></script>
+        <script type="text/javascript" src="lib/jasmine-1.1.0/jasmine-html.js"></script>
+        <script type="text/javascript" src="../../main/scala/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.js"></script>
+        <script type="text/javascript" src="spec/contentTreePanelSpec.js"></script>
+        <script type="text/javascript">
+            (function() {
+                var jasmineEnv = jasmine.getEnv();
+                jasmineEnv.updateInterval = 1000;
+                var trivialReporter = new jasmine.TrivialReporter();
+                jasmineEnv.addReporter(trivialReporter);
+                jasmineEnv.specFilter = function(spec) {
+                    return trivialReporter.specFilter(spec);
+                };
+                var currentWindowOnload = window.onload;
+                window.onload = function() {
+                    if (currentWindowOnload) {
+                      currentWindowOnload();
+                    }
+                    jasmineEnv.execute();
+                };
+            })();
+        </script>
+    </head>
+    <body>
+        <div class="contentTreePanel">
+            <ul class="contentlist">
+                <li>
+                    <div><span class="path">one/index1.html</span></div>
+                </li>
+                <li>
+                    <div><span class="path">one/index2.html</span></div>
+                </li>
+                <li>
+                    <div><span class="path">one/index3.html</span></div>
+                </li>
+                <li>
+                    <div><span class="path">one/index4.html</span></div>
+                </li>
+                <li>
+                    <div><span class="path">two/index1.html</span></div>
+                </li>
+                <li>
+                    <div><span class="path">two/index2.html</span></div>
+                </li>
+                <li>
+                    <div><span class="path">two/index3.html</span></div>
+                </li>
+                <li>
+                    <div><span class="path">two/index4.html</span></div>
+                </li>
+                <li>
+                    <div><span class="path">index1.html</span></div>
+                </li>
+                <li>
+                    <div><span class="path">index2.html</span></div>
+                </li>
+                <li>
+                    <div><span class="path">one/three/index.html</span></div>
+                </li>
+                <li>
+                    <div><span class="path">one/three/index.html</span></div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
