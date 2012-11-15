@@ -5,6 +5,7 @@ import com.orientechnologies.orient.server.OServer
 import com.orientechnologies.orient.server.OServerMain
 import java.io.File
 import com.orientechnologies.orient.core.metadata.schema.OSchema
+import jhc.figaro.webapps.uiengine.admin.db.DBService
 
 class OrientDBServer {
 
@@ -28,6 +29,7 @@ class OrientDBServer {
       }
     }
     addClasses(db)
+    DBFunctions.doWithConnection(new DBService().getCurrentVersion)
   }
   def addClasses(db:OGraphDatabase){
     val schema = db.getMetadata().getSchema()

@@ -12,25 +12,28 @@ object Main {
 
   def main(args : Array[String]) : Unit = { 
 
+    //crawl
+    start(args)
+
+  }
+  def start(args: Array[String]) {
+
     PropertyStore.addOrDefault(if(args.length > 0) args(0) else null )
     val p = PropertyStore
     val db = new OrientDBServer()
     db.startup(p.get("db.config"),p.get("db.path","./database"),
-	       p.get("db.user","admin"),p.get("db.pass","admin"))
+         p.get("db.user","admin"),p.get("db.pass","admin"))
     new EngineServer().start
 
   }
   def crawl = {
 
-   val dir = "src/test/data/content/jhc/figaro/webapps/"+
-			 "uiengine/CrawlerSuite/";
-   def index = new File(dir + "index.html")
-   if(index.exists()) index.delete()
-   val writer = new ContentWriter(){
+     val writer = new ContentWriter(){
      override def addContent(content:Content){}
      override def updateContent(content:Content):Boolean = {true}
      override def putContent(c:Content){
-       println("Put content of type "+c.contentType+" and path "+c.path)
+       println("Put content of type "+c.contentType+" and path "+c.path+" code "+
+        c.status)
 
      }
    }

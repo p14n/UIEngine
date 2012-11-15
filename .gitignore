@@ -5,3 +5,6 @@ project/target
 target
 lib
 src/main/scala/target
+project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.7/compiler-interface-bin_2.8.1.final/compiler-interface-bin-0.7.7.jar
+
+src/.DS_Store

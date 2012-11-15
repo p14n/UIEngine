@@ -87,8 +87,10 @@ class DBService extends ContentWriter {
     doc.field("status",content.status)
     doc.field("charset",content.charset)
     doc.field("contentType",content.contentType)
-    val record = new ORecordBytes(conn(), content.content);
-    doc.field("content",record)
+    if(content.content!=null){
+      val record = new ORecordBytes(conn(), content.content);
+      doc.field("content",record)
+    }
     doc.save()
     qry("select from ContentVersion where current = 'true'").foreach(c => {
       val edge = conn.createEdge(doc,c)
@@ -97,7 +99,7 @@ class DBService extends ContentWriter {
     })
   }
   def updateContent(content:Content):Boolean = {
-    qry("select from Content where in[@type='belongsto'].out.current = 'true' "+
+    qry("select from Content where out[type = 'belongsto'].in.current = 'true' "+
   "and path = '"+content.path+"'").foreach(doc => {
       doc.field("role",content.role)
       doc.field("status",content.status)
@@ -111,12 +113,12 @@ class DBService extends ContentWriter {
     false
   }
   def getContent():List[Content] = {
-    qry("select from Content where in[@type='belongsto'].out.current = 'true' ")
+    qry("select from Content where out[type = 'belongsto'].in.current = 'true' ")
     .map(doc => {
       val record:ORecordBytes = doc.field("content");
       new Content(doc.field("path"),doc.field("contentType"),
         doc.field("status"),doc.field("charset"),doc.field("role"),
-        record.toStream())
+        if(record!=null)record.toStream() else null)
     })
   }
   def putContent(content:Content) {

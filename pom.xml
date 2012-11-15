@@ -42,28 +42,11 @@
                 <includes>
                     <include>**/*.html</include>
                     <include>**/*.js</include>
+                    <include>**/*.css</include>
                 </includes>
             </resource>
         </resources>
         <plugins>
-            <!--plugin>
-                <groupId>org.zeroturnaround</groupId>
-                <artifactId>jrebel-maven-plugin</artifactId>
-                <version>1.1.1</version>
-                <configuration>
-                    <relativePath>../../</relativePath>
-                    <rootPath>$${myproject.root}</rootPath>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>generate-rebel-xml</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin-->
             <plugin>
                 <groupId>st.happy_camper.maven.plugins</groupId>
                 <artifactId>ensime-maven-plugin</artifactId>
@@ -127,10 +110,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.6.1</version>
-            <scope>compile</scope>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.7</version>
         </dependency>
         <dependency>
             <groupId>org.apache.wicket</groupId>
@@ -148,7 +130,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.8.2</version>
-            <scope>compile</scope>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.github.scala-incubator.io</groupId>

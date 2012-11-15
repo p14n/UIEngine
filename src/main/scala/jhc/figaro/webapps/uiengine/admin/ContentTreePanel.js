@@ -1,5 +1,5 @@
 var ContentTreePanel = {};
-($){
+(function($){
 	var pathBitOf = function(fullPath){
 		var index = fullPath.lastIndexOf("/");
 		if(index>-1){
@@ -20,11 +20,17 @@ var ContentTreePanel = {};
 		}
 	}
 	var createClickableFolderElement = function(path,folderCnt){
+		if(path==""){
+			path="&lt;root&gt;"
+		}
+
 		var heading = $("<li><span class=\"clickablefolder\">"+path+"</span></li>")
-		heading.click(toggleHandler("folder_"+folderCnt))
+		var folderClassName = "folder_"+folderCnt;
+		heading.click(toggleHandler(folderClassName));
+		$("."+folderClassName).toggle()
 		return heading;
 	}
-	var createTree = function(ulClass) {
+	ContentTreePanel.createTree = function(ulClass) {
 		var currPath = null
 		var folderCount = 0
 		$($("."+ulClass+" li").get().reverse()).each(function() { 
@@ -50,4 +56,4 @@ var ContentTreePanel = {};
 			$("."+ulClass).prepend(heading);
 		}
 	}
-}(jQuery)
+}(jQuery));
