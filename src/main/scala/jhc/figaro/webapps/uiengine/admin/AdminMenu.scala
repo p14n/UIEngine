@@ -9,6 +9,8 @@ import org.apache.wicket.behavior.Behavior
 import org.apache.wicket.request.resource.PackageResourceReference
 import org.apache.wicket.Component
 import org.apache.wicket.markup.html.IHeaderResponse
+import org.apache.wicket.AttributeModifier
+import org.apache.wicket.model.Model
 
 class AdminMenu(id:String,selected:Class[_<:WebPage]) extends Panel(id) {
 
@@ -24,7 +26,8 @@ class AdminMenu(id:String,selected:Class[_<:WebPage]) extends Panel(id) {
     val name = page.getSimpleName()
     link.add(new Label("page",name.substring(0,name.indexOf("Page"))))
     listItem.add(link)
-    link.setEnabled(page != selected)
+    if(page == selected)
+      listItem.add(new AttributeModifier("class",true,Model.of("active")))
     list.add(listItem)    
   }
   add(list)
@@ -33,6 +36,8 @@ class AdminMenu(id:String,selected:Class[_<:WebPage]) extends Panel(id) {
     override def renderHead(component: Component, response: IHeaderResponse) {
       response.renderCSSReference(
         new PackageResourceReference(classOf[AdminMenu],"bootstrap.min.css"));
+      response.renderCSSReference(
+        new PackageResourceReference(classOf[AdminMenu],"AdminMenu.css"))
     }
   });
 }

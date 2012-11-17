@@ -1,0 +1,7 @@
+.navbar-inner{
+	height: 40px;
+}
+.active {
+   pointer-events: none;
+   cursor: default;
+}

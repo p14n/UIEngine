@@ -1,34 +1,34 @@
 <html><body>
 <wicket:panel>
-<div class="contentSourcePanel">
+<div class="contentSourcePanel info-group">
 	<ul>
-		<li>
+		<li class="rootname">
 			<span>Source root:</span><span wicket:id="root"></span>
 			<a href="#" wicket:id="delete"/>
 		</li>
-		<wicket:container wicket:id="feederSection">
-			<li>
-				<span>Feeders</span>
-			</li>
-			<li>
-				<ul>
-					<li wicket:id="feeders">
-						<span wicket:id="path"></span>
-						<a wicket:id="delete">Delete</a>
-						<a wicket:id="feed">Feed</a>
-					</li>
-				</ul>
-			</li>
-		</wicket:container>
-		<li>
+		<li class="feederform">
 			<form wicket:id="form">
 				<div>
 					<input type="text" wicket:id="path"/>
-					<a wicket:id="submit">Add new feed source</a>
+					<a class="btn" wicket:id="submit">Add new feed source</a>
 					<span wicket:id="feed"></span>
 				</div>
 			</form>
 		</li>
+		<wicket:container wicket:id="feederSection">
+			<li class="feedertitle">
+				<span>Feeders</span>
+			</li>
+			<li>
+				<ul class="feederlist">
+					<li wicket:id="feeders">
+						<span wicket:id="path"></span>
+						<a class="btn" wicket:id="delete">Delete</a>
+						<a class="btn" wicket:id="feed">Feed</a>
+					</li>
+				</ul>
+			</li>
+		</wicket:container>
 	</ul>
 </div>
 </wicket:panel>

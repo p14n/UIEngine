@@ -1,6 +1,69 @@
 <html>
 <head>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<style type="text/css">
+
+li {
+	list-style: none;
+}
+
+.info-group {
+	position: relative;
+	margin: 0px 0;
+	padding: 39px 19px 14px;
+	background-color: white;
+	border: 1px solid #DDD;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+}
+.contentPanel {
+	width:900px;
+}
+.contentPanel span {
+	float: right;
+}
+.content-source-form {
+	margin-top: 20;
+	float: right;
+}
+
+form input {
+	margin-bottom: -2.5px;
+	height: 25px;
+}
+
+.contentSourcePanel .feedertitle {
+	position: relative;
+}
+
+.content-source-list {
+	margin: 0px 0px 0px 0px;
+}
+
+.feederform {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+.rootname {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: whiteSmoke;
+	border: 1px solid #DDD;
+	color: #9DA0A4;
+	-webkit-border-radius: 4px 0 4px 0;
+	-moz-border-radius: 4px 0 4px 0;
+	border-radius: 4px 0 4px 0;
+}
+
+	</style>
 </head>
 	<body>
 		<div wicket:id="feedDiv">
@@ -8,7 +71,7 @@
 			<span wicket:id="feedLog"></span>
 		</div>
 		<div wicket:id="navigation"/>
-		<div wicket:id="contentSourceList"/>
-		<div wicket:id="contentList"/>
+		<div class="container" wicket:id="contentSourceList"/>
+		<div class="container" wicket:id="contentList"/>
 	</body>
 </html>
