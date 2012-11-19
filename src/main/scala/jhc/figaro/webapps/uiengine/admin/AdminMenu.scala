@@ -16,7 +16,8 @@ class AdminMenu(id:String,selected:Class[_<:WebPage]) extends Panel(id) {
 
   val list = new RepeatingView("nav")
 
-  List(classOf[ContentPage],classOf[ComponentPage],classOf[CatalogPage]).foreach { page => 
+  List(classOf[ContentPage],classOf[ComponentPage],
+    classOf[CatalogPage],classOf[DatabasePage]).foreach { page => 
     val listItem = new WebMarkupContainer(list.newChildId())
     val link = new Link("link"){
       override def onClick(){

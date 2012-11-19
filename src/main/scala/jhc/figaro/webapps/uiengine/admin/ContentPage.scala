@@ -28,7 +28,6 @@ class ContentPage extends WebPage {
 	feedDiv.add(feedLogLabel)
 
 	add(feedDiv)
-	//var timer:AjaxSelfUpdatingTimerBehavior = null
 
 	add(new AdminMenu("navigation",classOf[ContentPage]))
 	add(new ContentSourceListPanel("contentSourceList", 

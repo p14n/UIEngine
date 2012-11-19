@@ -6,8 +6,8 @@ class ComponentPage extends WebPage {
 
 	add(new AdminMenu("navigation",classOf[ComponentPage]))
 
-/*	add(new ComponentListPanel("componenents"),LDM.of(
+	/*add(new ComponentListPanel("componenents"),LDM.of(
 		() => {
 			    val annotatedComponentMap = findComponentObjectsOnClasspath("jhc");
-		}))*/		
+		}))*/
 }

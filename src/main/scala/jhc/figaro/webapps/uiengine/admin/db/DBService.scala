@@ -99,8 +99,15 @@ class DBService extends ContentWriter {
     })
   }
   def updateContent(content:Content):Boolean = {
+    val debug = log.isDebugEnabled()
+    if(debug)
+      log.debug("Saving content for path "+content.path)
     qry("select from Content where out[type = 'belongsto'].in.current = 'true' "+
   "and path = '"+content.path+"'").foreach(doc => {
+      if(debug) {
+        log.debug("Content "+content.path+" saved for current version")
+        log.debug(content.toString())
+      }
       doc.field("role",content.role)
       doc.field("status",content.status)
       doc.field("charset",content.charset)
@@ -113,7 +120,7 @@ class DBService extends ContentWriter {
     false
   }
   def getContent():List[Content] = {
-    qry("select from Content where out[type = 'belongsto'].in.current = 'true' ")
+    qry("select from Content where out[type = 'belongsto'].in.current = 'true' order by path")
     .map(doc => {
       val record:ORecordBytes = doc.field("content");
       new Content(doc.field("path"),doc.field("contentType"),

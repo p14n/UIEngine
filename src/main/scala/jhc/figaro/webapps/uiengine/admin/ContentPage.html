@@ -18,12 +18,53 @@ li {
 	border-radius: 4px;
 
 }
-.contentPanel {
-	width:900px;
+div.pathdiv {
+	float:left;
+	margin-left: 20px;
 }
-.contentPanel span {
+div.labels {
+	float:right;
+	padding-top: 4px;
+	padding-right: 5px;
+}
+div.labels .label {
+	margin: 5 2 5 2;
+}
+div.roles {
 	float: right;
 }
+div.contentPanel {
+	height: 25px;
+}
+.clickablefolder {
+	font-weight: bold;
+}
+.contentlist .alert {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+/*div.contentPanel {
+	height: 25px;
+}
+.contentPanel .roleForm {
+	width:40%;
+	float:right;
+}*/
+/*
+.contentPanel span {
+	position: relative;
+	float:right;
+}
+.roleform {
+	position: relative;
+	float: right;
+}
+.contentPanel .path {
+	position: relative;
+	float: left;
+} */
 .content-source-form {
 	margin-top: 20;
 	float: right;
@@ -48,7 +89,7 @@ form input {
 	right: 20px;
 }
 
-.rootname {
+.info-group-name {
 	position: absolute;
 	top: -1px;
 	left: -1px;
@@ -61,6 +102,16 @@ form input {
 	-webkit-border-radius: 4px 0 4px 0;
 	-moz-border-radius: 4px 0 4px 0;
 	border-radius: 4px 0 4px 0;
+}
+
+.feedLog {
+	background-color: #333;
+opacity: 0.8;
+color: fff;
+position: absolute;
+top: 20px;
+left: 20px;
+z-index: 2000;
 }
 
 	</style>

@@ -24,7 +24,7 @@ var ContentTreePanel = {};
 			path="&lt;root&gt;"
 		}
 
-		var heading = $("<li><span class=\"clickablefolder\">"+path+"</span></li>")
+		var heading = $("<div><span class=\"clickablefolder\">"+path+"</span></div>")
 		var folderClassName = "folder_"+folderCnt;
 		heading.click(toggleHandler(folderClassName));
 		$("."+folderClassName).toggle()
@@ -33,7 +33,7 @@ var ContentTreePanel = {};
 	ContentTreePanel.createTree = function(ulClass) {
 		var currPath = null
 		var folderCount = 0
-		$($("."+ulClass+" li").get().reverse()).each(function() { 
+		$($("."+ulClass+" .contentitem").get().reverse()).each(function() { 
 			var pathSpan = $(this).find(".path")
 			var pathText = pathSpan.text()
 			pathSpan.text(fileBitOf(pathText))

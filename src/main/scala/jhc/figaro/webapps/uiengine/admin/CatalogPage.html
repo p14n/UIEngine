@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" xml:lang="en" lang="en">  
 	<head>
 		<style>
-span {
+.components span {
 	color:#333;
 	font-family: 'Helvetica',sans-serif;
 }
-ul {
+.container ul {
 	list-style: none;
 }
 
@@ -45,6 +45,6 @@ ul {
 	</head>
   <body>
     <div wicket:id="navigation"/>
-    <div wicket:id="components"></div>
+    <div class="container components" wicket:id="components"></div>
   </body>
 </html>

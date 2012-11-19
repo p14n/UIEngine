@@ -1,11 +1,14 @@
 <html>
 <body>
 <wicket:panel>
-<ul class="contentlist info-group">
-<li wicket:id="list">
-	<div wicket:id="content"></div>
-</li>
-</ul>
+<div class="contentlist info-group">
+	<span class="info-group-name">Current content</span>
+	<span class="alert alert-error" wicket:id="feedback">Error</span>
+
+	<wicket:container wicket:id="list">
+		<div class="contentitem" wicket:id="content"></div>
+	</wicket:container>
+</div>
 </wicket:panel>
 </body>
 </html>
