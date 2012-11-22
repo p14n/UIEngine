@@ -18,8 +18,9 @@ class ContentMapper(
   override def mapRequest(req: Request) : IRequestHandler = {
 
     val path = pathFromRequest(req.getUrl())
-
+    val start = System.nanoTime()
     val content = resolver.resolve(path)
+    RequestInfo.get().addTimeSpent(start,RequestInfo.RESOLVE_CONTENT)
 
     if(content == null) return null;
 

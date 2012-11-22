@@ -5,6 +5,7 @@ import org.apache.wicket.model.IModel
 import org.apache.wicket.util.tester.FormTester
 import org.apache.wicket.util.tester.WicketTester
 import org.scalatest.FunSuite
+import org.apache.wicket.ajax.AjaxRequestTarget
 
 class ContentPanelSuite extends FunSuite {
 
@@ -12,7 +13,8 @@ class ContentPanelSuite extends FunSuite {
 
   val tps = TPS.of((id:String)=>{
       new ContentPanel(id,LDM.of(()=>{content})){
-	override def onChanged(model:IModel[Content]){}
+      	override def onChanged(model:IModel[Content]){}
+        override def onRoleError(target:AjaxRequestTarget){}
       }
     })
 

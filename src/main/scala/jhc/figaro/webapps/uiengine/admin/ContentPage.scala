@@ -13,13 +13,24 @@ import org.apache.wicket.util.time.Duration
 import java.io.{StringWriter, Writer}
 import org.apache.wicket.markup.html.WebMarkupContainer
 import scala.actors.Future
+import org.apache.wicket.markup.html.link.Link
 
 class ContentPage extends WebPage {
 
 	setOutputMarkupId(true)
 	val feedMessage = Model.of("")
 	val feedLabel = new Label("feedLabel",feedMessage);
-	val feedDiv = new WebMarkupContainer("feedDiv")
+	val feedDiv = new WebMarkupContainer("feedDiv"){
+		override def isVisible():Boolean = {
+			feedMessage.getObject() != ""
+		}
+	}
+	feedDiv.setOutputMarkupPlaceholderTag(true);
+	feedDiv.add(new Link("close"){
+		override def onClick(){
+			feedMessage.setObject("")
+		}
+	})
 	feedDiv.add(feedLabel)
 	feedDiv.setOutputMarkupId(true)
 	val feedLog = Model.of("")
@@ -34,7 +45,7 @@ class ContentPage extends WebPage {
 		LDM.of(()=>{
 			asList(data.getContentSources())
 		})){
-		override def onFeedStart(target:AjaxRequestTarget,log:Writer,future:Future[Boolean]) {
+		override def onFeedStart(target:AjaxRequestTarget,log:Writer,@serializable future:Future[Boolean]) {
 
 			feedMessage.setObject("Content being updated")
 
@@ -42,7 +53,6 @@ class ContentPage extends WebPage {
 				override def onPostProcessTarget(target:AjaxRequestTarget){
 					feedLog.setObject(log.toString())
 					if(future.isSet){
-						feedMessage.setObject("")
 						stop()
 						feedDiv.remove(this);
 					}
@@ -51,6 +61,10 @@ class ContentPage extends WebPage {
 				}
 			})
 			target.add(feedDiv)
+			/*val divId = feedDiv.getMarkupId(true)
+
+			target.appendJavaScript("var elem = document.getElementById('"+divId+"');"+
+				"elem.scrollTop = elem.scrollHeight;");*/
 		}
 	})
 

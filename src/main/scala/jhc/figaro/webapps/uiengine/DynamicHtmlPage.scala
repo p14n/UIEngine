@@ -4,7 +4,6 @@ import org.apache.wicket.markup.IMarkupCacheKeyProvider
 import org.apache.wicket.markup.IMarkupResourceStreamProvider
 import org.apache.wicket.markup.Markup
 import org.apache.wicket.markup.MarkupResourceStream
-
 import org.apache.wicket.markup.WicketTag
 import org.apache.wicket.markup.IMarkupResourceStreamProvider
 import org.apache.wicket.markup.html.WebPage
@@ -17,7 +16,11 @@ import org.apache.wicket.markup.MarkupStream
 import org.apache.wicket.markup.ComponentTag
 import org.apache.wicket.Component
 import scala.collection.mutable.Queue
+import org.slf4j.LoggerFactory
 
+object DynamicHtmlPage {
+  val log = LoggerFactory.getLogger(classOf[DynamicHtmlPage])
+}
 class DynamicHtmlPage(sourceProvider: () => String,
   headComponentCreator: (String, String) => Behavior,
   componentCreator: (String, String) => Component)
@@ -43,7 +46,7 @@ class DynamicHtmlPage(sourceProvider: () => String,
 
   }
   def findAndAddHeaderComponents(stream: MarkupStream) {
-
+    val start = System.nanoTime()
     while (stream.skipUntil(classOf[ComponentTag])) {
 
       val tag = stream.getTag()
@@ -69,6 +72,8 @@ class DynamicHtmlPage(sourceProvider: () => String,
       }
       stream.next()
     }
+    RequestInfo.get().addTimeSpent(start,RequestInfo.CREATE_COMPONENT)
+
   }
 
   override def getMarkupResourceStream(
@@ -82,6 +87,7 @@ class DynamicHtmlPage(sourceProvider: () => String,
 
   def resolve(container: MarkupContainer, markupstream: MarkupStream, tag: ComponentTag): Component = {
 
+    val start = System.nanoTime()
     if (tag.isInstanceOf[WicketTag]) {
 
       var markupId = tag.getAttribute("id")
@@ -94,8 +100,11 @@ class DynamicHtmlPage(sourceProvider: () => String,
         val c = componentCreator(uitype, markupId)
         return c;
       } catch {
-        case e => e.printStackTrace()
+        case e:Throwable =>
+        DynamicHtmlPage.log.error("Unable to creeate component from tag "+tag.toString(),e)
       }
+      RequestInfo.get().addTimeSpent(start,RequestInfo.CREATE_COMPONENT)
+
     }
     null
   }

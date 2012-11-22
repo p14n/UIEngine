@@ -104,20 +104,36 @@ form input {
 	border-radius: 4px 0 4px 0;
 }
 
-.feedLog {
+.feeddiv.info-group-name {
+	right: -1px;
+	padding: 7px 3px;
+	-webkit-border-radius: 0px 4px 0px 4px;
+	-moz-border-radius: 0px 4px 0px 4px;
+	border-radius: 0px 4px 0px 4px;
+
+}
+
+.feeddiv {
 	background-color: #333;
-opacity: 0.8;
-color: fff;
-position: absolute;
-top: 20px;
-left: 20px;
-z-index: 2000;
+	opacity: 0.8;
+	color: #fff;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 2000;
+	width: 600px;
+	height: 400px;
+	overflow: auto;
+}
+.contentitem {
+	margin-bottom: -0.9em;
 }
 
 	</style>
 </head>
 	<body>
-		<div wicket:id="feedDiv">
+		<div class="feeddiv info-group" wicket:id="feedDiv">
+			<a class="info-group-name" href="#" wicket:id="close">x</a>
 			<span wicket:id="feedLabel"></span>
 			<span wicket:id="feedLog"></span>
 		</div>

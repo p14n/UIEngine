@@ -11,12 +11,19 @@ import org.apache.wicket.request.resource.PackageResource
 import org.apache.wicket.request.resource.PackageResourceReference
 import org.apache.wicket.markup.html.panel.FeedbackPanel
 import org.apache.wicket.ajax.AjaxRequestTarget
+import org.apache.wicket.protocol.http.WebSession
 
 abstract class ContentTreePanel(id:String,contentList:IModel[List[Content]]) 
 	 extends Panel(id) with IHeaderContributor {
 
-  val feed = new FeedbackPanel("feedback")
+  val feed = new FeedbackPanel("feedback"){
+    override def isVisible():Boolean = {
+      return ! WebSession.get().getFeedbackMessages().isEmpty()
+    }
+  }
   add(feed)
+  feed.setOutputMarkupPlaceholderTag(true)
+
 
   add(new ListView("list",contentList){
     override def populateItem(item:ListItem[Content]){

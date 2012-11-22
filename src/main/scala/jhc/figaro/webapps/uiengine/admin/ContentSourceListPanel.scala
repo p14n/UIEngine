@@ -17,6 +17,7 @@ import java.io.Writer
 import org.apache.wicket.request.cycle.RequestCycle
 import scala.actors.Future
 import java.io.StringWriter
+import java.io.PrintWriter
 
 abstract class ContentSourceListPanel(id:String,
 			     model:IModel[java.util.List[ContentSource]]) extends Panel(id) {
@@ -46,8 +47,12 @@ abstract class ContentSourceListPanel(id:String,
         }
         val rootUrl = item.getModelObject().rootUrl
         onFeedStart(target,log,future {
-          val crawler = new Crawler(rootUrl,path,data)
-          DBFunctions.doWithConnection(()=>{ crawler.fetch(log)})
+          try { 
+            val crawler = new Crawler(rootUrl,path,data)
+            DBFunctions.doWithConnection(()=>{ crawler.fetch(log)})
+          } catch {
+            case e: Exception => e.printStackTrace(new PrintWriter(log)); 
+          }
           true
         })
        }

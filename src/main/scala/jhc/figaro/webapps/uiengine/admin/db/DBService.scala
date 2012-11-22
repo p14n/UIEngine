@@ -112,8 +112,10 @@ class DBService extends ContentWriter {
       doc.field("status",content.status)
       doc.field("charset",content.charset)
       doc.field("contentType",content.contentType)
-      val record = new ORecordBytes(conn(), content.content);
-      doc.field("content",record)
+      if(content.content!=null){
+        val record = new ORecordBytes(conn(), content.content);
+        doc.field("content",record)
+      }
       doc.save()
       return true
     })
