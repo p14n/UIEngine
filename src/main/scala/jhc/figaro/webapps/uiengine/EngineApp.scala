@@ -4,13 +4,13 @@ import org.apache.wicket.markup.html.WebPage
 import org.apache.wicket.markup.parser.filter.WicketTagIdentifier
 import org.apache.wicket.protocol.http.WebApplication
 import jhc.figaro.webapps.uiengine.UIComponentCreator._
+import jhc.figaro.webapps.uiengine.content.DBContentResolver
+import org.apache.wicket.request.http.flow.AbortWithHttpErrorCodeException
 
 class EngineApp extends WebApplication {
 
- val rootFileContentPath = "/Users/ae589/dev/ws/scala/FWUIEngine/src/test/data/content/jhc/figaro/webapps/uiengine/CrawlerSuite/"
-
   override def getHomePage(): Class[_<:WebPage] = {
-    null
+    throw new AbortWithHttpErrorCodeException(404);
   }
   override def init(){
 
@@ -19,7 +19,8 @@ class EngineApp extends WebApplication {
     val annotatedComponentMap = findComponentObjectsOnClasspath("jhc");
     val componentCreator = new UIComponentCreator(annotatedComponentMap);
 
-    mount(new ContentMapper(new FileContentResolver(rootFileContentPath),
+    mount(new ContentMapper(
+      new DBContentResolver(ServiceLocator.db),
 			 componentCreator.createHeaderComponent, 
 			    componentCreator.createComponent));
   }

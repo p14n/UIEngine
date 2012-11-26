@@ -1,21 +1,19 @@
 package jhc.figaro.webapps.uiengine.admin.db
 import com.orientechnologies.orient.core.db.ODatabaseRecordThreadLocal
 import com.orientechnologies.orient.core.db.graph.OGraphDatabase
-import com.orientechnologies.orient.core.db.record.ODatabaseRecord
-import com.orientechnologies.orient.core.db.record.ODatabaseRecordTx
-import com.orientechnologies.orient.core.record.impl.ODocument
-import com.orientechnologies.orient.core.record.impl.ORecordBytes
+import com.orientechnologies.orient.core.db.record.{ODatabaseRecord,ODatabaseRecordTx}
+import com.orientechnologies.orient.core.record.impl.{ODocument,ORecordBytes}
 import com.orientechnologies.orient.core.sql.query.OSQLSynchQuery
-import jhc.figaro.webapps.uiengine.content.Content
-import jhc.figaro.webapps.uiengine.content.ContentWriter
-import jhc.figaro.webapps.uiengine.content.ContentSource
+import jhc.figaro.webapps.uiengine.content.{Content,ContentWriter,ContentSource}
+import jhc.figaro.webapps.uiengine.ConditionalLogger
 import scala.collection.JavaConversions._
 import org.slf4j.LoggerFactory
 import java.util.ArrayList
+import jhc.figaro.webapps.uiengine.content.ContentReader
 
-class DBService extends ContentWriter {
+class DBService extends ContentWriter with ContentReader {
 
-  val log = LoggerFactory.getLogger(classOf[DBService])
+  val log = new ConditionalLogger(classOf[DBService])
 
   def conn():OGraphDatabase = {
     new OGraphDatabase (ODatabaseRecordThreadLocal.INSTANCE
@@ -99,15 +97,12 @@ class DBService extends ContentWriter {
     })
   }
   def updateContent(content:Content):Boolean = {
-    val debug = log.isDebugEnabled()
-    if(debug)
-      log.debug("Saving content for path "+content.path)
+      log.ifDebug(()=>{"Saving content for path "+content.path})
     qry("select from Content where out[type = 'belongsto'].in.current = 'true' "+
   "and path = '"+content.path+"'").foreach(doc => {
-      if(debug) {
-        log.debug("Content "+content.path+" saved for current version")
-        log.debug(content.toString())
-      }
+       log.ifDebug(()=>{"Content "+content.path+" saved for current version"})
+       log.ifDebug(()=>{content.toString()})
+
       doc.field("role",content.role)
       doc.field("status",content.status)
       doc.field("charset",content.charset)
@@ -121,13 +116,25 @@ class DBService extends ContentWriter {
     })
     false
   }
+  def getContent(path:String):Content = {
+    log.ifDebug(() => {"Searching content database for "+path})
+    qry("select from Content where out[type = 'belongsto'].in.current = 'true' "+
+      "and path = '"+path+"'").foreach(doc => {
+        return contentFromDocument(doc)
+      })
+      null
+  }
+  def contentFromDocument(doc:ODocument):Content = {
+    val record:ORecordBytes = doc.field("content");
+    new Content(doc.field("path"),doc.field("contentType"),
+      doc.field("status"),doc.field("charset"),doc.field("role"),
+      if(record!=null)record.toStream() else null)
+
+  }
   def getContent():List[Content] = {
     qry("select from Content where out[type = 'belongsto'].in.current = 'true' order by path")
     .map(doc => {
-      val record:ORecordBytes = doc.field("content");
-      new Content(doc.field("path"),doc.field("contentType"),
-        doc.field("status"),doc.field("charset"),doc.field("role"),
-        if(record!=null)record.toStream() else null)
+      contentFromDocument(doc)
     })
   }
   def putContent(content:Content) {

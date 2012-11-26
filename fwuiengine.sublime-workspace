@@ -4,6 +4,102 @@
 		"selected_items":
 		[
 			[
+				"ContentR",
+				"ContentResolver	"
+			],
+			[
+				"con",
+				"contentFromDocument	(String)"
+			],
+			[
+				"Con",
+				"ConditionalLogger	"
+			],
+			[
+				"isD",
+				"isDebugEnabled	()"
+			],
+			[
+				"cla",
+				"class	class"
+			],
+			[
+				"figa",
+				"figaro	"
+			],
+			[
+				"infoE",
+				"isInfoEnabled	()"
+			],
+			[
+				"Fil",
+				"FilterChain	"
+			],
+			[
+				"ServletR",
+				"ServletResponse	"
+			],
+			[
+				"Thr",
+				"Throwable	"
+			],
+			[
+				"Dyn",
+				"DynamicHtmlPage	"
+			],
+			[
+				"get",
+				"getOrElse	(<byname>[B])"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"Re",
+				"RequestInfo"
+			],
+			[
+				"n",
+				"nanoTime"
+			],
+			[
+				"clas",
+				"class	class"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"inf",
+				"info-group-name"
+			],
+			[
+				"fee",
+				"feedDiv	"
+			],
+			[
+				"getm",
+				"getMarkupId	(Boolean)"
+			],
+			[
+				"feed",
+				"feedDiv	"
+			],
+			[
+				"d",
+				"dbcontainer"
+			],
+			[
+				"c",
+				"container"
+			],
+			[
 				"to",
 				"tostr	toString"
 			],
@@ -14,10 +110,6 @@
 			[
 				"de",
 				"debug	(String)"
-			],
-			[
-				"con",
-				"contentList"
 			],
 			[
 				"in",
@@ -41,10 +133,6 @@
 			],
 			[
 				"margin",
-				"margin-right"
-			],
-			[
-				"marg",
 				"margin-right"
 			],
 			[
@@ -72,10 +160,6 @@
 				"listItem	"
 			],
 			[
-				"re",
-				"response	"
-			],
-			[
 				"renderC",
 				"renderCSSReference	(ResourceReference)"
 			],
@@ -84,16 +168,8 @@
 				"folderClassName"
 			],
 			[
-				"Con",
-				"contentTreePanel"
-			],
-			[
 				"sete",
 				"setEscapeModelStrings	(Boolean)"
-			],
-			[
-				"feed",
-				"feedLogLabel	"
 			],
 			[
 				"log",
@@ -102,10 +178,6 @@
 			[
 				"is",
 				"isStopped	()"
-			],
-			[
-				"fee",
-				"feedMessage	"
 			],
 			[
 				"on",
@@ -148,10 +220,6 @@
 				"println"
 			],
 			[
-				"l",
-				"length	()"
-			],
-			[
 				"sp",
 				"splitFeeders"
 			],
@@ -174,10 +242,6 @@
 			[
 				"for",
 				"foreach	(Function1[String, B])"
-			],
-			[
-				"get",
-				"getMetadata	()"
 			],
 			[
 				"er",
@@ -328,26 +392,58 @@
 	"buffers":
 	[
 		{
-			"file": "src/main/scala/jhc/figaro/webapps/uiengine/admin/ComponentPage.html",
+			"file": "src/main/scala/jhc/figaro/webapps/uiengine/EngineServer.scala",
 			"settings":
 			{
-				"buffer_size": 344,
+				"buffer_size": 2086,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.scala",
+			"file": "src/main/scala/jhc/figaro/webapps/uiengine/EngineApp.scala",
 			"settings":
 			{
-				"buffer_size": 1533,
+				"buffer_size": 890,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPage.scala",
+			"file": "src/main/scala/jhc/figaro/webapps/uiengine/content/ContentResolver.scala",
 			"settings":
 			{
-				"buffer_size": 2054,
+				"buffer_size": 119,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/scala/jhc/figaro/webapps/uiengine/content/FileContentResolver.scala",
+			"settings":
+			{
+				"buffer_size": 1065,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/scala/jhc/figaro/webapps/uiengine/admin/db/DBService.scala",
+			"settings":
+			{
+				"buffer_size": 5079,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/scala/jhc/figaro/webapps/uiengine/content/ContentReader.scala",
+			"settings":
+			{
+				"buffer_size": 141,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/scala/jhc/figaro/webapps/uiengine/content/DBContentResolver.scala",
+			"settings":
+			{
+				"buffer_size": 195,
 				"line_ending": "Unix"
 			}
 		}
@@ -359,31 +455,31 @@
 		"selected_items":
 		[
 			[
-				"mvn",
-				"Maven: Run resources"
-			],
-			[
 				"im",
 				"Ensime: Add Import"
 			],
 			[
-				"imp",
-				"Ensime: Add Import"
-			],
-			[
-				"mv",
-				"Maven: Run resources"
-			],
-			[
-				"m",
-				"Maven: Run resources"
-			],
-			[
-				"ens",
+				"ensi",
 				"Ensime: Startup"
 			],
 			[
-				"impo",
+				"mvn",
+				"Maven: Run resources"
+			],
+			[
+				"pa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"mave",
+				"Maven: Kill running process"
+			],
+			[
+				"mv",
+				"Maven: Kill running process"
+			],
+			[
+				"imp",
 				"Ensime: Add Import"
 			],
 			[
@@ -391,12 +487,20 @@
 				"Ensime: Startup"
 			],
 			[
-				"i",
+				"impo",
 				"Ensime: Add Import"
 			],
 			[
-				"ensi",
+				"ens",
 				"Ensime: Startup"
+			],
+			[
+				"m",
+				"Maven: Run resources"
+			],
+			[
+				"i",
+				"Ensime: Add Import"
 			],
 			[
 				"import",
@@ -479,10 +583,6 @@
 				"Preferences: Browse Packages"
 			],
 			[
-				"pa",
-				"Package Control: Install Package"
-			],
-			[
 				"ins",
 				"Package Control: Install Package"
 			],
@@ -491,7 +591,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 440.0
 	},
 	"console":
 	{
@@ -508,30 +608,49 @@
 	},
 	"file_history":
 	[
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/EngineApp.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/EngineAdminApp.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPage.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/content/ContentWriter.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/ConditionalLogger.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/admin/ContentPanelSuite.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPanel.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPanel.html",
+		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/ContentMapper.scala",
+		"/Volumes/JHC/ws/Iapi/SprayJetty/src/main/scala/com/example/JettyServer.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/DBConnectionFilter.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/RequestInfoFilter.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/DynamicHtmlPage.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/RequestInfo.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentSourceListPanel.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/db/DBService.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPage.html",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ComponentPage.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/DatabasePage.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/AdminMenu.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/DatabasePage.html",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/CatalogPage.html",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ComponentPage.html",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/admin/ContentSourceListPanelSuite.scala",
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/orient.db.xml",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentSourcePanel.html",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/target/classes/jhc/figaro/webapps/uiengine/admin/ContentPanel.html",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPage.html",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.html",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/db/DBService.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/OrientDBServer.scala",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentSourceListPanel.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentSourceListPanel.html",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.js",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/fwuiengine.sublime-project",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/admin/ContentPanelTest.scala",
 		"/Users/ae589/Desktop/admin.html",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/Main.scala",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPanel.html",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/EngineServer.scala",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPage.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/ContentMapperSuite.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/HeaderComponent.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/pom.xml",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/AdminMenu.css",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/AdminMenu.html",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/AdminMenu.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/target/classes/jhc/figaro/webapps/uiengine/admin/ContentPage.html",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/target/classes/scripts/angular/docs/css/bootstrap.min.css",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/target/classes/jhc/figaro/webapps/uiengine/admin/bootstrap.min.css",
@@ -542,7 +661,6 @@
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/javascript/ContentTreePanelRunner.html",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/javascript/spec/contentTreePanelSpec.js",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/CatalogPage.scala",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/CatalogPage.html",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/logback.groovy",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/kata/src/gameOfLife.js",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/target/classes/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.html",
@@ -560,8 +678,6 @@
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/content/ContentFunctionsSuite.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/admin/UITestBuilderSuite.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/admin/ContentSourcePanelSuite.scala",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/admin/ContentSourceListPanelSuite.scala",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/admin/ContentPanelSuite.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/admin/ComponentTestFrameSuite.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/admin/ComponentListPanelSuite.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/admin/ComponentForTestA.scala",
@@ -575,11 +691,7 @@
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ComponentListPanel.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/ServiceLocator.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/DBFunctions.scala",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/DBConnectionFilter.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/target/classes/jhc/figaro/webapps/uiengine/admin/ComponentPage.html",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ComponentPage.scala",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/EngineApp.scala",
-		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
 		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/Ensime/Default.sublime-commands",
@@ -588,8 +700,6 @@
 		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/Ensime/Context.sublime-menu",
 		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/Ensime/Default (OSX).sublime-keymap",
 		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/Ensime/Context.sublime-menu\n",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/ComponentPage.html",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/admin/EngineAdminApp.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/scripts/angular/docs/partials/guide/dev_guide.templates.filters.using_filters.html",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/content/ContentSource.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/LDM.scala",
@@ -609,10 +719,8 @@
 		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/Maven/maven.py",
 		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/Maven/config_generator.py",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/target/classes/html/clientsearch/ClientSearch.html",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/ContentMapper.scala",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/test/scala/jhc/figaro/webapps/uiengine/ContentMapperTest.scala",
 		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/ScalaTest/testdeps.sh",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine/content/ContentWriter.scala",
 		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/Ensime/logs/server.log",
 		"/Users/ae589/Library/Application Support/Sublime Text 2/Packages/Ensime/logs/client.log",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/.ensime",
@@ -627,15 +735,7 @@
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/jhc/figaro/webapps/uiengine/admin/ComponentTestPage.html",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/scripts/core/angularutils.js",
 		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/scripts/clientsearch/ClientSearchSpec.js",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/scripts/clientsearch/ClientSearch.js",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/scripts/core/person/personServices.js",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/orient.db.xml.bak",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/html/clientsearch/ClientSearch.html",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/orient.db.xml",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/orient.db.xml",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/orient.db.config",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/scripts/clientsearch/ClientSearchMocks.js",
-		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/jhc/figaro/webapps/uiengine/admin/ComponentTestRunnerPage.html"
+		"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/resources/scripts/clientsearch/ClientSearch.js"
 	],
 	"find":
 	{
@@ -643,9 +743,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Users/ae589/dev/ws/scala/FWUIEngine/src/main/scala/jhc/figaro/webapps/uiengine"
 		]
 	},
 	"find_state":
@@ -653,6 +754,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ContentResolver",
 			"x:C",
 			"x",
 			"=",
@@ -691,28 +793,58 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/main/scala/jhc/figaro/webapps/uiengine/admin/ComponentPage.html",
+					"file": "src/main/scala/jhc/figaro/webapps/uiengine/EngineServer.scala",
 					"settings":
 					{
-						"buffer_size": 344,
+						"buffer_size": 2086,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1246,
+								1246
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/Scala/Scala.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/main/scala/jhc/figaro/webapps/uiengine/EngineApp.scala",
+					"settings":
+					{
+						"buffer_size": 890,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								687,
+								687
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scala/Scala.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -723,23 +855,49 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
-					"buffer": 1,
-					"file": "src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.scala",
+					"buffer": 2,
+					"file": "src/main/scala/jhc/figaro/webapps/uiengine/content/ContentResolver.scala",
 					"settings":
 					{
-						"buffer_size": 1533,
+						"buffer_size": 119,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1098,
-								1098
+								79,
+								79
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scala/Scala.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/main/scala/jhc/figaro/webapps/uiengine/content/FileContentResolver.scala",
+					"settings":
+					{
+						"buffer_size": 1065,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								44
 							]
 						],
 						"settings":
@@ -749,34 +907,87 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 71.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPage.scala",
+					"buffer": 4,
+					"file": "src/main/scala/jhc/figaro/webapps/uiengine/admin/db/DBService.scala",
 					"settings":
 					{
-						"buffer_size": 2054,
+						"buffer_size": 5079,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2014,
-								2014
+								702,
+								702
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Scala/Scala.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 222.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/main/scala/jhc/figaro/webapps/uiengine/content/ContentReader.scala",
+					"settings":
+					{
+						"buffer_size": 141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scala/Scala.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/main/scala/jhc/figaro/webapps/uiengine/content/DBContentResolver.scala",
+					"settings":
+					{
+						"buffer_size": 195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scala/Scala.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -845,8 +1056,80 @@
 		"selected_items":
 		[
 			[
+				"engine",
+				"src/main/scala/jhc/figaro/webapps/uiengine/EngineApp.scala"
+			],
+			[
+				"contentp",
+				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPage.scala"
+			],
+			[
+				"enginead",
+				"src/main/scala/jhc/figaro/webapps/uiengine/admin/EngineAdminApp.scala"
+			],
+			[
+				"contentw",
+				"src/main/scala/jhc/figaro/webapps/uiengine/content/ContentWriter.scala"
+			],
+			[
+				"cond",
+				"src/main/scala/jhc/figaro/webapps/uiengine/ConditionalLogger.scala"
+			],
+			[
+				"contentres",
+				"src/main/scala/jhc/figaro/webapps/uiengine/content/ContentResolver.scala"
+			],
+			[
+				"contentpane",
+				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPanel.html"
+			],
+			[
+				"engin",
+				"src/main/scala/jhc/figaro/webapps/uiengine/EngineServer.scala"
+			],
+			[
+				"cps",
+				"src/test/scala/jhc/figaro/webapps/uiengine/admin/ContentPanelSuite.scala"
+			],
+			[
+				"dy",
+				"src/main/scala/jhc/figaro/webapps/uiengine/DynamicHtmlPage.scala"
+			],
+			[
+				"ctp",
+				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.scala"
+			],
+			[
+				"dbs",
+				"src/main/scala/jhc/figaro/webapps/uiengine/admin/db/DBService.scala"
+			],
+			[
+				"contentsour",
+				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentSourceListPanel.scala"
+			],
+			[
+				"orie",
+				"src/main/resources/orient.db.xml"
+			],
+			[
+				"catal",
+				"src/main/scala/jhc/figaro/webapps/uiengine/admin/CatalogPage.html"
+			],
+			[
+				"compo",
+				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ComponentPage.scala"
+			],
+			[
+				"admin",
+				"src/main/scala/jhc/figaro/webapps/uiengine/admin/AdminMenu.scala"
+			],
+			[
+				"contentpage",
+				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPage.scala"
+			],
+			[
 				"compon",
-				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ComponentPage.html"
+				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ComponentPage.scala"
 			],
 			[
 				"db",
@@ -865,14 +1148,6 @@
 				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPage.scala"
 			],
 			[
-				"ctp",
-				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.scala"
-			],
-			[
-				"dbs",
-				"src/main/scala/jhc/figaro/webapps/uiengine/admin/db/DBService.scala"
-			],
-			[
 				"contentt",
 				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.html"
 			],
@@ -883,10 +1158,6 @@
 			[
 				"sub",
 				"fwuiengine.sublime-project"
-			],
-			[
-				"contentp",
-				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPage.html"
 			],
 			[
 				"cp",
@@ -903,10 +1174,6 @@
 			[
 				"content",
 				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentTreePanel.html"
-			],
-			[
-				"contentpage",
-				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentPage.html"
 			],
 			[
 				"contentpa",
@@ -1045,16 +1312,8 @@
 				"src/main/scala/jhc/figaro/webapps/uiengine/EngineApp.scala"
 			],
 			[
-				"engine",
-				"src/main/scala/jhc/figaro/webapps/uiengine/admin/EngineAdminApp.scala"
-			],
-			[
 				"clp",
 				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ComponentListPanel.scala"
-			],
-			[
-				"admin",
-				"src/main/scala/jhc/figaro/webapps/uiengine/admin/AdminMenu.scala"
 			],
 			[
 				"cs",
@@ -1075,10 +1334,6 @@
 			[
 				"contentf",
 				"src/main/scala/jhc/figaro/webapps/uiengine/content/ContentFunctions.scala"
-			],
-			[
-				"orie",
-				"src/main/scala/jhc/figaro/webapps/uiengine/OrientDBServer.scala"
 			],
 			[
 				"ldm",
@@ -1137,20 +1392,12 @@
 				"src/test/scala/jhc/figaro/webapps/uiengine/admin/EngineAdminPageTest.scala"
 			],
 			[
-				"engin",
-				"src/test/scala/jhc/figaro/webapps/uiengine/admin/EngineAdminPageTest.scala"
-			],
-			[
 				"engi",
 				"src/test/scala/jhc/figaro/webapps/uiengine/admin/EngineAdminPageTest.scala"
 			],
 			[
 				"contentso",
 				"src/main/scala/jhc/figaro/webapps/uiengine/admin/ContentSourcePanel.scala"
-			],
-			[
-				"contentw",
-				"src/main/scala/jhc/figaro/webapps/uiengine/content/ContentWriter.scala"
 			],
 			[
 				".",
@@ -1168,13 +1415,17 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/Volumes/JHC/ws/Iapi/SprayJetty/spray-rapi.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 317.0,
 	"status_bar_visible": true
 }

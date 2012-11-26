@@ -20,11 +20,14 @@ class EngineServer {
       val server = new Server()
 
       val connector = new SocketConnector();
-      connector.setPort(8082);
-      createApp(server,connector,"/app",classOf[EngineApp].getName())
-      createApp(server,connector,"/admin",classOf[EngineAdminApp].getName())
+      connector.setPort(8080);
+      createApp(server,connector,"/",classOf[EngineApp].getName())
 
-      server.setConnectors(Array(connector));
+      val adminConnector = new SocketConnector();
+      adminConnector.setPort(8082);
+      createApp(server,adminConnector,"/",classOf[EngineAdminApp].getName())
+
+      server.setConnectors(Array(connector,adminConnector));
       server.start();
 
     } catch {
@@ -45,6 +48,7 @@ class EngineServer {
     context.setMimeTypes(mt);
 
     context.addFilter(classOf[DBConnectionFilter].getName(),"/*",1)
+    context.addFilter(classOf[RequestInfoFilter].getName(),"/*",1)
 
     val holder = context.addFilter(classOf[WicketFilter].getName(), "/*", 1)
     holder.setInitParameter("applicationClassName", appClass)
