@@ -28,6 +28,7 @@ class EngineServer {
       createApp(server,adminConnector,"/",classOf[EngineAdminApp].getName())
 
       server.setConnectors(Array(connector,adminConnector));
+
       server.start();
 
     } catch {
@@ -35,10 +36,12 @@ class EngineServer {
     }
   }
 
-  private def createApp(server: Server,connector: SocketConnector,
+  private def createApp(server:Server,connector: SocketConnector,
 			contextPath: String, appClass: String) {
 
-    val context = new Context(server, contextPath);
+    val context = new Context(server,contextPath);
+    context.setConnectorNames(Array(appClass))
+    connector.setName(appClass);
     val sess = new SessionHandler();
     sess.setSessionManager(new HashSessionManager());
     context.setSessionHandler(sess);
@@ -47,8 +50,8 @@ class EngineServer {
     mt.addMimeMapping("js", "application/javascript");
     context.setMimeTypes(mt);
 
-    context.addFilter(classOf[DBConnectionFilter].getName(),"/*",1)
     context.addFilter(classOf[RequestInfoFilter].getName(),"/*",1)
+    context.addFilter(classOf[DBConnectionFilter].getName(),"/*",1)
 
     val holder = context.addFilter(classOf[WicketFilter].getName(), "/*", 1)
     holder.setInitParameter("applicationClassName", appClass)
