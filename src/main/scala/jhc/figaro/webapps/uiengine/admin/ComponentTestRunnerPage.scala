@@ -16,7 +16,7 @@ class ComponentTestRunnerPage(spec:String,pageUrl:CharSequence,data:() => String
 
   val scriptFunction = () => {
     var dataResult = data()
-    "function getTestUrl() { return '../"+pageUrl+"'; };"+
+    "function getTestUrl() { return 'hello/"+pageUrl+"'; };"+
     (if(dataResult==null) "" else dataResult)
   }
 
