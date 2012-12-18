@@ -24,7 +24,7 @@ class ClientSearch extends UIWithJavascriptDependencies
     }
 
     override def listJavascriptDependencies() : Array[String] = {
-      Array(angular,angularResource,
+      Array(jquery,angular,angularResource,directives,
 	    classpathJs("core/person/personServices.js"),
 	    classpathJs("clientsearch/ClientSearch.js"))
     }

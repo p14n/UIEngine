@@ -4,7 +4,7 @@
 					<fieldset>
 						<legend>${client.search.form.legend}</legend>
 						<label for="providerCustomerFormName">${client.search.form.label}:</label>
-						<input tabindex="1" size="" id="providerCustomerFormName"  />
+						<input tabindex="1" size="" id="providerCustomerFormName" ng-model="query"/>
 					</fieldset>
 				<div wicket:id="feedback"/>
 			</div>	
@@ -14,17 +14,17 @@
 						<th><span>${client.name.label}</span></th>
 						<th><span>${client.number.label}</span></th>
 					</tr>
-					<tbody class="clientrow" ng-repeat="client in clients">
+					<tbody class="clientrow" ng-repeat="client in clients|filter:query">
 						<tr>
-							<td class="searchable">{{client.name}}</td>
-							<td class="searchable">{{client.number}}</td>
+							<td>{{client.name}}</td>
+							<td>{{client.number}}</td>
 						</tr>
-						<tr>
+						<tr style="display:none" showonhoverparent>
 							<td colspan="2">
 								<span>${client.account.label}</span>:
-								<span class="searchable">{{client.account}}</span>
+								<span>{{client.account}}</span>
 								<span>${client.external.ref.label}</span>:
-								<span class="searchable">{{client.external}}</span>
+								<span>{{client.external}}</span>
 							</td>
 						</tr>
 					</tbody>

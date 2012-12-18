@@ -24,6 +24,12 @@ trait UIWithJavascriptDependencies {
     "angular/angular-resource-min.js")
   val angularMocksJs = new PackageResourceReference(scripts,
     "angular/angular-mocks.js")
+  val directivesJs = new PackageResourceReference(scripts,
+    "core/directives.js")
+  val jqueryJs = new PackageResourceReference(scripts,
+    "jquery-1.8.3/jquery.js")
+  val jqueryJsMin = new PackageResourceReference(scripts,
+    "jquery-1.8.3/jquery.min.js")
 
 
   def urlFor(ref: PackageResourceReference): String = {
@@ -37,6 +43,12 @@ trait UIWithJavascriptDependencies {
   }
   def angular: String = {
     urlFor(if(isDevelopment) angularJs else angularJsMin)
+  }
+  def directives: String = {
+    urlFor(directivesJs)
+  }
+  def jquery: String = {
+    urlFor(if(isDevelopment) jqueryJs else jqueryJsMin)
   }
   def angularResource: String = {
     urlFor(if(isDevelopment) angularResourceJs else angularResourceJsMin)
