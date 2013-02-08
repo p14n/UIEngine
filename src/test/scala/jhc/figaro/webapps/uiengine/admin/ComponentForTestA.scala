@@ -6,7 +6,7 @@ import org.apache.wicket.Component
 @UIComponent(name="test.a",description="A test component")
 class ComponentForTestA extends UIWithPageComponent {
 
-    override def createComponent(id: String): Component = {
+    override def createComponent(id: String,propertyApplier: (() => String,List[ComponentProperty]) => String ): Component = {
       htmlComponent(id,htmlFromFile("clientsearch/ClientSearch.html"))
     }
 

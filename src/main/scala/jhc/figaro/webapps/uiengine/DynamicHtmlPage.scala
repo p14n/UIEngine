@@ -17,13 +17,14 @@ import org.apache.wicket.markup.ComponentTag
 import org.apache.wicket.Component
 import scala.collection.mutable.Queue
 import org.slf4j.LoggerFactory
+import jhc.figaro.webapps.uiengine.admin.ComponentProperty
 
 object DynamicHtmlPage {
   val log = LoggerFactory.getLogger(classOf[DynamicHtmlPage])
 }
 class DynamicHtmlPage(sourceProvider: () => String,
   headComponentCreator: (String, String) => Behavior,
-  componentCreator: (String, String) => Component)
+  componentCreator: (String, String, String) => Component)
   extends WebPage with IMarkupResourceStreamProvider
   with IRequestablePage with IMarkupCacheKeyProvider with IComponentResolver {
 
@@ -97,7 +98,7 @@ class DynamicHtmlPage(sourceProvider: () => String,
       }
 
       try {
-        val c = componentCreator(uitype, markupId)
+        val c = componentCreator(uitype, markupId, "en")
         return c;
       } catch {
         case e:Throwable =>

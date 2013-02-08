@@ -9,7 +9,7 @@ import org.apache.wicket.request.mapper.parameter.PageParameters
 
 class DynamicHtmlPageProvider(sourceProvider:() => String,
 		    headComponentCreator: (String,String) => Behavior,
-		    componentCreator: (String,String) => Component) extends IPageProvider { 
+		    componentCreator: (String,String,String) => Component) extends IPageProvider { 
 
   override def getPageClass():Class[_<:IRequestablePage] = { 
     classOf[DynamicHtmlPage]

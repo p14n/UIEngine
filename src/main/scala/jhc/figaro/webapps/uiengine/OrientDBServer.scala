@@ -33,7 +33,7 @@ class OrientDBServer {
   }
   def addClasses(db:OGraphDatabase){
     val schema = db.getMetadata().getSchema()
-    List("Content","ContentSource","ContentVersion").foreach( n => {
+    List("Content","ContentSource","ContentVersion","ComponentProperty").foreach( n => {
       if(!schema.existsClass(n)) db.createVertexType(n)
     })
   }

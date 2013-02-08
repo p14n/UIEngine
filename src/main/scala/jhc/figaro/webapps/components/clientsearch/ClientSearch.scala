@@ -1,11 +1,9 @@
 package jhc.figaro.webapps.components.clientsearch
 import jhc.figaro.webapps.uiengine.UIComponent
 import jhc.figaro.webapps.uiengine.admin.UITest
-import jhc.figaro.webapps.uiengine.traits.UIWithDynamicJavascript
-import jhc.figaro.webapps.uiengine.traits.UIWithJavascriptDependencies
-import jhc.figaro.webapps.uiengine.traits.UIWithPageComponent
-import jhc.figaro.webapps.uiengine.traits.UIWithTests
+import jhc.figaro.webapps.uiengine.traits._
 import org.apache.wicket.Component
+import jhc.figaro.webapps.uiengine.admin.ComponentProperty
 
 @UIComponent(name="client.search",description=
 """The advisor user can view a list of their clients using this component.
@@ -14,13 +12,15 @@ Can be used in conjunction with the advisor.search component to give a provider 
 to the underlying clients""")
 class ClientSearch extends UIWithJavascriptDependencies
   with UIWithPageComponent
-  with UIWithTests {
+  with UIWithTests
+  with UIWithProperties {
 
     def myHtml():String = {
       htmlFromFile("clientsearch/ClientSearch.html")
     }
-    override def createComponent(id: String): Component = {
-      htmlComponent(id,myHtml)
+    override def createComponent(id: String,
+      propertyApplier: (() => String,List[ComponentProperty]) => String): Component = {
+      htmlComponent(id,propertyApplier(myHtml,getProperties()))
     }
 
     override def listJavascriptDependencies() : Array[String] = {
@@ -34,7 +34,8 @@ class ClientSearch extends UIWithJavascriptDependencies
       testBuilder.withDependencies(listJavascriptDependencies())
 	.withSpec(classpathJs("clientsearch/ClientSearchSpec.js"))
 	.withAllVersions
-	.withHtml(myHtml)
+	.withHtml(
+    () => {replacePropertiesInText(myHtml(),getProperties())})
 	.withData(createDataForTest)
 	.build()
     }
@@ -49,5 +50,13 @@ class ClientSearch extends UIWithJavascriptDependencies
 		]"""
     }
 
-
+    override def getProperties():List[ComponentProperty] = {
+      List(
+      prop("client.search.form.legend","Client search","The legend of the client search form","en"),
+      prop("client.search.form.label","Search for","The form label in the client search form","en"),
+      prop("client.name.label","Client name","The label next to the client name in results","en"),
+      prop("client.number.label","Client number","The label next to the client number in results","en"),
+      prop("client.account.label","Account number","The label next to the account number in results","en"),
+      prop("client.external.ref.label","Client external reference","The label next to the client external reference in results","en"))
+    }
   }

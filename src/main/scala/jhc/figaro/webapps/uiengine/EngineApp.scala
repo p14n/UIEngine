@@ -17,7 +17,8 @@ class EngineApp extends WebApplication {
     WicketTagIdentifier.registerWellKnownTagName("ui")
 
     val annotatedComponentMap = findComponentObjectsOnClasspath("jhc");
-    val componentCreator = new UIComponentCreator(annotatedComponentMap);
+    val componentCreator = new UIComponentCreator(annotatedComponentMap,
+      ServiceLocator.db.getComponentProperties);
 
     mount(new ContentMapper(
       new DBContentResolver(ServiceLocator.db),

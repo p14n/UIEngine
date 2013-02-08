@@ -4,6 +4,7 @@ import jhc.figaro.webapps.uiengine.traits.UIWithJavascriptDependencies
 import jhc.figaro.webapps.uiengine.traits.UIWithPageComponent
 import org.apache.wicket.Component
 import org.apache.wicket.markup.html.basic.Label
+import jhc.figaro.webapps.uiengine.admin.ComponentProperty
 
 @UIComponent(name="test_ui",description="test")
 class TestAnnotatedComponent extends UIWithJavascriptDependencies 
@@ -15,7 +16,7 @@ class TestAnnotatedComponent extends UIWithJavascriptDependencies
   def listJavascriptDependencies: Array[String] = {
     Array("script1.js","script2.js")
   }
-  def createComponent(id:String): Component = {
+  def createComponent(id:String,propertyApplier: (() => String,List[ComponentProperty]) => String ): Component = {
     new Label(id)
   }
 

@@ -15,7 +15,7 @@ class UIComponentResolverSuite extends FunSuite {
 
     val t = new WicketTester()
 
-    def resolver(id:String,uitype:String): Component = { 
+    def resolver(id:String,uitype:String,lang:String): Component = { 
       new DynamicHtmlComponent(id,
 			       {"<span>special</span>"})
     }

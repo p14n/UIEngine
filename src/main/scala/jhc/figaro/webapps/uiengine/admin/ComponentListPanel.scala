@@ -11,7 +11,7 @@ import org.apache.wicket.model.LoadableDetachableModel
 import org.apache.wicket.model.Model
 import scala.collection.immutable.TreeMap
 
-class ComponentListPanel(id: String,model: IModel[Map[String, Serializable]]) extends Panel(id) {
+abstract class ComponentListPanel(id: String,model: IModel[Map[String, Serializable]]) extends Panel(id) {
 
   val annotationClass = classOf[UIComponent];
 
@@ -42,8 +42,9 @@ class ComponentListPanel(id: String,model: IModel[Map[String, Serializable]]) ex
 
     componentPanel.add(details)
 
-    details.add(new Label("description",annotation.description()))
-    details.add(new ComponentTestFrame("test",Model.of(value)))
+    addComponentDetails(annotation,value,details)
 
   }
+
+  def addComponentDetails(annotation:UIComponent,component:Serializable,details:WebMarkupContainer)
 }

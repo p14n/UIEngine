@@ -13,7 +13,7 @@ class ComponentListPanelSuite extends FunSuite {
     tester.startPanel(new ITestPanelSource() {
       override def getTestPanel(id: String): Panel = {
 	val nameObjectMap = Map[String,Serializable]("comp1" -> new ComponentForTestA())
-	return new ComponentListPanel(id,LDM.of(() => {nameObjectMap}));
+	return new CatalogPanel(id,LDM.of(() => {nameObjectMap}));
       }
     })
     tester.assertLabel("panel:list:1:link:name","test.a")

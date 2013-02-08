@@ -10,8 +10,9 @@ import scala.collection.JavaConversions._
 import org.slf4j.LoggerFactory
 import java.util.ArrayList
 import jhc.figaro.webapps.uiengine.content.ContentReader
+import jhc.figaro.webapps.uiengine.admin.{PropertyWriter,PropertyReader}
 
-class DBService extends ContentWriter with ContentReader {
+class DBService extends ContentWriter with ContentReader with PropertyReader with PropertyWriter {
 
   val log = new ConditionalLogger(classOf[DBService])
 
@@ -20,6 +21,7 @@ class DBService extends ContentWriter with ContentReader {
 			.get().asInstanceOf[ODatabaseRecordTx]);
   }
   def qry(sql:String):List[ODocument] = {
+    log.ifDebug(()=>{"Exec query "+sql})
     try {
       val results:ArrayList[ODocument] = conn().query(new OSQLSynchQuery[ODocument](sql));
       if(results!=null) return results.toList
@@ -130,6 +132,31 @@ class DBService extends ContentWriter with ContentReader {
       doc.field("status"),doc.field("charset"),doc.field("role"),
       if(record!=null)record.toStream() else null)
 
+  }
+  def saveComponentProperty(uitype:String,uikey:String,lang:String,value:String){
+    qry("select from ComponentProperty where out[type = 'belongsto'].in.current = 'true' "+
+      "and uitype = '"+uitype+"' and uikey = '"+uikey+"' "+(if(lang==null)"" else "lang='"+lang+"' ")).foreach(doc => {
+        doc.field("value",value)
+        doc.save()
+        return;
+    })
+    val doc = conn().createVertex("ComponentProperty")
+    doc.field("uitype",uitype)
+    doc.field("uikey",uikey)
+    if(lang!=null)doc.field("lang",lang)
+    doc.field("value",value)
+    doc.save()
+    qry("select from ContentVersion where current = 'true'").foreach(c => {
+      val edge = conn.createEdge(doc,c)
+      edge.field("type","belongsto")
+      edge.save()
+    })
+  }
+  def getComponentProperties(uitype:String,lang:String):Map[String,String] = {
+    qry("select from ComponentProperty where out[type = 'belongsto'].in.current = 'true' "+
+      "and uitype = '"+uitype+"' and (lang = '"+lang+"' or lang is null)").map(
+      (c:ODocument) => (c.field("uikey"),c.field("value"))
+    ).toMap
   }
   def getContent():List[Content] = {
     qry("select from Content where out[type = 'belongsto'].in.current = 'true' order by path")

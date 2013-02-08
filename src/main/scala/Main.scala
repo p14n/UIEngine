@@ -1,4 +1,3 @@
-import java.util.Date
 import java.io.File
 import java.io.PrintWriter
 import jhc.figaro.webapps.uiengine.EngineServer
@@ -12,7 +11,6 @@ object Main {
 
   def main(args : Array[String]) : Unit = { 
 
-    //crawl
     start(args)
 
   }

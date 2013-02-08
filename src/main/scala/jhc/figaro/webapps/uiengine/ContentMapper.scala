@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory
 class ContentMapper(
   resolver: ContentResolver,
   headComponentCreator: (String,String) => Behavior, 
-  componentCreator: (String,String) => Component) extends AbstractMapper {
+  componentCreator: (String,String,String) => Component) extends AbstractMapper {
 
   override def mapRequest(req: Request) : IRequestHandler = {
 
